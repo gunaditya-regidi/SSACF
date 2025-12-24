@@ -13,15 +13,15 @@
     <section class="scrolling-hero-section">
         <div class="scrolling-column">
             <div class="scrolling-images">
-                <img src="{{ asset('images/background/bgimg3.jpg') }}" alt="Compassionate senior care in a bright, welcoming environment.">
-                <img src="{{ asset('images/background/bgimg1.jpg') }}" alt="An elderly woman enjoying a peaceful moment outdoors.">
-                <img src="{{ asset('images/background/bgimg5.jpg') }}" alt="A caregiver providing gentle support to a senior patient.">
-                <img src="{{ asset('images/background/bgimg4.jpg') }}" alt="A close-up of a caregiver holding a patient's hand, symbolizing trust and support.">
+                <img src="{{ vite::asset('resources/images/background/bgimg3.jpg') }}" alt="Compassionate senior care in a bright, welcoming environment.">
+                <img src="{{ vite::asset('resources/images/background/bgimg1.jpg') }}" alt="An elderly woman enjoying a peaceful moment outdoors.">
+                <img src="{{ vite::asset('resources/images/background/bgimg5.jpg') }}" alt="A caregiver providing gentle support to a senior patient.">
+                <img src="{{ vite::asset('resources/images/background/bgimg4.jpg') }}" alt="A close-up of a caregiver holding a patient's hand, symbolizing trust and support.">
                 <!-- Repeated images for continuous scroll -->
-                <img src="{{ asset('images/background/bgimg3.jpg') }}" alt="Compassionate senior care in a bright, welcoming environment.">
-                <img src="{{ asset('images/background/bgimg1.jpg') }}" alt="An elderly woman enjoying a peaceful moment outdoors.">
-                <img src="{{ asset('images/background/bgimg5.jpg') }}" alt="A caregiver providing gentle support to a senior patient.">
-                <img src="{{ asset('images/background/bgimg4.jpg') }}" alt="A close-up of a caregiver holding a patient's hand, symbolizing trust and support.">
+                <img src="{{ vite::asset('resources/images/background/bgimg3.jpg') }}" alt="Compassionate senior care in a bright, welcoming environment.">
+                <img src="{{ vite::asset('resources/images/background/bgimg1.jpg') }}" alt="An elderly woman enjoying a peaceful moment outdoors.">
+                <img src="{{ vite::asset('resources/images/background/bgimg5.jpg') }}" alt="A caregiver providing gentle support to a senior patient.">
+                <img src="{{ vite::asset('resources/images/background/bgimg4.jpg') }}" alt="A close-up of a caregiver holding a patient's hand, symbolizing trust and support.">
             </div>
         </div>
 
@@ -43,15 +43,15 @@
 
         <div class="scrolling-column">
             <div class="scrolling-images reverse-scroll">
-                <img src="{{ asset('images/background/bgimg5.jpg') }}" alt="A caregiver providing gentle support to a senior patient.">
-                <img src="{{ asset('images/background/bgimg4.jpg') }}" alt="A close-up of a caregiver holding a patient's hand, symbolizing trust and support.">
-                <img src="{{ asset('images/background/bgimg3.jpg') }}" alt="Compassionate senior care in a bright, welcoming environment.">
-                <img src="{{ asset('images/background/bgimg1.jpg') }}" alt="An elderly woman enjoying a peaceful moment outdoors.">
+                <img src="{{ vite::asset('resources/images/background/bgimg5.jpg') }}" alt="A caregiver providing gentle support to a senior patient.">
+                <img src="{{ vite::asset('resources/images/background/bgimg4.jpg') }}" alt="A close-up of a caregiver holding a patient's hand, symbolizing trust and support.">
+                <img src="{{ vite::asset('resources/images/background/bgimg3.jpg') }}" alt="Compassionate senior care in a bright, welcoming environment.">
+                <img src="{{ vite::asset('resources/images/background/bgimg1.jpg') }}" alt="An elderly woman enjoying a peaceful moment outdoors.">
                 <!-- Repeated images for continuous scroll -->
-                <img src="{{ asset('images/background/bgimg5.jpg') }}" alt="A caregiver providing gentle support to a senior patient.">
-                <img src="{{ asset('images/background/bgimg4.jpg') }}" alt="A close-up of a caregiver holding a patient's hand, symbolizing trust and support.">
-                <img src="{{ asset('images/background/bgimg3.jpg') }}" alt="Compassionate senior care in a bright, welcoming environment.">
-                <img src="{{ asset('images/background/bgimg1.jpg') }}" alt="An elderly woman enjoying a peaceful moment outdoors.">
+                <img src="{{ vite::asset('resources/images/background/bgimg5.jpg') }}" alt="A caregiver providing gentle support to a senior patient.">
+                <img src="{{ vite::asset('resources/images/background/bgimg4.jpg') }}" alt="A close-up of a caregiver holding a patient's hand, symbolizing trust and support.">
+                <img src="{{ vite::asset('resources/images/background/bgimg3.jpg') }}" alt="Compassionate senior care in a bright, welcoming environment.">
+                <img src="{{ vite::asset('resources/images/background/bgimg1.jpg') }}" alt="An elderly woman enjoying a peaceful moment outdoors.">
             </div>
         </div>
     </section>
