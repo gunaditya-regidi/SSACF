@@ -3,7 +3,7 @@
         <div class="approach-card w-full">
             <div class="flex flex-col md:flex-row items-center gap-5">
                 <div class="w-full md:w-1/2">
-                    <img src="{{ asset('images/art/mission.png') }}" alt="A group of seniors happily engaging in a community activity." class="rounded-lg shadow-lg w-full">
+                    <img src="{{ Vite::asset('resources/images/art/mission.png') }}" alt="A group of seniors happily engaging in a community activity." class="rounded-lg shadow-lg w-full">
                 </div>
                 <div class="w-full md:w-1/2">
                     <h2 class="text-2xl font-bold text-blue mb-4">Our Mission</h2>

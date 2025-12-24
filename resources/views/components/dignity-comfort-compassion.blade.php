@@ -1,7 +1,7 @@
 <section class="dignity-section">
     <div class="dignity-container">
         <div class="dignity-image-wrapper">
-            <img src="{{ asset('images/services/pc1.jpeg') }}" alt="A caregiver providing compassionate support to an elderly woman.">
+            <img src="{{ Vite::asset('resources/images/services/pc1.jpeg') }}" alt="A caregiver providing compassionate support to an elderly woman.">
         </div>
         <div class="dignity-content">
             <h2 class="dignity-headline">Providing Dignity, Comfort, and Compassion.</h2>

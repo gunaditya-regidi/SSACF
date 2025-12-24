@@ -11,7 +11,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-image: url("{{ asset('images/background/bglo.jpg') }}");
+        background-image: url("{{ Vite::asset('resources/images/background/bglo.jpg') }}");
         background-size: cover;
         background-position: center;
         filter: blur(8px);
@@ -96,48 +96,48 @@
 
 @php
 $palliativeImages = [
-    ['url' => asset('images/services/pc1.jpeg'), 'alt' => 'A caregiver holding a patient\'s hand.'],
-    ['url' => asset('images/services/pc2.jpeg'), 'alt' => 'Doctor talking to an elderly patient.'],
-    ['url' => asset('images/services/pc3.jpeg'), 'alt' => 'Peaceful room with a comfortable bed.'],
-    ['url' => asset('images/services/pc4.jpeg'), 'alt' => 'A senior person looking out a window.'],
+    ['url' => Vite::asset('resources/images/services/pc1.jpeg'), 'alt' => 'A caregiver holding a patient\'s hand.'],
+    ['url' => Vite::asset('resources/images/services/pc2.jpeg'), 'alt' => 'Doctor talking to an elderly patient.'],
+    ['url' => Vite::asset('resources/images/services/pc3.jpeg'), 'alt' => 'Peaceful room with a comfortable bed.'],
+    ['url' => Vite::asset('resources/images/services/pc4.jpeg'), 'alt' => 'A senior person looking out a window.'],
 ];
 $geriatricImages = [
-    ['url' => asset('images/services/gc1.jpeg'), 'alt' => 'Two senior women smiling together.'],
-    ['url' => asset('images/services/gc2.jpeg'), 'alt' => 'Senior man exercising with dumbbells.'],
+    ['url' => Vite::asset('resources/images/services/gc1.jpeg'), 'alt' => 'Two senior women smiling together.'],
+    ['url' => Vite::asset('resources/images/services/gc2.jpeg'), 'alt' => 'Senior man exercising with dumbbells.'],
 ];
 $dementiaImages = [
-    ['url' => asset('images/services/pc1.jpeg'), 'alt' => 'Caregiver assisting a senior woman with a puzzle.'],
-    ['url' => asset('images/services/pc2.jpeg'), 'alt' => 'A human brain model.'],
+    ['url' => Vite::asset('resources/images/services/pc1.jpeg'), 'alt' => 'Caregiver assisting a senior woman with a puzzle.'],
+    ['url' => Vite::asset('resources/images/services/pc2.jpeg'), 'alt' => 'A human brain model.'],
 ];
 $transitionalImages = [
-    ['url' => asset('images/services/pc3.jpeg'), 'alt' => 'Caregiver helping a senior patient walk at home.'],
-    ['url' => asset('images/services/pc4.jpeg'), 'alt' => 'Doctor reviewing a patient\'s chart with them.'],
+    ['url' => Vite::asset('resources/images/services/pc3.jpeg'), 'alt' => 'Caregiver helping a senior patient walk at home.'],
+    ['url' => Vite::asset('resources/images/services/pc4.jpeg'), 'alt' => 'Doctor reviewing a patient\'s chart with them.'],
 ];
 $respiteImages = [
-    ['url' => asset('images/services/pc1.jpeg'), 'alt' => 'Caregiver reading a book in a peaceful garden.'],
-    ['url' => asset('images/services/pc2.jpeg'), 'alt' => 'A group of seniors enjoying a social activity.'],
+    ['url' => Vite::asset('resources/images/services/pc1.jpeg'), 'alt' => 'Caregiver reading a book in a peaceful garden.'],
+    ['url' => Vite::asset('resources/images/services/pc2.jpeg'), 'alt' => 'A group of seniors enjoying a social activity.'],
 ];
 $rehabilitativeImages = [
-    ['url' => asset('images/services/pc3.jpeg'), 'alt' => 'Physical therapist assisting a senior with leg exercises.'],
-    ['url' => asset('images/services/pc4.jpeg'), 'alt' => 'Senior using parallel bars for support during therapy.'],
+    ['url' => Vite::asset('resources/images/services/pc3.jpeg'), 'alt' => 'Physical therapist assisting a senior with leg exercises.'],
+    ['url' => Vite::asset('resources/images/services/pc4.jpeg'), 'alt' => 'Senior using parallel bars for support during therapy.'],
 ];
 $hospiceImages = [
-    ['url' => asset('images/services/hc1.jpeg'), 'alt' => 'A nurse providing comfort to a patient in a calm environment.'],
-    ['url' => asset('images/services/hc2.jpeg'), 'alt' => 'A serene and comfortable room designed for peace.'],
+    ['url' => Vite::asset('resources/images/services/hc1.jpeg'), 'alt' => 'A nurse providing comfort to a patient in a calm environment.'],
+    ['url' => Vite::asset('resources/images/services/hc2.jpeg'), 'alt' => 'A serene and comfortable room designed for peace.'],
 ];
 $homeCareImages = [
-    ['url' => asset('images/services/hc1.jpeg'), 'alt' => 'A caregiver helping a senior with groceries in their kitchen.'],
-    ['url' => asset('images/services/hc2.jpeg'), 'alt' => 'A nurse checking a patient\'s vitals at home.'],
+    ['url' => Vite::asset('resources/images/services/hc1.jpeg'), 'alt' => 'A caregiver helping a senior with groceries in their kitchen.'],
+    ['url' => Vite::asset('resources/images/services/hc2.jpeg'), 'alt' => 'A nurse checking a patient\'s vitals at home.'],
 ];
 $outreachImages = [
-    ['url' => asset('images/services/orc1.jpeg'), 'alt' => 'A mobile medical van in a rural community.'],
-    ['url' => asset('images/services/orc2.jpeg'), 'alt' => 'A doctor conducting a health check-up at a community center.'],
-    ['url' => asset('images/services/orc3.jpeg'), 'alt' => 'Volunteers distributing supplies to elderly community members.'],
-    ['url' => asset('images/services/orc4.jpeg'), 'alt' => 'A health worker talking to a group of seniors outdoors.'],
+    ['url' => Vite::asset('resources/images/services/orc1.jpeg'), 'alt' => 'A mobile medical van in a rural community.'],
+    ['url' => Vite::asset('resources/images/services/orc2.jpeg'), 'alt' => 'A doctor conducting a health check-up at a community center.'],
+    ['url' => Vite::asset('resources/images/services/orc3.jpeg'), 'alt' => 'Volunteers distributing supplies to elderly community members.'],
+    ['url' => Vite::asset('resources/images/services/orc4.jpeg'), 'alt' => 'A health worker talking to a group of seniors outdoors.'],
 ];
 $advocacyImages = [
-    ['url' => asset('images/services/ad1.jpeg'), 'alt' => 'A group of people in a seminar about senior rights.'],
-    ['url' => asset('images/services/ad2.jpeg'), 'alt' => 'A person speaking at a podium during a conference.'],
+    ['url' => Vite::asset('resources/images/services/ad1.jpeg'), 'alt' => 'A group of people in a seminar about senior rights.'],
+    ['url' => Vite::asset('resources/images/services/ad2.jpeg'), 'alt' => 'A person speaking at a podium during a conference.'],
 ];
 @endphp
 
