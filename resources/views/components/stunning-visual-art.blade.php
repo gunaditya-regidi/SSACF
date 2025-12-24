@@ -1,0 +1,46 @@
+{{-- Original Desktop View --}}
+<section class="art-showcase">
+    <video autoplay muted loop class="art-background-video">
+        <source src="{{ asset('Videos/main/bgvid.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="art-content">
+        <h1 class="art-subheadline">Welcome To</h1>
+        <h1 class="art-subheadline1">Sneha Sandhya</h1>
+        <h1 class="art-subheadline2">AGE CARE FOUNDATION</h1>
+        <div class="art-headline-wrapper">
+            <h2 class="art-headline">
+                <span>&#10022;</span> Where Care Comes First <span>&#10022;</span>
+            </h2>
+        </div>
+        <div class="art-buttons">
+            <a href="#" class="btn-upload-more">Our Services</a>
+            <a href="#" class="btn-view-gallery">More Info &rarr;</a>
+        </div>
+    </div>
+</section>
+
+{{-- New Mobile & Tablet View --}}
+<section class="art-showcase-mobile">
+    {{-- Video is now on top --}}
+    <video autoplay muted loop class="art-video-mobile">
+        <source src="{{ asset('Videos/main/bgvid.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    {{-- Content card is below the video --}}
+    <div class="art-content-mobile">
+        <h1 class="art-subheadline">Welcome To</h1>
+        <h1 class="art-subheadline1">Sneha Sandhya</h1>
+        <h1 class="art-subheadline2">AGE CARE FOUNDATION</h1>
+        <div class="art-headline-wrapper">
+            <h2 class="art-headline">
+                <span>&#10022;</span> Where Care Comes First <span>&#10022;</span>
+            </h2>
+        </div>
+        <div class="art-buttons">
+            <a href="#" class="btn-upload-more">Our Services</a>
+            <a href="#" class="btn-view-gallery">More Info &rarr;</a>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us - Age Care Foundation</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+
+        <!-- Favicon -->
+        <link rel="icon" href="/images/logos/logo.png" type="image/x-icon"/>
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+    <style>
+        .foco {
+            background: linear-gradient(to right, rgba(0, 70, 209, 0.82), rgba(0, 46, 138, 0.82));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: blue;
+        }
+        .support-us-container {
+            font-family: 'Figtree', sans-serif;
+        }
+        .support-us-header {
+            text-align: center;
+            padding: 4rem 1rem 2rem;
+        }
+        .support-us-header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            display: inline-flex;
+            align-items: center;
+        }
+        .support-us-header h1 .icon {
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+        }
+        .support-us-header p {
+            font-size: 1.1rem;
+            color: #fff;
+            max-width: 600px;
+            margin: 0.5rem auto 0;
+        }
+        .main-content-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        @media (min-width: 1024px) {
+            .main-content-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .contact-info-card {
+            background: url('/images/background/bgimg5.jpg') center center/cover no-repeat;
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 350px;
+        }
+        .contact-info-card h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .contact-info-card p {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            max-width: 300px;
+        }
+        .contact-info-card .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        .contact-info-card .info-item svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 0.75rem;
+        }
+        .map-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .map-card iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 350px;
+            border: none;
+        }
+        .form-card {
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            margin: 3rem auto;
+        }
+
+        .form-card h2 {
+            color: #1f2937;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 2.5rem;
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        @media (min-width: 768px) {
+            .form-grid { grid-template-columns: 1fr 1fr; }
+            .form-group.full-width { grid-column: 1 / -1; }
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #d2d6dc;
+            padding: 0.75rem 0.25rem;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+            background: transparent;
+            color: #333;
+        }
+        .form-group input::placeholder, .form-group textarea::placeholder {
+            color: #9ca3af;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            border-bottom-color: #3b82f6;
+            outline: none;
+        }
+        .submit-btn-container { text-align: center; margin-top: 1.5rem; }
+        .submit-btn {
+            background: linear-gradient(to right, #3b82f6, #60a5fa);
+            color: white;
+            padding: 0.8rem 3rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .submit-btn:hover { transform: scale(1.05); }
+        .txt{
+            color: #000000;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+                <div class="flex justify-start lg:w-0 lg:flex-1">
+                    <a href="/">
+                        <img class="h-8 w-auto sm:h-10" src="/images/logos/logo.png" alt="Age Care Foundation">
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-10">
+                    <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Home</a>
+                    <a href="/about.html" class="text-base font-medium text-gray-500 hover:text-gray-900">About Us</a>
+                    <a href="/services.html" class="text-base font-medium text-gray-500 hover:text-gray-900">Our Services</a>
+                    <a href="/our-team.html" class="text-base font-medium text-gray-500 hover:text-gray-900">Our Team</a>
+                    <a href="/our-journey.html" class="text-base font-medium text-gray-500 hover:text-gray-900">Our Journey</a>
+                    <a href="/gallery.html" class="text-base font-medium text-gray-500 hover:text-gray-900">Gallery</a>
+                    <a href="/contact.html" class="text-base font-medium text-gray-500 hover:text-gray-900 active">Contact Us</a>
+                    <a href="/support-us.html" class="nav-cta">Support Us</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main style="background-image: url('/images/topper/mmm.jpg'); background-size: cover; background-position: center; padding-bottom: 3rem;">
+        <div class="support-us-container">
+            <div class="support-us-header">
+                <h1 class="foco">Feel free to reach out to Sneha Sandhya<span class="icon">❤️</span>Age Care Foundation</h1>
+                <p class="txt">Have a question about our services, donations, or how to support our mission? We are here to help you connect.</p>
+            </div>
+
+            <div class="main-content-grid">
+                <div class="contact-info-card">
+                    <h2>Foundation Contact Info</h2>
+                    <p>Want to Donate, or Learn more about our services? Reach out to us.</p>
+                    <div class="info-item">
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                        <span>+91 12345 67890</span>
+                    </div>
+                    <div class="info-item">
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        <span>info@snehsandhya.org</span>
+                    </div>
+                    <div class="info-item">
+                        <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                        <span>Age Care Foundation, IIM-Vizag, Road, Gambhiram, 531163</span>
+                    </div>
+                </div>
+                <div class="map-card">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1181.9904122546277!2d83.37084447410545!3d17.880038351311505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395974d7ecb56f%3A0xc4115c733eb64220!2sAge%20Care%20Foundation%20-%20Hospital!5e1!3m2!1sen!2sin!4v1764493340813!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="form-card max-w-4xl mx-auto">
+                <h2>Get In Touch</h2>
+                <form action="#" method="POST">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                    </div>
+                    <div class="submit-btn-container">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div><h3 class="text-lg font-semibold mb-4">Sneha Sandhya Age Care Foundation</h3><p class="text-gray-400">Providing dignified and compassionate care for the elderly.</p></div>
+                <div><h3 class="text-lg font-semibold mb-4">Quick Links</h3><ul class="space-y-2"><li><a href="/" class="hover:text-gray-300">Home</a></li><li><a href="/about.html" class="hover:text-gray-300">About Us</a></li><li><a href="/services.html" class="hover:text-gray-300">Services</a></li><li><a href="/contact.html" class="hover:text-gray-300">Contact</a></li></ul></div>
+                <div><h3 class="text-lg font-semibold mb-4">Contact Us</h3><p class="text-gray-400">123 Aging Gracefully Lane</p><p class="text-gray-400">Hyderabad, Telangana, 500001</p><p class="text-gray-400">Email: info@snehsandhya.org</p><p class="text-gray-400">Phone: +91 123 456 7890</p></div>
+                <div><h3 class="text-lg font-semibold mb-4">Follow Us</h3><div class="flex space-x-4"><a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a><a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a><a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a><a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a></div></div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 text-center text-gray-400"><p>&copy; 2024 Sneha Sandhya Age Care Foundation. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+</body>
+</html>

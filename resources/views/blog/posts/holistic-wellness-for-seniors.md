@@ -1,0 +1,4 @@
+image: /images/blog/vlcsnap-2025-11-30-12h42m18s917.png
+### Embracing Holistic Wellness for Seniors
+
+Holistic wellness for seniors is about caring for the whole person—mind, body, and spirit. It goes beyond just physical health to include emotional, social, and spiritual well-being. At Sneha Sandhya, we encourage a holistic approach by offering a variety of programs and activities. This includes yoga and meditation for mental clarity, nutritious meals for physical health, social events to foster community, and quiet spaces for reflection. By focusing on all aspects of wellness, we help our residents lead more fulfilling and balanced lives.

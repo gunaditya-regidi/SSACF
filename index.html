@@ -1,0 +1,449 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneha Sandhya Age Care Foundation</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <style>
+        .hero-section {
+            background-image: url('/images/background/bgimg5.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .dignity-section {
+            background-color: #f8f9fa;
+        }
+        .our-services-section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .our-services-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('/images/background/bgimg5.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: blur(8px);
+            z-index: -1;
+        }
+
+        .core-values-section {
+            background-color: #f8f9fa;
+        }
+
+        .blog-section {
+            background-color: #f8f9fa;
+        }
+
+        .newsletter-carousel .slick-slide {
+            padding: 0 15px;
+        }
+
+        .newsletter-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .newsletter-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .newsletter-item a:hover .newsletter-image {
+            transform: scale(1.05);
+        }
+
+        .newsletter-title {
+            font-weight: 600;
+            color: #374151; /* text-gray-700 */
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+                <div class="flex justify-start lg:w-0 lg:flex-1">
+                    <a href="/">
+                        <img class="h-8 w-auto sm:h-10" src="/images/logo/logo.png" alt="Sneha Sandhya Age Care Foundation">
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-10">
+                    <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Home</a>
+                    <a href="/about" class="text-base font-medium text-gray-500 hover:text-gray-900">About Us</a>
+                    <a href="/services" class="text-base font-medium text-gray-500 hover:text-gray-900">Services</a>
+                    <a href="/our-team" class="text-base font-medium text-gray-500 hover:text-gray-900">Our Team</a>
+                    <a href="/our-journey" class="text-base font-medium text-gray-500 hover:text-gray-900">Our Journey</a>
+                    <a href="/gallery" class="text-base font-medium text-gray-500 hover:text-gray-900">Gallery</a>
+                    <a href="/contact" class="text-base font-medium text-gray-500 hover:text-gray-900">Contact</a>
+                </nav>
+                <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                    <a href="/donate" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700">
+                        Donate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section relative h-screen flex items-center justify-center text-center">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="relative z-10 p-8">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight">Sneha Sandhya Age Care Foundation</h1>
+                <p class="mt-4 text-lg md:text-xl text-white">Providing dignified and compassionate care for the elderly.</p>
+                <div class="mt-8">
+                    <a href="/about" class="cta-button">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="dignity-section py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">Dignity, Comfort, and Compassion</h2>
+                    <p class="mt-4 text-xl text-gray-600">These are the pillars of our care philosophy. We believe in providing a nurturing environment where seniors can live with respect and grace.</p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-24 w-24 rounded-full bg-blue-100 mx-auto">
+                            <i class="fas fa-hand-holding-heart text-5xl text-blue-600"></i>
+                        </div>
+                        <h3 class="mt-6 text-2xl font-bold text-gray-900">Compassionate Care</h3>
+                        <p class="mt-4 text-lg text-gray-600">Our dedicated team provides round-the-clock care, ensuring that every resident feels valued and supported.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-24 w-24 rounded-full bg-blue-100 mx-auto">
+                            <i class="fas fa-home text-5xl text-blue-600"></i>
+                        </div>
+                        <h3 class="mt-6 text-2xl font-bold text-gray-900">Comfortable Living</h3>
+                        <p class="mt-4 text-lg text-gray-600">We offer a safe and comfortable living environment, designed to feel like home.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-24 w-24 rounded-full bg-blue-100 mx-auto">
+                            <i class="fas fa-users text-5xl text-blue-600"></i>
+                        </div>
+                        <h3 class="mt-6 text-2xl font-bold text-gray-900">Community and Connection</h3>
+                        <p class="mt-4 text-lg text-gray-600">We foster a strong sense of community, with regular activities and social events.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-services-section py-20 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-extrabold text-black sm:text-5xl tracking-tight">Our Services</h2>
+                    <p class="mt-4 text-lg text-black">Comprehensive and compassionate care tailored to the unique needs of seniors.</p>
+                </div>
+
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex justify-center mb-8">
+                        <button class="tab-button active" data-tab="palliative">Palliative Care</button>
+                        <button class="tab-button" data-tab="geriatric">Geriatric Care</button>
+                        <button class="tab-button" data-tab="dementia">Dementia Care</button>
+                    </div>
+
+                    <div class="bg-opacity-80 bg-gray-900 p-8 rounded-lg shadow-lg">
+                        <div id="palliative" class="tab-content">
+                            <div class="text-left">
+                                <h3 class="text-3xl font-bold text-white mb-4">Palliative Care</h3>
+                                <p class="text-white mb-6">Palliative care is a specialized medical care of persons living with serious illnesses like cancer, severe heart, lung, kidney & liver failures, dementia, Parkinson's etc.
+                                </br>
+        These patients have a heavy symptom burden like pain, breathlessness, and many others, from the primary disease and the treatments received. The patients also suffer from the psychological, social and spiritual problems that come from living with terminal illnesses.
+        </br>
+        Hence in palliative care we address all these concerns of the patient and their families through a holistic approach, providing them comfort and relief and improve their quality of life.</p>
+                                <a href="/palliative-care" class="cta-button">Learn More</a>
+                            </div>
+                        </div>
+
+                        <div id="geriatric" class="tab-content" style="display:none">
+                            <div class="text-left">
+                                <h3 class="text-3xl font-bold text-white mb-4">Geriatric Care</h3>
+                                <p class="text-white mb-6">Geriatric medicine is a medical specialty that is related to the specific health care needs of older adults.
+                                </br>
+        The Indian elderly face several social issues such as loneliness, elder abuse, neglect, lack of income security, and poor access to health care. According to the National Council on Aging, about 92 percent of seniors have at least one chronic disease and 77 percent have at least two. Heart disease, stroke, cancer, and diabetes are among the most common.
+        </br>
+        Since 2012 we have been providing geriatric care services to the underprivileged elderly in our community. Our geriatric care services are availed by about 1200 persons every month.</p>
+                                <a href="/geriatric-care" class="cta-button">Learn More</a>
+                            </div>
+                        </div>
+
+                        <div id="dementia" class="tab-content" style="display:none">
+                            <div class="text-left">
+                                <h3 class="text-3xl font-bold text-white mb-4">Dementia Care</h3>
+                                <p class="text-white mb-6">Dementia is one of the major causes of disability and dependency among older people worldwide. It is not a part of normal ageing process. It is an umbrella term for several progressive degenerative diseases of the brain cells, affecting memory, thinking, language, communication and behaviour, that interfere significantly with a person’s ability to maintain their activities of daily living.</br> It can be overwhelming, not only for the people who have it, but also for their carers and families. There is often a lack of awareness and understanding of dementia, resulting in stigmatization and barriers to diagnosis and care.</p>
+                                <a href="/dementia-care" class="cta-button">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="core-values-section py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-extrabold text-black sm:text-4xl">Our Core Values</h2>
+                    <p class="mt-4 text-lg text-black">The principles that guide our work.</p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="approach-card text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="flex items-center justify-center h-20 w-20 mx-auto mb-6">
+                            <i class="fas fa-hands-helping text-5xl text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Patient-First</h3>
+                        <p class="text-gray-600">We prioritize the needs, comfort, and well-being of our patients above all else, ensuring they receive personalized and compassionate care.</p>
+                    </div>
+                    <div class="approach-card text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="flex items-center justify-center h-20 w-20 mx-auto mb-6">
+                            <i class="fas fa-hand-holding-heart text-5xl text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Compassion</h3>
+                        <p class="text-gray-600">We approach our work with empathy, kindness, and a deep sense of understanding for the challenges our patients and their families face.</p>
+                    </div>
+                    <div class="approach-card text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="flex items-center justify-center h-20 w-20 mx-auto mb-6">
+                            <i class="fas fa-user-shield text-5xl text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Dignity</h3>
+                        <p class="text-gray-600">We treat every individual with the utmost respect, honoring their life experiences, and preserving their dignity at all stages of care.</p>
+                    </div>
+                    <div class="approach-card text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="flex items-center justify-center h-20 w-20 mx-auto mb-6">
+                            <i class="fas fa-star text-5xl text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Quality</h3>
+                        <p class="text-gray-600">We are committed to the highest standards of care, continuously improving our practices and staying current with the latest advancements in geriatric and palliative medicine.</p>
+                    </div>
+                    <div class="approach-card text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="flex items-center justify-center h-20 w-20 mx-auto mb-6">
+                            <i class="fas fa-shield-alt text-5xl text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Integrity</h3>
+                        <p class="text-gray-600">We operate with transparency, honesty, and strong ethical principles, building trust with our patients, partners, and the community.</p>
+                    </div>
+                    <div class="approach-card text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="flex items-center justify-center h-20 w-20 mx-auto mb-6">
+                            <i class="fas fa-users text-5xl text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Community</h3>
+                        <p class="text-gray-600">We foster a sense of belonging and connection, creating a supportive network for our patients, their families, and our team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="bg-white py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        News & Events
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-500">
+                        Stay updated with our latest newsletters.
+                    </p>
+                </div>
+                <div class="newsletter-carousel">
+                    <div class="newsletter-item">
+                        <a href="/newsletters/Sept2025.pdf" target="_blank">
+                            <img src="/newsletters/Sept2025.png" alt="September - 2025" class="newsletter-image">
+                            <span class="newsletter-title">September - 2025</span>
+                        </a>
+                    </div>
+                    <div class="newsletter-item">
+                        <a href="/newsletters/dec2022.pdf" target="_blank">
+                            <img src="/newsletters/dec2022.png" alt="December - 2022" class="newsletter-image">
+                            <span class="newsletter-title">December - 2022</span>
+                        </a>
+                    </div>
+                    <div class="newsletter-item">
+                        <a href="/newsletters/dec2024.pdf" target="_blank">
+                            <img src="/newsletters/dec2024.png" alt="December - 2024" class="newsletter-image">
+                            <span class="newsletter-title">December - 2024</span>
+                        </a>
+                    </div>
+                    <div class="newsletter-item">
+                        <a href="/newsletters/jan2021.pdf" target="_blank">
+                            <img src="/newsletters/jan2021.png" alt="January - 2021" class="newsletter-image">
+                            <span class="newsletter-title">January - 2021</span>
+                        </a>
+                    </div>
+                    <div class="newsletter-item">
+                        <a href="/newsletters/june2023.pdf" target="_blank">
+                            <img src="/newsletters/june2023.png" alt="June - 2023" class="newsletter-image">
+                            <span class="newsletter-title">June - 2023</span>
+                        </a>
+                    </div>
+                    <div class="newsletter-item">
+                        <a href="/newsletters/june2025.pdf" target="_blank">
+                            <img src="/newsletters/june2025.png" alt="June - 2025" class="newsletter-image">
+                            <span class="newsletter-title">June - 2025</span>
+                        </a>
+                    </div>
+                    <div class="newsletter-item">
+                        <a href="/newsletters/mar2023.pdf" target="_blank">
+                            <img src="/newsletters/mar2023.png" alt="March - 2023" class="newsletter-image">
+                            <span class="newsletter-title">March - 2023</span>
+                        </a>
+                    </div>
+                    <div class="newsletter-item">
+                        <a href="/newsletters/mar2024.pdf" target="_blank">
+                            <img src="/newsletters/mar2024.png" alt="March - 2024" class="newsletter-image">
+                            <span class="newsletter-title">March - 2024</span>
+                        </a>
+                    </div>
+                    <div class="newsletter-item">
+                        <a href="/newsletters/mar2025.pdf" target="_blank">
+                            <img src="/newsletters/mar2025.png" alt="March - 2025" class="newsletter-image">
+                            <span class="newsletter-title">March - 2025</span>
+                        </a>
+                    </div>
+                    <div class="newsletter-item">
+                        <a href="/newsletters/sept2023.pdf" target="_blank">
+                            <img src="/newsletters/sept2023.png" alt="September - 2023" class="newsletter-image">
+                            <span class="newsletter-title">September - 2023</span>
+                        </a>
+                    </div>
+                    <div class="newsletter-item">
+                        <a href="/newsletters/sept2024.pdf" target="_blank">
+                            <img src="/newsletters/sept2024.png" alt="September - 2024" class="newsletter-image">
+                            <span class="newsletter-title">September - 2024</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-section bg-gray-100 py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl text-center mb-12">Blog</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <article class="blog-post-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="/images/art/art2.JPG" alt="Age Care Foundation" class="blog-post-card-image w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Age Care Foundation</h3>
+                            <p class="text-gray-600 mb-4">Sneha Sandhya Age Care Foundation is committed to providing a nurturing and supportive community for senior citizens. Our mission is to ensure that every resident lives a life of dignity, respect, and joy...</p>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">Read More</a>
+                        </div>
+                    </article>
+                    <article class="blog-post-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="/images/background/bgimg5.jpg" alt="Dementia Care" class="blog-post-card-image w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Dementia Care</h3>
+                            <p class="text-gray-600 mb-4">Dementia care requires a specialized approach that is tailored to the unique needs of individuals with memory loss. The primary goal is to provide a safe, supportive, and engaging environment that...</p>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">Read More</a>
+                        </div>
+                    </article>
+                    <article class="blog-post-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="/images/blog/vlcsnap-2025-11-30-12h42m48s232.png" alt="Geriatric Care" class="blog-post-card-image w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Geriatric Care</h3>
+                            <p class="text-gray-600 mb-4">Geriatric care is a specialty that focuses on the health care of elderly people. It aims to promote health by preventing and treating diseases and disabilities in older adults. The focus is on quality of life and...</p>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Sneha Sandhya Age Care Foundation</h3>
+                    <p class="text-gray-400">Providing dignified and compassionate care for the elderly.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="hover:text-gray-300">Home</a></li>
+                        <li><a href="/about" class="hover:text-gray-300">About Us</a></li>
+                        <li><a href="/services" class="hover:text-gray-300">Services</a></li>
+                        <li><a href="/contact" class="hover:text-gray-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <p class="text-gray-400">123 Aging Gracefully Lane</p>
+                    <p class="text-gray-400">Hyderabad, Telangana, 500001</p>
+                    <p class="text-gray-400">Email: info@snehsandhya.org</p>
+                    <p class="text-gray-400">Phone: +91 123 456 7890</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Sneha Sandhya Age Care Foundation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.newsletter-carousel').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+
+            $('.tab-button').on('click', function() {
+                var tab_id = $(this).attr('data-tab');
+
+                $('.tab-button').removeClass('active');
+                $('.tab-content').hide();
+
+                $(this).addClass('active');
+                $("#"+tab_id).show();
+            })
+        });
+    </script>
+
+</body>
+</html>
