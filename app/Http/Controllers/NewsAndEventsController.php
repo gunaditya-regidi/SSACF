@@ -10,16 +10,19 @@ class NewsAndEventsController extends Controller
 {
     public function index()
     {
-        // Prepare Blog Posts
+        $files = File::files(resource_path('views/blog/posts'));
         $posts = [];
-        $blogFiles = File::files(resource_path('views/blog/posts'));
-        $converter = new CommonMarkConverter(['html_input' => 'escape', 'allow_unsafe_links' => false]);
 
-        foreach ($blogFiles as $file) {
-            $content = File::get($file->getRealPath());
-            $slug = basename($file->getFilename(), '.md');
+        $converter = new CommonMarkConverter([
+            'html_input' => 'strip',
+            'allow_unsafe_links' => false,
+        ]);
 
-            // Extract image URL
+        foreach ($files as $file) {
+            $slug = pathinfo($file->getFilename(), PATHINFO_FILENAME);
+            $content = File::get($file->getPathname());
+
+            // Extract image URL from the front matter
             $imageUrl = null;
             if (preg_match('/^image:\s*(.*)/m', $content, $matches)) {
                 $imageUrl = trim($matches[1]);
@@ -31,7 +34,7 @@ class NewsAndEventsController extends Controller
                 'title' => str_replace('-', ' ', ucwords($slug)),
                 'content' => $converter->convert($content)->getContent(),
                 'slug' => $slug,
-                'image' => $imageUrl ? asset($imageUrl) : null, // Add image to post data
+                'image' => $imageUrl, // Pass the image URL directly to the view
             ];
         }
 
@@ -58,18 +61,17 @@ class NewsAndEventsController extends Controller
             $content = preg_replace('/^image:\s*(.*)\r?\n/', '', $content, 1);
         }
 
-        $converter = new CommonMarkConverter(['html_input' => 'escape', 'allow_unsafe_links' => false]);
+        $converter = new CommonMarkConverter([
+            'html_input' => 'strip',
+            'allow_unsafe_links' => false,
+        ]);
+
         $htmlContent = $converter->convert($content)->getContent();
 
-        $title = str_replace('-', ' ', ucwords($slug));
-
-        $post = [
-            'title' => $title,
+        return view('blog-post', [
+            'title' => str_replace('-', ' ', ucwords($slug)),
             'content' => $htmlContent,
-            'image' => $imageUrl ? asset($imageUrl) : null,
-            'date' => now(),
-        ];
-
-        return view('blog-post', ['post' => $post]);
+            'image' => $imageUrl, // Pass the image URL to the view
+        ]);
     }
 }

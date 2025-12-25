@@ -7,7 +7,9 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             @foreach ($posts as $post)
                 <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="{{ asset('storage/' . $post->image) }}" alt="{{ $post->title }}" class="w-full h-48 object-cover">
+                    @if ($post->image)
+                        <img src="{{ asset('storage/' . $post->image) }}" alt="{{ $post->title }}" class="w-full h-48 object-cover">
+                    @endif
                     <div class="p-6">
                         <h2 class="text-xl font-bold mb-2">{{ $post->title }}</h2>
                         <p class="text-gray-700 mb-4">{{ Str::limit(strip_tags($post->content), 100) }}</p>
