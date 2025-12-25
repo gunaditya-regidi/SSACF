@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Spatie\LaravelMarkdown\MarkdownParser;
+use Illuminate\Support\Facades\File;
 use App\Http\Controllers\NewsAndEventsController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PalliativeCareController;
@@ -14,48 +16,13 @@ use App\Http\Controllers\HomeCareController;
 use App\Http\Controllers\OutreachGeriatricCareController;
 use App\Http\Controllers\AdvocacyAndTrainingController;
 use App\Http\Controllers\GalleryController;
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Str;
-use League\CommonMark\CommonMarkConverter;
 
 Route::get('/', function () {
-    $converter = new CommonMarkConverter();
-    $posts_path = resource_path('views/blog/posts');
     $posts = [];
+    $files = File::files(resource_path('markdown/posts'));
 
-    if (File::isDirectory($posts_path)) {
-        $posts = collect(File::files($posts_path))
-            ->map(function ($file) use ($converter) {
-                $contents = File::get($file->getPathname());
-                $slug = Str::slug(basename($file, '.md'));
-
-                // Extract image from the first line
-                preg_match('/^image: (.+)/m', $contents, $imageMatches);
-                $image = $imageMatches[1] ?? null;
-                if ($image) {
-                    $image = url(trim($image));
-                }
-
-                // Extract title from H3
-                preg_match('/^### (.+)/m', $contents, $titleMatches);
-                $title = $titleMatches[1] ?? 'Untitled';
-
-                // Remove title and image from content
-                $cleanContent = preg_replace([
-                    '/^image: .+/m',
-                    '/^### .+/m'
-                ], '', $contents);
-                
-                $htmlContent = $converter->convert(trim($cleanContent))->getContent();
-
-                return [
-                    'slug' => $slug,
-                    'title' => $title,
-                    'content' => $htmlContent,
-                    'image' => $image,
-                    'date' => null, // No date in the current markdown structure
-                ];
-            });
+    foreach ($files as $file) {
+        $posts[] = app(MarkdownParser::class)->parse(file_get_contents($file));
     }
 
     return view('welcome', ['posts' => $posts]);
@@ -123,46 +90,3 @@ Route::get('/home-care', [HomeCareController::class, 'index'])->name('home-care'
 Route::get('/outreach-geriatric-care', [OutreachGeriatricCareController::class, 'index'])->name('outreach-geriatric-care');
 
 Route::get('/advocacy-and-training', [AdvocacyAndTrainingController::class, 'index'])->name('advocacy-and-training');
-
-Route::get('/render-welcome', function () {
-    $converter = new CommonMarkConverter();
-    $posts_path = resource_path('views/blog/posts');
-    $posts = [];
-
-    if (File::isDirectory($posts_path)) {
-        $posts = collect(File::files($posts_path))
-            ->map(function ($file) use ($converter) {
-                $contents = File::get($file->getPathname());
-                $slug = Str::slug(basename($file, '.md'));
-
-                // Extract image from the first line
-                preg_match('/^image: (.+)/m', $contents, $imageMatches);
-                $image = $imageMatches[1] ?? null;
-                if ($image) {
-                    $image = url(trim($image));
-                }
-
-                // Extract title from H3
-                preg_match('/^### (.+)/m', $contents, $titleMatches);
-                $title = $titleMatches[1] ?? 'Untitled';
-
-                // Remove title and image from content
-                $cleanContent = preg_replace([
-                    '/^image: .+/m',
-                    '/^### .+/m'
-                ], '', $contents);
-                
-                $htmlContent = $converter->convert(trim($cleanContent))->getContent();
-
-                return [
-                    'slug' => $slug,
-                    'title' => $title,
-                    'content' => $htmlContent,
-                    'image' => $image,
-                    'date' => null, // No date in the current markdown structure
-                ];
-            });
-    }
-
-    return view('welcome', ['posts' => $posts])->render();
-});
