@@ -3,38 +3,39 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class HomeCareController extends Controller
 {
     public function index()
     {
         $sliderImages = [
-            ['url' => asset('images/services/hc1.jpeg'), 'title' => 'Personalized In-Home Care', 'description' => 'Professional and compassionate care in the comfort of your own home.'],
-            ['url' => asset('images/services/hc2.jpeg'), 'title' => 'Assistance with Daily Living', 'description' => 'Helping with daily tasks to maintain independence.'],
-            ['url' => asset('images/services/hc3.jpeg'), 'title' => 'Companionship and Support', 'description' => 'Providing a friendly face and a helping hand.'],
+            ['url' => Storage::url('images/services/hc1.jpeg'), 'title' => 'Personalized In-Home Care', 'description' => 'Professional and compassionate care in the comfort of your own home.'],
+            ['url' => Storage::url('images/services/hc2.jpeg'), 'title' => 'Assistance with Daily Living', 'description' => 'Helping with daily tasks to maintain independence.'],
+            ['url' => Storage::url('images/services/hc3.jpeg'), 'title' => 'Companionship and Support', 'description' => 'Providing a friendly face and a helping hand.'],
         ];
 
         $highlightCards = [
             [
-                'icon' => asset('images/icons/home-care.png'),
+                'icon' => Storage::url('images/icons/home-care.png'),
                 'alt' => 'In-Home Support',
                 'title' => 'In-Home Support',
                 'description' => 'Providing assistance with daily activities to help seniors live independently at home.',
             ],
             [
-                'icon' => asset('images/icons/compassion.png'),
+                'icon' => Storage::url('images/icons/compassion.png'),
                 'alt' => 'Compassionate Companionship',
                 'title' => 'Compassionate Companionship',
                 'description' => 'Friendly and supportive caregivers to combat loneliness and isolation.',
             ],
             [
-                'icon' => asset('images/icons/care-plan.png'),
+                'icon' => Storage::url('images/icons/care-plan.png'),
                 'alt' => 'Customized Care Plans',
                 'title' => 'Customized Care Plans',
                 'description' => 'Tailored care plans to meet the unique needs and preferences of each individual.',
             ],
             [
-                'icon' => asset('images/icons/peace-of-mind.png'),
+                'icon' => Storage::url('images/icons/peace-of-mind.png'),
                 'alt' => 'Peace of Mind for Families',
                 'title' => 'Peace of Mind for Families',
                 'description' => 'Knowing your loved one is safe and well-cared for in their own home.',

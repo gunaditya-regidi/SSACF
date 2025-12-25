@@ -3,40 +3,41 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class OutreachGeriatricCareController extends Controller
 {
     public function index()
     {
         $sliderImages = [
-            ['url' => 'images/services/orc1.jpeg', 'title' => 'Community Health Clinics', 'description' => 'Bringing geriatric care directly to underserved communities.'],
-            ['url' => 'images/services/orc2.jpeg', 'title' => 'Mobile Health Units', 'description' => 'Our mobile clinics provide on-site care for seniors with limited mobility.'],
-            ['url' => 'images/services/orc3.jpeg', 'title' => 'Health Education Workshops', 'description' => 'Empowering seniors with knowledge to manage their health.'],
-            ['url' => 'images/services/orc4.jpeg', 'title' => 'Mobile Health Units', 'description' => 'Our mobile clinics provide on-site care for seniors with limited mobility.'],
+            ['url' => Storage::url('images/services/orc1.jpeg'), 'title' => 'Community Health Clinics', 'description' => 'Bringing geriatric care directly to underserved communities.'],
+            ['url' => Storage::url('images/services/orc2.jpeg'), 'title' => 'Mobile Health Units', 'description' => 'Our mobile clinics provide on-site care for seniors with limited mobility.'],
+            ['url' => Storage::url('images/services/orc3.jpeg'), 'title' => 'Health Education Workshops', 'description' => 'Empowering seniors with knowledge to manage their health.'],
+            ['url' => Storage::url('images/services/orc4.jpeg'), 'title' => 'Mobile Health Units', 'description' => 'Our mobile clinics provide on-site care for seniors with limited mobility.'],
             
         ];
 
         $highlightCards = [
             [
-                'icon' => 'images/icons/community.png',
+                'icon' => Storage::url('images/icons/community.png'),
                 'alt' => 'Community-Based Care',
                 'title' => 'Community-Based Care',
                 'description' => 'Bringing essential geriatric health services directly to local communities.',
             ],
             [
-                'icon' => 'images/icons/accessibility.png',
+                'icon' => Storage::url('images/icons/accessibility.png'),
                 'alt' => 'Accessible to All',
                 'title' => 'Accessible to All',
                 'description' => 'Breaking down barriers to care for vulnerable and underserved seniors.',
             ],
             [
-                'icon' => 'images/icons/prevention.png',
+                'icon' => Storage::url('images/icons/prevention.png'),
                 'alt' => 'Preventive Health',
                 'title' => 'Preventive Health',
                 'description' => 'Focusing on early detection and proactive health management.',
             ],
             [
-                'icon' => 'images/icons/empowerment.png',
+                'icon' => Storage::url('images/icons/empowerment.png'),
                 'alt' => 'Health Empowerment',
                 'title' => 'Health Empowerment',
                 'description' => 'Equipping seniors and communities with knowledge and resources.',

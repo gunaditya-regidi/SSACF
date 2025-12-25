@@ -69,7 +69,7 @@
     
 </style>
 
-<div class="relative bg-cover bg-center py-24" style="background-image: url('{{ url('images/topper/peeps.jpg') }}');">
+<div class="relative bg-cover bg-center py-24" {{-- style="background-image: url('{{ url('images/topper/peeps.jpg') }}');" --}}>
     <div class="absolute inset-0 bg-black opacity-50"></div>
     <div class="container mx-auto text-center relative">
         <h1 class="text-4xl font-bold text-white tracking-wider">Our Journey</h1>
