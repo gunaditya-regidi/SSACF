@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Spatie\LaravelMarkdown\MarkdownParser;
 use Illuminate\Support\Facades\File;
 use App\Http\Controllers\NewsAndEventsController;
 use App\Http\Controllers\BlogController;
@@ -18,20 +17,7 @@ use App\Http\Controllers\AdvocacyAndTrainingController;
 use App\Http\Controllers\GalleryController;
 
 Route::get('/', function () {
-    $posts = [];
-    $path = resource_path('markdown/posts');
-
-    if (!File::exists($path)) {
-        File::makeDirectory($path, 0755, true);
-    }
-
-    $files = File::files($path);
-
-    foreach ($files as $file) {
-        $posts[] = app(MarkdownParser::class)->parse(file_get_contents($file));
-    }
-
-    return view('welcome', ['posts' => $posts]);
+    return view('welcome', ['posts' => []]);
 })->name('home');
 
 Route::get('/about', function () {
