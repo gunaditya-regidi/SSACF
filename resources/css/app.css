@@ -553,7 +553,7 @@ nav {
 
 /* Dignity Section */
 .dignity-section {
-    background-image: url('/images/background/greenwv.jpg');
+    background-image: url('images/background/greenwv.jpg');
     background-size: cover;
     background-position: center;
     padding: 6rem 2rem;
@@ -818,7 +818,7 @@ main {
 
 /* Get Involved Section */
 .get-involved-section {
-    background-image: url('/images/background/greenwv.jpg');
+    background-image: url('images/background/greenwv.jpg');
     background-size: cover;
     background-position: center;
     padding: 6rem 2rem;

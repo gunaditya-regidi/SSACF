@@ -10,7 +10,14 @@ class NewsAndEventsController extends Controller
 {
     public function index()
     {
-        $files = File::files(resource_path('views/blog/posts'));
+        $path = resource_path('views/blog/posts');
+
+        // Check if the directory exists, if not, create it.
+        if (!File::exists($path)) {
+            File::makeDirectory($path, 0755, true);
+        }
+
+        $files = File::files($path);
         $posts = [];
 
         $converter = new CommonMarkConverter([
