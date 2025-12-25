@@ -1,7 +1,7 @@
 {{-- Original Desktop View --}}
 <section class="art-showcase">
     <video autoplay muted loop class="art-background-video">
-        <source src="{{ asset('Videos/main/bgvid.mp4') }}" type="video/mp4">
+        <source src="{{ asset('images/video/bgvideo.mp4') }}" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <div class="art-content">

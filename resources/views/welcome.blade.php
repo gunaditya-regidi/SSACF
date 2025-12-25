@@ -22,11 +22,11 @@
     <section class="scrolling-hero-section">
         <div class="scrolling-column">
             <div class="scrolling-images reverse-scroll">
-                @foreach ($heroImages as $image)
+                @foreach (array_reverse($heroImages)as $image)
                     <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}">
                 @endforeach
                 <!-- Repeated images for continuous scroll -->
-                @foreach ($heroImages as $image)
+                @foreach (array_reverse($heroImages) as $image)
                     <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}">
                 @endforeach
             </div>
