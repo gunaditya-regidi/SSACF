@@ -31,7 +31,7 @@ class NewsAndEventsController extends Controller
                 'title' => str_replace('-', ' ', ucwords($slug)),
                 'content' => $converter->convert($content)->getContent(),
                 'slug' => $slug,
-                'image' => $imageUrl, // Add image to post data
+                'image' => $imageUrl ? asset($imageUrl) : null, // Add image to post data
             ];
         }
 
@@ -66,7 +66,7 @@ class NewsAndEventsController extends Controller
         $post = [
             'title' => $title,
             'content' => $htmlContent,
-            'image' => $imageUrl,
+            'image' => $imageUrl ? asset($imageUrl) : null,
             'date' => now(),
         ];
 

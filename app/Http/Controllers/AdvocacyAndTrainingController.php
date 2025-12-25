@@ -9,9 +9,9 @@ class AdvocacyAndTrainingController extends Controller
     public function index()
     {
         $sliderImages = [
-            ['url' => 'images/services/ad1.jpeg', 'title' => 'Empowering Seniors', 'description' => 'Advocating for the rights and well-being of older adults.'],
-            ['url' => 'images/services/ad2.jpeg', 'title' => 'Caregiver Training Programs', 'description' => 'Equipping caregivers with the skills and knowledge for confident care.'],
-            ['url' => 'images/services/advocacy-3.jpeg', 'title' => 'Community Education', 'description' => 'Raising awareness about the issues facing seniors.'],
+            ['url' => asset('images/services/ad1.jpeg'), 'title' => 'Empowering Seniors', 'description' => 'Advocating for the rights and well-being of older adults.'],
+            ['url' => asset('images/services/ad2.jpeg'), 'title' => 'Caregiver Training Programs', 'description' => 'Equipping caregivers with the skills and knowledge for confident care.'],
+            ['url' => asset('images/services/advocacy-3.jpeg'), 'title' => 'Community Education', 'description' => 'Raising awareness about the issues facing seniors.'],
         ];
 
         $highlightCards = [

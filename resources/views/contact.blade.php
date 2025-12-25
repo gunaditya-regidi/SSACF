@@ -47,7 +47,7 @@
         }
     }
     .contact-info-card {
-        background: url('/images/background/cont.jpg') center center/cover no-repeat;
+        background: url('{{ asset('images/background/cont.jpg') }}') center center/cover no-repeat;
         color: #0a009c;
         padding: 2rem;
         border-radius: 12px;
@@ -149,7 +149,7 @@
 @endpush
 
 @section('content')
-<main style="background-image: url('/images/topper/mmm.jpg'); background-size: cover; background-position: center; padding-bottom: 3rem;">
+<main style="background-image: url('{{ asset('images/topper/mmm.jpg') }}'); background-size: cover; background-position: center; padding-bottom: 3rem;">
     <div class="support-us-container">
         <div class="support-us-header">
             <h1 class="foco">Feel free to reach out to Sneha Sandhya<span class="icon">❤️</span>Age Care Foundation</h1>

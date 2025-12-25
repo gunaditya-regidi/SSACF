@@ -49,7 +49,7 @@
 @endpush
 
 @section('content')
-<main class="max-w-screen-2xl mx-auto py-12" style="background-image: url('/images/topper/mmm.jpg'); background-size: cover; background-position: center;">
+<main class="max-w-screen-2xl mx-auto py-12" style="background-image: url('{{ asset('images/topper/mmm.jpg') }}'); background-size: cover; background-position: center;">
     <section class="gallery-section">
         <h2 class="foco">Image Gallery</h2>
         <p class="mt-2 mb-2 text-center text-lg text-gray-500">

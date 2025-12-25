@@ -9,12 +9,12 @@ class GalleryController extends Controller
     public function index()
     {
         $images = [
-            ['url' => url('images/art/art1.JPG'), 'title' => 'Engaging Activities'],
-            ['url' => url('images/art/art2.JPG'), 'title' => 'Community Fellowship'],
-            ['url' => url('images/art/art3.JPG'), 'title' => 'Art Therapy'],
-            ['url' => url('images/art/art4.JPG'), 'title' => 'Creative Expression'],
-            ['url' => url('images/art/art1.JPG'), 'title' => 'Engaging Activities'],
-            ['url' => url('images/art/art2.JPG'), 'title' => 'Community Fellowship'],
+            ['url' => asset('images/art/art1.JPG'), 'title' => 'Engaging Activities'],
+            ['url' => asset('images/art/art2.JPG'), 'title' => 'Community Fellowship'],
+            ['url' => asset('images/art/art3.JPG'), 'title' => 'Art Therapy'],
+            ['url' => asset('images/art/art4.JPG'), 'title' => 'Creative Expression'],
+            ['url' => asset('images/art/art1.JPG'), 'title' => 'Engaging Activities'],
+            ['url' => asset('images/art/art2.JPG'), 'title' => 'Community Fellowship'],
         ];
 
         $panoramas = [
@@ -25,13 +25,13 @@ class GalleryController extends Controller
             ],
             [
                 'title' => 'Peaceful Garden Area',
-                'thumbnail' => url('images/background/greenwv.jpg'),
-                'panorama' => url('images/background/14.jpg') 
+                'thumbnail' => asset('images/background/greenwv.jpg'),
+                'panorama' => asset('images/background/14.jpg') 
             ],
             [
                 'title' => 'Community Hall',
-                'thumbnail' => url('images/background/bglo.jpg'),
-                'panorama' => url('images/background/14.jpg')
+                'thumbnail' => asset('images/background/bglo.jpg'),
+                'panorama' => asset('images/background/14.jpg')
             ],
         ];
 

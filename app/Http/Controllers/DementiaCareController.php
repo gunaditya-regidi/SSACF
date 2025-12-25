@@ -9,32 +9,32 @@ class DementiaCareController extends Controller
     public function index()
     {
         $sliderImages = [
-            ['url' => 'images/services/dementia-1.jpg', 'title' => 'Specialized Memory Care', 'description' => 'Safe and supportive environments for individuals with memory loss.'],
-            ['url' => 'images/services/dementia-2.jpg', 'title' => 'Cognitive Therapies', 'description' => 'Engaging activities to help maintain cognitive function.'],
-            ['url' => 'images/services/dementia-3.jpg', 'title' => 'Family and Caregiver Support', 'description' => 'Providing resources and guidance for those supporting loved ones with dementia.'],
+            ['url' => asset('images/services/dementia-1.jpg'), 'title' => 'Specialized Memory Care', 'description' => 'Safe and supportive environments for individuals with memory loss.'],
+            ['url' => asset('images/services/dementia-2.jpg'), 'title' => 'Cognitive Therapies', 'description' => 'Engaging activities to help maintain cognitive function.'],
+            ['url' => asset('images/services/dementia-3.jpg'), 'title' => 'Family and Caregiver Support', 'description' => 'Providing resources and guidance for those supporting loved ones with dementia.'],
         ];
 
         $highlightCards = [
             [
-                'icon' => 'images/icons/safety.png',
+                'icon' => asset('images/icons/safety.png'),
                 'alt' => 'Safe Environment',
                 'title' => 'Safe Environment',
                 'description' => 'A secure and nurturing setting designed for individuals with dementia.',
             ],
             [
-                'icon' => 'images/icons/cognitive-support.png',
+                'icon' => asset('images/icons/cognitive-support.png'),
                 'alt' => 'Cognitive Support',
                 'title' => 'Cognitive Support',
                 'description' => 'Personalized activities to enhance cognitive function and quality of life.',
             ],
             [
-                'icon' => 'images/icons/dignity.png',
+                'icon' => asset('images/icons/dignity.png'),
                 'alt' => 'Care with Dignity',
                 'title' => 'Care with Dignity',
                 'description' => 'Respectful and compassionate care that honors each individual.',
             ],
             [
-                'icon' => 'images/icons/family-support.png',
+                'icon' => asset('images/icons/family-support.png'),
                 'alt' => 'Family Education',
                 'title' => 'Family Education',
                 'description' => 'Empowering families with knowledge and strategies for dementia care.',
