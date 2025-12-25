@@ -96,3 +96,7 @@ Route::get('/home-care', [HomeCareController::class, 'index'])->name('home-care'
 Route::get('/outreach-geriatric-care', [OutreachGeriatricCareController::class, 'index'])->name('outreach-geriatric-care');
 
 Route::get('/advocacy-and-training', [AdvocacyAndTrainingController::class, 'index'])->name('advocacy-and-training');
+
+Route::get('/test-our-services', function () {
+    return view('components.our-services');
+});

@@ -3,7 +3,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build && php -d memory_limit=-1 artisan export"
+        "build": "vite build"
     },
     "devDependencies": {
         "axios": "^1.6.4",
