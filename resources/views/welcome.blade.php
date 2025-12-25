@@ -21,7 +21,7 @@
 
     <section class="scrolling-hero-section">
         <div class="scrolling-column">
-            <div class="scrolling-images">
+            <div class="scrolling-images scroll">
                 @foreach ($heroImages as $image)
                     <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}">
                 @endforeach
