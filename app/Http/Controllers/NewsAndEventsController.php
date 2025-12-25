@@ -27,7 +27,7 @@ class NewsAndEventsController extends Controller
                 $content = preg_replace('/^image:\s*(.*)\r?\n/', '', $content, 1);
             }
 
-            $posts[] = [
+            $posts[] = (object)[
                 'title' => str_replace('-', ' ', ucwords($slug)),
                 'content' => $converter->convert($content)->getContent(),
                 'slug' => $slug,
