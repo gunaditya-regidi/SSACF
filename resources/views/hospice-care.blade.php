@@ -45,7 +45,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 my-16">
         @foreach ($highlightCards as $card)
             <div class="highlight-card">
-                <img src="{{ Storage::url($card['icon']) }}" alt="{{ $card['alt'] }}">
+                <img src="{{ asset($card['icon']) }}" alt="{{ $card['alt'] }}">
                 <div>
                     <h3 class="text-xl font-semibold text-gray-700">{{ $card['title'] }}</h3>
                     <p class="text-gray-500">{{ $card['description'] }}</p>

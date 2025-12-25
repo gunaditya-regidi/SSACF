@@ -1,7 +1,7 @@
 {{-- Original Desktop View --}}
 <section class="art-showcase">
     <video autoplay muted loop class="art-background-video">
-        <source src="{{ Storage::url('Videos/main/bgvid.mp4') }}" type="video/mp4">
+        <source src="{{ asset('Videos/main/bgvid.mp4') }}" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <div class="art-content">
@@ -24,7 +24,7 @@
 <section class="art-showcase-mobile">
     {{-- Video is now on top --}}
     <video autoplay muted loop class="art-video-mobile">
-        <source src="{{ Storage::url('Videos/main/bgvid.mp4') }}" type="video/mp4">
+        <source src="{{ asset('Videos/main/bgvid.mp4') }}" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     

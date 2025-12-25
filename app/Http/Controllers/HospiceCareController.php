@@ -10,32 +10,32 @@ class HospiceCareController extends Controller
     public function index()
     {
         $sliderImages = [
-            ['url' => Storage::url('images/services/hospice-1.jpg'), 'title' => 'Comfort and Dignity', 'description' => 'Providing compassionate care that focuses on quality of life.'],
-            ['url' => Storage::url('images/services/hospice-2.jpg'), 'title' => 'Symptom Management', 'description' => 'Expert medical care to manage pain and other symptoms.'],
-            ['url' => Storage::url('images/services/hospice-3.jpg'), 'title' => 'Emotional and Spiritual Support', 'description' => 'Caring for the whole person, not just the illness.'],
+            ['url' => asset('images/services/hospice-1.jpg'), 'title' => 'Comfort and Dignity', 'description' => 'Providing compassionate care that focuses on quality of life.'],
+            ['url' => asset('images/services/hospice-2.jpg'), 'title' => 'Symptom Management', 'description' => 'Expert medical care to manage pain and other symptoms.'],
+            ['url' => asset('images/services/hospice-3.jpg'), 'title' => 'Emotional and Spiritual Support', 'description' => 'Caring for the whole person, not just the illness.'],
         ];
 
         $highlightCards = [
             [
-                'icon' => Storage::url('images/icons/compassion.png'),
+                'icon' => asset('images/icons/compassion.png'),
                 'alt' => 'Compassionate Support',
                 'title' => 'Compassionate Support',
                 'description' => 'A team-oriented approach to expert medical care, pain management, and emotional and spiritual support.',
             ],
             [
-                'icon' => Storage::url('images/icons/dignity.png'),
+                'icon' => asset('images/icons/dignity.png'),
                 'alt' => 'Dignity and Respect',
                 'title' => 'Dignity and Respect',
                 'description' => 'Honoring the choices and values of each individual with deep respect.',
             ],
             [
-                'icon' => Storage::url('images/icons/family-support.png'),
+                'icon' => asset('images/icons/family-support.png'),
                 'alt' => 'Support for Families',
                 'title' => 'Support for Families',
                 'description' => 'Providing guidance, resources, and bereavement counseling for loved ones.',
             ],
             [
-                'icon' => Storage::url('images/icons/peace-of-mind.png'),
+                'icon' => asset('images/icons/peace-of-mind.png'),
                 'alt' => 'A Peaceful Journey',
                 'title' => 'A Peaceful Journey',
                 'description' => 'Creating a calm and serene environment for patients and their families.',

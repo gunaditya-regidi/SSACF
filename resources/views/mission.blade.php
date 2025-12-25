@@ -32,7 +32,7 @@
     <x-app-layout>
         <x-header />
 
-        <main style="background-image: url('{{ Storage::url('images/topper/mmm.jpg') }}'); background-size: cover; background-position: center;">
+        <main style="background-image: url('{{ asset('images/topper/mmm.jpg') }}'); background-size: cover; background-position: center;">
             <section class="py-20">
                 <div class="container mx-auto text-center px-4">
                     <div class="content-box">
