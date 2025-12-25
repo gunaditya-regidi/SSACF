@@ -236,7 +236,7 @@
 @endpush
 
 @section('content')
-<main style="background-image: url('{{ Storage::url('images/topper/mmm.jpg') }}'); background-size: cover; background-position: center; padding-bottom: 3rem;">
+<main style="background-image: url('{{ asset('storage/images/topper/mmm.jpg') }}'); background-size: cover; background-position: center; padding-bottom: 3rem;">
     <div class="support-us-container">
         <div class="support-us-header">
             <h1 class="foco">Support Sneha Sandhya<span class="icon">❤️</span>Age Care Foundation</h1>
@@ -309,7 +309,7 @@
                     <h3 class="text-white text-xl font-semibold mb-4">Donation Details</h3>
                     <p class="text-sm">Donations may be remitted by RTGS/NEFT/IMPS</p>
                     <div class="payment-method mt-4">
-                        <img src="{{ Storage::url('images/services/kvb.png') }}" alt="Karur Vysya Bank Logo" class="h-12 mb-2">
+                        <img src="{{ asset('storage/images/services/kvb.png') }}" alt="Karur Vysya Bank Logo" class="h-12 mb-2">
                         <h3 class="text-white">Favoring: Sneha Sandhya Age Care Foundation</h3>
                         <p><strong>Account No:</strong> 4842135000003091</p>
                         <p><strong>IFSC Code:</strong> KVBL0004842</p>
@@ -318,7 +318,7 @@
                         <p>Andhra Pradesh, India</p>
                     </div>
                     <div class="payment-method mt-6">
-                        <img src="{{ Storage::url('images/services/sbi.jpg') }}" alt="SBI Logo" class="h-12 mb-2">
+                        <img src="{{ asset('storage/images/services/sbi.jpg') }}" alt="SBI Logo" class="h-12 mb-2">
                          <p><strong>OR</strong></p>
                         <p><strong>Account No:</strong> 37707311727</p>
                         <p><strong>IFSC Code:</strong> SBIN0015380</p>
@@ -332,7 +332,7 @@
                     </div>
                     <div class="qr-code-container text-center">
                         <p class="text-white">Please pay through the QR below.</p>
-                        <img src="{{ Storage::url('images/services/qr.jpg') }}" alt="Donation QR Code">
+                        <img src="{{ asset('storage/images/services/qr.jpg') }}" alt="Donation QR Code">
                     </div>
                      <div class="tax-benefits-section">
                         <h3 class="text-white">Tax Benefits</h3>
@@ -389,7 +389,7 @@
 <div id="partner-modal" class="modal">
     <div class="modal-content-pdf">
         <span id="close-partner" class="close-btn">&times;</span>
-        <iframe src="{{ Storage::url('acfdata/sustain.pdf') }}" width="100%" height="100%" style="border:none;"></iframe>
+        <iframe src="{{ asset('storage/acfdata/sustain.pdf') }}" width="100%" height="100%" style="border:none;"></iframe>
     </div>
 </div>
 @endsection
