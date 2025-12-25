@@ -2,7 +2,7 @@
     <nav>
         <div class="logo">
             <a href="{{ url('/') }}">
-                <img src="{{ asset('images/logos/log.png') }}" class="lonav" alt="Age Care Foundation">
+                <img src="{{ asset('storage/images/logos/log.png') }}" class="lonav" alt="Age Care Foundation">
             </a>
         </div>
         <div class="menu-toggle" id="mobile-menu">

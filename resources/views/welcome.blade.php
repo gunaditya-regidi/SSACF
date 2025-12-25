@@ -1,9 +1,9 @@
 @php
     $heroImages = [
-        ['url' => Storage::url('images/background/bgimg3.jpg'), 'alt' => 'Compassionate senior care in a bright, welcoming environment.'],
-        ['url' => Storage::url('images/background/bgimg1.jpg'), 'alt' => 'An elderly woman enjoying a peaceful moment outdoors.'],
-        ['url' => Storage::url('images/background/bgimg5.jpg'), 'alt' => 'A caregiver providing gentle support to a senior patient.'],
-        ['url' => Storage::url('images/background/bgimg4.jpg'), 'alt' => 'A close-up of a caregiver holding a patient\'s hand, symbolizing trust and support.'],
+        ['url' => asset('storage/images/background/bgimg3.jpg'), 'alt' => 'Compassionate senior care in a bright, welcoming environment.'],
+        ['url' => asset('storage/images/background/bgimg1.jpg'), 'alt' => 'An elderly woman enjoying a peaceful moment outdoors.'],
+        ['url' => asset('storage/images/background/bgimg5.jpg'), 'alt' => 'A caregiver providing gentle support to a senior patient.'],
+        ['url' => asset('storage/images/background/bgimg4.jpg'), 'alt' => 'A close-up of a caregiver holding a patient\'s hand, symbolizing trust and support.'],
     ];
 @endphp
 
