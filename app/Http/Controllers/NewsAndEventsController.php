@@ -56,7 +56,7 @@ class NewsAndEventsController extends Controller
         // Extract image URL
         $imageUrl = null;
         if (preg_match('/^image:\s*(.*)/m', $content, $matches)) {
-            $imageUrl = trim($matches[1]);
+            $imageUrl = asset('storage/' . trim($matches[1]));
             // Remove the image line from the content
             $content = preg_replace('/^image:\s*(.*)\r?\n/', '', $content, 1);
         }
