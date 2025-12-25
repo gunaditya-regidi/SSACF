@@ -62,7 +62,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 border-t border-gray-700 pt-14 pb-12">
             <!-- Left Column - Contact Info -->
             <div class="lg:col-span-1">
-                <img src="{{ asset('storage/images/logos/logo.png') }}" alt="Age Care Foundation Logo" class="h-16 mb-6">
+                <img src="{{ asset('images/logos/logo.png') }}" alt="Age Care Foundation Logo" class="h-16 mb-6">
                 <h3 class="font-semibold text-lg text-white mb-6">Contact Us</h3>
                 <div class="space-y-4 text-gray-400">
                     <p class="flex items-start"><span class="mr-3 mt-1"><i class="fas fa-map-marker-alt"></i></span><span>IIM Vizag Road, Gambheeram<br>Visakhapatnam, Andhra Pradesh <br>India - 531163</span></p>
