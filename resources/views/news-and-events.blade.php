@@ -8,7 +8,7 @@
             @foreach ($posts as $post)
                 <div class="bg-white rounded-lg shadow-md overflow-hidden">
                     @if ($post->image)
-                        <img src="{{ asset('storage/' . $post->image) }}" alt="{{ $post->title }}" class="w-full h-48 object-cover">
+                        <img src="{{ asset($post->image) }}" alt="{{ $post->title }}" class="w-full h-48 object-cover">
                     @endif
                     <div class="p-6">
                         <h2 class="text-xl font-bold mb-2">{{ $post->title }}</h2>

@@ -1,4 +1,4 @@
-image: storage/images/art/art2.JPG
+image: images/art/art2.JPG
 ### Our Mission at Sneha Sandhya Age Care Foundation
 
 Sneha Sandhya Age Care Foundation is committed to providing a nurturing and supportive community for senior citizens. Our mission is to ensure that every resident lives a life of dignity, respect, and joy. We offer a range of services, from comprehensive medical care to engaging social activities, all designed to meet the physical, emotional, and social needs of our residents. We believe in creating a true home, where seniors can thrive in a safe, caring, and vibrant environment. Our foundation is built on the principles of compassion, integrity, and a deep respect for the elderly.

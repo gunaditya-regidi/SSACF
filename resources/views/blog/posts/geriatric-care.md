@@ -1,4 +1,4 @@
-image: storage/images/blog/vlcsnap-2025-11-30-12h42m48s232.png
+image: images/blog/vlcsnap-2025-11-30-12h42m48s232.png
 ### The Essentials of Geriatric Care
 
 Geriatric care is a specialty that focuses on the health care of elderly people. It aims to promote health by preventing and treating diseases and disabilities in older adults. The focus is on quality of life and functional ability. A geriatric care team includes a variety of professionals, such as geriatricians, nurses, social workers, and therapists, who work to address the complex needs of older adults. This comprehensive approach helps to manage chronic conditions, promote independence, and provide support for both seniors and their caregivers.

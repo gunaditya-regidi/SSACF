@@ -1,17 +1,17 @@
 @php
     $sponsors = [
-        'storage/images/sponsors/chpw.png',
-        'storage/images/sponsors/devi.png',
-        'storage/images/sponsors/dibvi.png',
-        'storage/images/sponsors/ever.png',
-        'storage/images/sponsors/gef.png',
-        'storage/images/sponsors/kali.png',
-        'storage/images/sponsors/kvb.png',
-        'storage/images/sponsors/neka.png',
-        'storage/images/sponsors/poli.png',
-        'storage/images/sponsors/rotary.png',
-        'storage/images/sponsors/salp.png',
-        'storage/images/sponsors/srava.png',
+        ' images/sponsors/chpw.png',
+        ' images/sponsors/devi.png',
+        ' images/sponsors/dibvi.png',
+        ' images/sponsors/ever.png',
+        ' images/sponsors/gef.png',
+        ' images/sponsors/kali.png',
+        ' images/sponsors/kvb.png',
+        ' images/sponsors/neka.png',
+        ' images/sponsors/poli.png',
+        ' images/sponsors/rotary.png',
+        ' images/sponsors/salp.png',
+        ' images/sponsors/srava.png',
     ];
     $allSponsors = array_merge($sponsors, $sponsors);
 @endphp
