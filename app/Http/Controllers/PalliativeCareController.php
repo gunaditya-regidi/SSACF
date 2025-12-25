@@ -9,10 +9,10 @@ class PalliativeCareController extends Controller
     public function index()
     {
         $sliderImages = [
-            ['url' => 'images/services/pc1.jpeg', 'title' => 'Comfort in Care', 'description' => 'Our team provides compassionate support to ensure comfort at every stage.'],
-            ['url' => 'images/services/pc2.jpeg', 'title' => 'Skilled & Compassionate', 'description' => 'Combining medical expertise with a gentle, understanding approach.'],
-            ['url' => 'images/services/pc3.jpeg', 'title' => 'A Peaceful Journey', 'description' => 'Creating a calm and serene environment for our patients and their families.'],
-            ['url' => 'images/services/pc4.jpeg', 'title' => 'Skilled & Compassionate', 'description' => 'Combining medical expertise with a gentle, understanding approach.'],
+            ['url' => asset('images/services/pc1.jpeg'), 'title' => 'Comfort in Care', 'description' => 'Our team provides compassionate support to ensure comfort at every stage.'],
+            ['url' => asset('images/services/pc2.jpeg'), 'title' => 'Skilled & Compassionate', 'description' => 'Combining medical expertise with a gentle, understanding approach.'],
+            ['url' => asset('images/services/pc3.jpeg'), 'title' => 'A Peaceful Journey', 'description' => 'Creating a calm and serene environment for our patients and their families.'],
+            ['url' => asset('images/services/pc4.jpeg'), 'title' => 'Skilled & Compassionate', 'description' => 'Combining medical expertise with a gentle, understanding approach.'],
             
         ];
 

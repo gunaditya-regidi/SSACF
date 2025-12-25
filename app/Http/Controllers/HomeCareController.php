@@ -9,9 +9,9 @@ class HomeCareController extends Controller
     public function index()
     {
         $sliderImages = [
-            ['url' => 'images/services/hc1.jpeg', 'title' => 'Personalized In-Home Care', 'description' => 'Professional and compassionate care in the comfort of your own home.'],
-            ['url' => 'images/services/hc2.jpeg', 'title' => 'Assistance with Daily Living', 'description' => 'Helping with daily tasks to maintain independence.'],
-            ['url' => 'images/services/hc3.jpeg', 'title' => 'Companionship and Support', 'description' => 'Providing a friendly face and a helping hand.'],
+            ['url' => asset('images/services/hc1.jpeg'), 'title' => 'Personalized In-Home Care', 'description' => 'Professional and compassionate care in the comfort of your own home.'],
+            ['url' => asset('images/services/hc2.jpeg'), 'title' => 'Assistance with Daily Living', 'description' => 'Helping with daily tasks to maintain independence.'],
+            ['url' => asset('images/services/hc3.jpeg'), 'title' => 'Companionship and Support', 'description' => 'Providing a friendly face and a helping hand.'],
         ];
 
         $highlightCards = [
