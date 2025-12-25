@@ -19,7 +19,13 @@ use App\Http\Controllers\GalleryController;
 
 Route::get('/', function () {
     $posts = [];
-    $files = File::files(resource_path('markdown/posts'));
+    $path = resource_path('markdown/posts');
+
+    if (!File::exists($path)) {
+        File::makeDirectory($path, 0755, true);
+    }
+
+    $files = File::files($path);
 
     foreach ($files as $file) {
         $posts[] = app(MarkdownParser::class)->parse(file_get_contents($file));
