@@ -409,7 +409,7 @@
     <div id="partner-modal" class="modal">
         <div class="modal-content-pdf">
             <span id="close-partner" class="close-btn">&times;</span>
-            <iframe src="{{ Vite::asset('resources/acfdata/sustain.pdf') }}" width="100%" height="100%" style="border:none;"></iframe>
+            <iframe src="{{ asset('acfdata/sustain.pdf') }}" width="100%" height="100%" style="border:none;"></iframe>
         </div>
     </div>
 
