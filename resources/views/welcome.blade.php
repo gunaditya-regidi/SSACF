@@ -1,3 +1,12 @@
+@php
+    $heroImages = [
+        ['url' => Vite::asset('resources/images/background/bgimg3.jpg'), 'alt' => 'Compassionate senior care in a bright, welcoming environment.'],
+        ['url' => Vite::asset('resources/images/background/bgimg1.jpg'), 'alt' => 'An elderly woman enjoying a peaceful moment outdoors.'],
+        ['url' => Vite::asset('resources/images/background/bgimg5.jpg'), 'alt' => 'A caregiver providing gentle support to a senior patient.'],
+        ['url' => Vite::asset('resources/images/background/bgimg4.jpg'), 'alt' => 'A close-up of a caregiver holding a patient\'s hand, symbolizing trust and support.'],
+    ];
+@endphp
+
 @extends('layouts.app')
 
 @section('title', 'Age Care Foundation')
@@ -13,15 +22,13 @@
     <section class="scrolling-hero-section">
         <div class="scrolling-column">
             <div class="scrolling-images">
-                <img src="{{ vite::asset('resources/images/background/bgimg3.jpg') }}" alt="Compassionate senior care in a bright, welcoming environment.">
-                <img src="{{ vite::asset('resources/images/background/bgimg1.jpg') }}" alt="An elderly woman enjoying a peaceful moment outdoors.">
-                <img src="{{ vite::asset('resources/images/background/bgimg5.jpg') }}" alt="A caregiver providing gentle support to a senior patient.">
-                <img src="{{ vite::asset('resources/images/background/bgimg4.jpg') }}" alt="A close-up of a caregiver holding a patient's hand, symbolizing trust and support.">
+                @foreach ($heroImages as $image)
+                    <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}">
+                @endforeach
                 <!-- Repeated images for continuous scroll -->
-                <img src="{{ vite::asset('resources/images/background/bgimg3.jpg') }}" alt="Compassionate senior care in a bright, welcoming environment.">
-                <img src="{{ vite::asset('resources/images/background/bgimg1.jpg') }}" alt="An elderly woman enjoying a peaceful moment outdoors.">
-                <img src="{{ vite::asset('resources/images/background/bgimg5.jpg') }}" alt="A caregiver providing gentle support to a senior patient.">
-                <img src="{{ vite::asset('resources/images/background/bgimg4.jpg') }}" alt="A close-up of a caregiver holding a patient's hand, symbolizing trust and support.">
+                @foreach ($heroImages as $image)
+                    <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}">
+                @endforeach
             </div>
         </div>
 
@@ -43,15 +50,13 @@
 
         <div class="scrolling-column">
             <div class="scrolling-images reverse-scroll">
-                <img src="{{ vite::asset('resources/images/background/bgimg5.jpg') }}" alt="A caregiver providing gentle support to a senior patient.">
-                <img src="{{ vite::asset('resources/images/background/bgimg4.jpg') }}" alt="A close-up of a caregiver holding a patient's hand, symbolizing trust and support.">
-                <img src="{{ vite::asset('resources/images/background/bgimg3.jpg') }}" alt="Compassionate senior care in a bright, welcoming environment.">
-                <img src="{{ vite::asset('resources/images/background/bgimg1.jpg') }}" alt="An elderly woman enjoying a peaceful moment outdoors.">
+                @foreach (array_reverse($heroImages) as $image)
+                    <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}">
+                @endforeach
                 <!-- Repeated images for continuous scroll -->
-                <img src="{{ vite::asset('resources/images/background/bgimg5.jpg') }}" alt="A caregiver providing gentle support to a senior patient.">
-                <img src="{{ vite::asset('resources/images/background/bgimg4.jpg') }}" alt="A close-up of a caregiver holding a patient's hand, symbolizing trust and support.">
-                <img src="{{ vite::asset('resources/images/background/bgimg3.jpg') }}" alt="Compassionate senior care in a bright, welcoming environment.">
-                <img src="{{ vite::asset('resources/images/background/bgimg1.jpg') }}" alt="An elderly woman enjoying a peaceful moment outdoors.">
+                @foreach (array_reverse($heroImages) as $image)
+                    <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}">
+                @endforeach
             </div>
         </div>
     </section>
