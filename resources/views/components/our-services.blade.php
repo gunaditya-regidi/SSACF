@@ -145,7 +145,7 @@ $advocacyImages = [
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div class="text-center mb-12">
             <h2 class="text-4xl font-extrabold text-black sm:text-5xl tracking-tight">Our Services</h2>
-            <p class="mt-4 text-lg text-black">Comprehensive and compassionate care tailored to the unique needs of seniors.</p>
+            <p class="mt-4 text-lg text-black">Compassionate care tailored to the unique health care needs of the Elderly and the Seriously ill</p>
         </div>
 
         <div x-data="{ activeTab: 'palliative' }" class="max-w-5xl mx-auto">
@@ -167,7 +167,7 @@ $advocacyImages = [
                     <div class="service-content-grid">
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Palliative Care</h3>
-                            <p class="text-white mb-6">Specialized medical care for people with serious illnesses, focusing on providing relief from symptoms and stress to improve quality of life for both the patient and the family.</p>
+                            <p class="text-white mb-6">Specialized medical care for people living with serious illness and focuses on providing relief from the symptoms and stress of the ailment.</p>
                             <a href="/palliative-care" class="cta-button">Learn More</a>
                         </div>
                         <div class="service-image-scroller">
@@ -183,7 +183,7 @@ $advocacyImages = [
                      <div class="service-content-grid">
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Geriatric Care</h3>
-                            <p class="text-white mb-6">Helping older adults with multiple health problems. Since 2012, we have been providing geriatric care to underprivileged elders, serving about 1200 persons every month.</p>
+                            <p class="text-white mb-6">Medical sub-specialty that aims to meet the complex health care needs of the elderly.</p>
                             <a href="/geriatric-care" class="cta-button">Learn More</a>
                         </div>
                         <div class="service-image-scroller">
@@ -199,7 +199,7 @@ $advocacyImages = [
                     <div class="service-content-grid">
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Dementia Care</h3>
-                            <p class="text-white mb-6">Specialized support for individuals with memory loss. We focus on creating a safe, comfortable, and engaging environment for patients and their families.</p>
+                            <p class="text-white mb-6">Specialized support for people with cognitive decline, focusing on managing symptoms, maintaining quality of life.</p>
                             <a href="/dementia-care" class="cta-button">Learn More</a>
                         </div>
                         <div class="service-image-scroller">
@@ -215,7 +215,7 @@ $advocacyImages = [
                     <div class="service-content-grid">
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Transitional Care</h3>
-                            <p class="text-white mb-6">Coordinating and ensuring continuity of health care as patients transfer between different locations or different levels of care, such as from hospital to home.</p>
+                            <p class="text-white mb-6">Coordinated and continuous healthcare provided to patients as they move from one care setting to another—such as from hospital to home, from acute care to rehabilitation, or from curative treatment to supportive or palliative care.</p>
                             <a href="/transitional-care" class="cta-button">Learn More</a>
                         </div>
                         <div class="service-image-scroller">
@@ -231,7 +231,7 @@ $advocacyImages = [
                     <div class="service-content-grid">
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Respite Care</h3>
-                            <p class="text-white mb-6">Providing temporary relief for primary caregivers, enabling them to take a much-needed break from the demands of caring for a sick, aging, or disabled family member.</p>
+                            <p class="text-white mb-6">Short-term, temporary health care service provided to individuals who are elderly, chronically ill, or living with disabilities, in order to give a much-needed break or relief to their primary caregivers.</p>
                             <a href="/respite-care" class="cta-button">Learn More</a>
                         </div>
                         <div class="service-image-scroller">
@@ -247,7 +247,7 @@ $advocacyImages = [
                     <div class="service-content-grid">
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Rehabilitative Care</h3>
-                            <p class="text-white mb-6">Focused on helping patients recover from injury, illness, or surgery. Our goal is to restore function, improve mobility, and enhance overall well-being and independence.</p>
+                            <p class="text-white mb-6">Form of healthcare focused on helping individuals recover, restore, or improve physical, cognitive, and functional abilities that have been affected by illness, injury, surgery, or prolonged hospitalization and enhance overall well-being and independence.</p>
                             <a href="/rehabilitative-care" class="cta-button">Learn More</a>
                         </div>
                         <div class="service-image-scroller">
@@ -263,7 +263,7 @@ $advocacyImages = [
                     <div class="service-content-grid">
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Hospice Care</h3>
-                            <p class="text-white mb-6">Providing compassionate, end-of-life care that focuses on comfort, dignity, and quality of life for patients with terminal illnesses, in a serene and supportive environment.</p>
+                            <p class="text-white mb-6">Specialized form of care provided to people with life-limiting or terminal illnesses when the focus shifts from cure to comfort. It aims to relieve pain and distressing symptoms and focuses on care, dignity, and quality of life.</p>
                             <a href="/hospice-care" class="cta-button">Learn More</a>
                         </div>
                         <div class="service-image-scroller">
@@ -279,7 +279,7 @@ $advocacyImages = [
                     <div class="service-content-grid">
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Home Care</h3>
-                            <p class="text-white mb-6">Delivering professional and compassionate assistance with daily living activities in the comfort of the patient's own home, promoting independence and well-being.</p>
+                            <p class="text-white mb-6">For patients living with advanced or chronic health conditions, bringing health care right to the patient’s doorstep through home-based Palliative and Geriatric Care Services.</p>
                             <a href="/home-care" class="cta-button">Learn More</a>
                         </div>
                         <div class="service-image-scroller">
@@ -295,7 +295,7 @@ $advocacyImages = [
                     <div class="service-content-grid">
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Outreach Geriatric Care</h3>
-                            <p class="text-white mb-6">Extending our specialized geriatric services to underserved communities through mobile clinics and home visits, ensuring accessible healthcare for all seniors.</p>
+                            <p class="text-white mb-6">Primary health care services to the elderly in the community and those who are living in old age homes in and around Visakhapatnam through mobile clinics ensuring accessible healthcare to the underserved and underprivileged.</p>
                             <a href="/outreach-geriatric-care" class="cta-button">Learn More</a>
                         </div>
                         <div class="service-image-scroller">
@@ -311,7 +311,7 @@ $advocacyImages = [
                     <div class="service-content-grid">
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Advocacy & Training</h3>
-                            <p class="text-white mb-6">Championing the rights and well-being of the elderly through policy advocacy, community education, and comprehensive training programs for caregivers and healthcare professionals.</p>
+                            <p class="text-white mb-6">Focus on promoting the rights and well-being of older adults, spreading awareness about geriatric and palliative care, and encouraging early recognition of age-related health challenges such as dementia and chronic illness. Imparting training to the family caregivers and healthcare professionals on Geriatric and Palliative Care.</p>
                             <a href="/advocacy-and-training" class="cta-button">Learn More</a>
                         </div>
                         <div class="service-image-scroller">

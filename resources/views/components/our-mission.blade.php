@@ -1,47 +1,94 @@
 <section class="py-20">
-    <div class="container mx-auto px-4 max-w-7xl">
+    <div class="container mx-auto px-4 max-w-10xl">
         <div class="approach-card w-full">
-            <div class="flex flex-col md:flex-row items-center gap-5">
-                <div class="w-full md:w-1/2">
-                    <img src="{{ asset('images/art/mission.png') }}" alt="A group of seniors happily engaging in a community activity." class="rounded-lg shadow-lg w-full">
+            <div class="flex flex-col items-center gap-8">
+                <div class="w-full md:w-5/6 lg:w-3/4">
+                    <img src="{{ asset('images/art/abcf.png') }}" alt="A group of seniors happily engaging in a community activity." class="rounded-lg shadow-lg w-full">
                 </div>
-                <div class="w-full md:w-1/2">
-                    <h2 class="text-2xl font-bold text-blue mb-4">Our Mission</h2>
-                    <p class="text-Black leading-relaxed">
-
-* Care Services: To provide comprehensive, affordable and accessible healthcare to persons with serious, health-related suffering.
-</br>* Comprehensive Support: To alleviate pain and suffering across all dimensions - physical, emotional and spiritual
-</br>* Patient-and family-centred: To provide care that delivers dignity in life and death for all our patients; and also support in bereavement for their families.
-</br>* Improved Quality of Life: To help improve the health, independence and quality of life of our patients as well as their families.
-</br>* Community Approach: To continuously educate the communities we serve: enabling carers, families and partner organizations to become knowledgeable and competent in delivering, communicating and advocating Supportive Care services.
-</br>* Domain Expertise: Initiate and participate in innovative projects to continuously improve and add to the Supportive Care expertise.
-
-                    </p>
-                    <div class="flex gap-4 mt-6">
+                <div class="w-full text-center">
+                    <h2 class="text-3xl font-bold text-blue mb-4">Our Mission</h2>
+                    <ul class="text-Black leading-relaxed list-disc pl-5 space-y-2 text-left inline-block">
+                        <li><strong>Care Services:</strong> To provide comprehensive, affordable and accessible healthcare to persons with serious, health-related suffering.</li>
+                        <li><strong>Comprehensive Support:</strong> To alleviate pain and suffering across all dimensions — physical, emotional and spiritual.</li>
+                        <li><strong>Patient- and family-centred:</strong> To provide care that delivers dignity in life and death for all our patients; and also support in bereavement for their families.</li>
+                        <li><strong>Improved Quality of Life:</strong> To help improve the health, independence and quality of life of our patients as well as their families.</li>
+                        <li><strong>Community Approach:</strong> To continuously educate the communities we serve: enabling carers, families and partner organizations to become knowledgeable and competent in delivering, communicating and advocating Supportive Care services.</li>
+                        <li><strong>Domain Expertise:</strong> Initiate and participate in innovative projects to continuously improve and add to the Supportive Care expertise.</li>
+                    </ul>
+                    <div class="flex gap-4 mt-6 justify-center">
                         <span class="bg-white/20 text-blue text-sm font-semibold px-3 py-1 rounded-full">Holistic Wellness</span>
                         <span class="bg-white/20 text-blue text-sm font-semibold px-3 py-1 rounded-full">Community</span>
-                        <span class="bg-white/20 text-blue text-sm font-semibold px-3 py-1 rounded-full">Respect</span>
+                        <span class="bg-white/20 text-blue text-sm font-semibold px-3 py-1 rounded-full">Dignity</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
     <div class="container mx-auto px-4 py-10 max-w-7xl">
         <div class="approach-card w-full">
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="w-full md:w-1/2">
                     <h2 class="text-2xl font-bold text-blue mb-4">Our Vision</h2>
                     <p class="text-Black leading-relaxed">
-                        To Be a Leading Center of Excellence for Supportive Care
+                        To be a leading centre of excellence for Supportive Care
                     </p>
                     <div class="flex gap-4 mt-6">
-                        <span class="bg-white/20 text-blue text-sm font-semibold px-3 py-1 rounded-full">Transforming lives with care & Compassion</span>
+                        <span class="bg-white/20 text-blue text-sm font-semibold px-3 py-1 rounded-full">Excellence in Supportive Care</span>
                     </div>
                 </div>
+                <div class="w-full md:w-1/2">
+                    <img src="{{ asset('images/art/vision.png') }}" alt="A vibrant image representing the organization's future vision." class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 py-10 max-w-7xl">
+        <h2 class="text-3xl font-bold text-center text-blue mb-12">Core Values</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-users text-4xl text-blue mb-4"></i>
+                <h3 class="text-xl font-bold text-blue mb-2">Patient First</h3>
+                <p class="text-Black">We believe that the patient comes first in our order of priorities followed immediately by his/her family.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-heart text-4xl text-blue mb-4"></i>
+                <h3 class="text-xl font-bold text-blue mb-2">Compassion</h3>
+                <p class="text-Black">We will work with compassion in all our dealings with patients, their families, our staff and the community we serve.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-hands-helping text-4xl text-blue mb-4"></i>
+                <h3 class="text-xl font-bold text-blue mb-2">Community</h3>
+                <p class="text-Black">We recognize that community is the foundational fabric of our society. We hope to build strong, lasting and loving partnerships with our colleagues, volunteers and community entities to work with us as one team, meeting all our community’s Supportive Care needs.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-fist-raised text-4xl text-blue mb-4"></i>
+                <h3 class="text-xl font-bold text-blue mb-2">Empowerment</h3>
+                <p class="text-Black">We acknowledge that power differentials in healthcare can make it difficult for individuals to ask for their needs to be met. We will give individuals information and resources that help them advocate for themselves and their families. We will facilitate / provide Information so that patients and families are enabled to make informed decisions.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-balance-scale text-4xl text-blue mb-4"></i>
+                <h3 class="text-xl font-bold text-blue mb-2">Equity</h3>
+                <p class="text-Black">We recognize that there are significant disparities in our community and within the provision of healthcare services. We will pay careful attention to them when we design and deliver our services.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-handshake text-4xl text-blue mb-4"></i>
+                <h3 class="text-xl font-bold text-blue mb-2">Integrity</h3>
+                <p class="text-Black">We commit to conduct our work honestly and strive to be dependable, forthcoming and open. As we work with communities, both within and outside the organization, ours will be an attitude of humility, acknowledging the limits of our own expertise. We will strive to build integrity into every aspect of our work.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-user-shield text-4xl text-blue mb-4"></i>
+                <h3 class="text-xl font-bold text-blue mb-2">Dignity</h3>
+                <p class="text-Black">We recognize that every individual has a right to be treated with respect and dignity even when their goals, values and priorities may be different from our own. We will help to educate and build conditions that uphold the dignity of all patients.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-award text-4xl text-blue mb-4"></i>
+                <h3 class="text-xl font-bold text-blue mb-2">Quality and Excellence</h3>
+                <p class="text-Black">We will work to inculcate excellence in everything we do and build, and continuously improve quality in the services we provide, while ensuring that each and every patient receives the same quality of care, irrespective of their social or economic status.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-leaf text-4xl text-blue mb-4"></i>
+                <h3 class="text-xl font-bold text-blue mb-2">Sustainability</h3>
+                <p class="text-Black">All our efforts will keep sustainability and environmental protection in mind at all times</p>
             </div>
         </div>
     </div>

@@ -82,3 +82,15 @@ Route::get('/home-care', [HomeCareController::class, 'index'])->name('home-care'
 Route::get('/outreach-geriatric-care', [OutreachGeriatricCareController::class, 'index'])->name('outreach-geriatric-care');
 
 Route::get('/advocacy-and-training', [AdvocacyAndTrainingController::class, 'index'])->name('advocacy-and-training');
+
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy');
+})->name('privacy-policy');
+
+Route::get('/disclaimers', function () {
+    return view('disclaimers');
+})->name('disclaimers');
+
+Route::get('/our-facilities', function () {
+    return view('our-facilities');
+})->name('our-facilities');

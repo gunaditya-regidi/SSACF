@@ -74,5 +74,4 @@
         </div>
     </section>
     <x-our-mission />
-    <x-core-values />
 @endsection
