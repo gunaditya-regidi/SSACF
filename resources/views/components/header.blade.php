@@ -15,8 +15,9 @@
             <li class="dropdown">
                 <a href="{{ route('about') }}" class="nav-item {{ request()->routeIs('about', 'our-team', 'our-journey') ? 'active' : '' }}">About Us <span class="dropdown-caret">▼</span></a>
                 <div class="dropdown-content">
+                <a href="{{ route('our-facilities') }}">Our Facilities</a>
                     <a href="{{ route('our-team') }}">Our Team</a>
-                    <a href="{{ route('our-journey') }}">Our Journey</a>
+                   <a href="{{ route('our-journey') }}">Our Journey</a>
                 </div>
             </li>
              <li class="dropdown">
@@ -37,7 +38,7 @@
             </li>
             <li><a href="{{ route('our-approach') }}" class="nav-item {{ request()->routeIs('our-approach') ? 'active' : '' }}">Our Approach</a></li>
             <li><a href="{{ route('gallery') }}" class="nav-item {{ request()->routeIs('gallery') ? 'active' : '' }}">Gallery</a></li>
-            <li><a href="{{ route('news-and-events') }}" class="nav-item {{ request()->routeIs('news-and-events', 'blog.show') ? 'active' : '' }}">Latest Events</a></li>
+            <li><a href="{{ route('news-and-events') }}" class="nav-item {{ request()->routeIs('blog', 'blog.show') ? 'active' : '' }}">Resources</a></li>
             <li><a href="{{ route('contact') }}" class="nav-item {{ request()->routeIs('contact') ? 'active' : '' }}">Contact Us</a></li>
             <li><a href="{{ route('support-us') }}" class="nav-cta">Support Us</a></li>
         </ul>

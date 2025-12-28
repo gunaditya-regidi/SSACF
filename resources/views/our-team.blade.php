@@ -47,9 +47,7 @@
                     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                         <div class="bg-white/90 backdrop-blur-sm overflow-hidden shadow-xl sm:rounded-2xl">
                             <div class="p-8 text-gray-900">
-                                <h1 class="text-5xl font-bold text-center text-gray-800 mb-16">Meet Our Team</h1>
-
-                                <!-- Chief Patron -->
+                           
                                 <div class="team-section text-center">
                                     <img class="h-auto w-full rounded-lg object-cover mb-8" src="{{ asset('images/team/CP.png') }}" alt="Chief Patron">
                                     <img class="h-auto w-full rounded-lg object-cover mb-8" src="{{ asset('images/team/comM.png') }}" alt="Committee Members">

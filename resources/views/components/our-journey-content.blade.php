@@ -1,3 +1,6 @@
+<!-- Slick Carousel CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
 <style>
     .journey-container {
@@ -10,170 +13,344 @@
 
     .journey-path {
         fill: none;
-        stroke: #e2e8f0;
-        stroke-width: 15;
-        stroke-dasharray: 3000;
-        stroke-dashoffset: 3000;
-        animation: draw-path 5s ease-in-out forwards;
-    }
-
-    @keyframes draw-path {
-        to {
-            stroke-dashoffset: 0;
-        }
-    }
-
-    .milestone {
+        stroke: #cbd5e1; /* slate-300 */
+        stroke-width: 8;
+        stroke-linecap: round;
         position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        height: 100%;
+    }
+
+    .milestone-entry {
+        position: relative;
+        margin-bottom: 80px; /* Space between milestones */
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .milestone-content-block {
+        width: calc(50% - 60px); /* Half width minus some margin */
         opacity: 0;
         transform: translateY(20px);
         transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     }
-
-    .milestone.is-visible {
+    
+    .milestone-entry.is-visible .milestone-content-block {
         opacity: 1;
         transform: translateY(0);
     }
 
-    .milestone-content {
-        background: #ffffff;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        width: 300px;
-        text-align: left;
-        overflow: hidden; /* Ensure image corners are rounded */
+    /* Alternating layout for desktop */
+    .milestone-entry:nth-child(odd) .milestone-image-block {
+        order: 1;
+        margin-right: auto;
+    }
+    .milestone-entry:nth-child(odd) .milestone-text-block {
+        order: 2;
+        margin-left: auto;
+    }
+    .milestone-entry:nth-child(even) .milestone-image-block {
+        order: 2;
+        margin-left: auto;
+    }
+    .milestone-entry:nth-child(even) .milestone-text-block {
+        order: 1;
+        margin-right: auto;
+    }
+
+    .milestone-image-block .milestone-slideshow {
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
     }
     
-    .milestone-image {
+    .milestone-slideshow img {
         width: 100%;
-        height: 150px;
+        height: 300px; 
         object-fit: cover;
     }
 
-    .milestone-text-content {
-        padding: 20px;
+    .milestone-text-block {
+        background: #ffffff;
+        padding: 24px;
+        border-radius: 12px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     }
 
-    .milestone-year {
-        font-size: 1.5rem;
+    .milestone-text-block .year {
+        font-size: 1.75rem;
         font-weight: bold;
         color: #4a90e2;
-        margin-bottom: 10px;
-    }
-
-    .milestone-text {
-        font-size: 1rem;
-        line-height: 1.6;
-        color: #334155;
+        margin-bottom: 8px;
     }
     
+    .milestone-text-block .title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #1e293b; /* slate-800 */
+        margin-bottom: 12px;
+    }
+
+    .milestone-text-block .text {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #334155;
+    }
+
+    .milestone-marker {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #4a90e2;
+        border: 4px solid #ffffff;
+        z-index: 10;
+    }
+
+    /* Slick overrides */
+    .slick-dots li button:before {
+        font-size: 12px;
+        color: #4a90e2;
+    }
+    .slick-dots li.slick-active button:before {
+        color: #4a90e2;
+    }
+
+    /* --- Responsive Styles --- */
+    @media (max-width: 1024px) {
+        .journey-path {
+            left: 20px; /* Position timeline to the left */
+            transform: translateX(0);
+        }
+
+        .milestone-marker {
+            left: 20px; /* Align marker with the timeline */
+        }
+
+        .milestone-entry {
+            flex-direction: column; /* Stack items vertically */
+            align-items: flex-start; /* Align items to the start */
+        }
+
+        .milestone-content-block {
+            width: calc(100% - 80px); /* Full width minus margin for timeline */
+            margin-left: 80px; /* Create space from the timeline */
+            margin-bottom: 20px;
+        }
+
+        /* Remove alternating order for stacked layout */
+        .milestone-entry:nth-child(odd) .milestone-image-block,
+        .milestone-entry:nth-child(even) .milestone-image-block {
+            order: 1;
+            margin-right: 0;
+            margin-left: 80px;
+        }
+        .milestone-entry:nth-child(odd) .milestone-text-block,
+        .milestone-entry:nth-child(even) .milestone-text-block {
+            order: 2;
+            margin-left: 80px;
+            margin-right: 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .journey-path, .milestone-marker {
+            left: 10px;
+        }
+        .milestone-content-block, 
+        .milestone-entry:nth-child(odd) .milestone-image-block,
+        .milestone-entry:nth-child(even) .milestone-image-block,
+        .milestone-entry:nth-child(odd) .milestone-text-block,
+        .milestone-entry:nth-child(even) .milestone-text-block {
+            width: calc(100% - 40px);
+            margin-left: 40px;
+        }
+
+        .milestone-text-block .year {
+            font-size: 1.5rem;
+        }
+        .milestone-text-block .title {
+            font-size: 1.15rem;
+        }
+        .milestone-text-block .text {
+            font-size: 1rem;
+        }
+    }
+
 </style>
 
-<div class="relative bg-cover bg-center py-24" {{-- style="background-image: url('{{ url('images/topper/peeps.jpg') }}');" --}}>
-    <div class="absolute inset-0 bg-black opacity-50"></div>
-    <div class="container mx-auto text-center relative">
-        <h1 class="text-4xl font-bold text-white tracking-wider">Our Journey</h1>
-        <p class="text-lg text-white mt-4">From Humble Beginnings to a Beacon of Hope</p>
+<div class="bg-white py-16 sm:py-24">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
+        <div class="mx-auto max-w-2xl">
+            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Our Journey</h1>
+            <p class="mt-6 text-lg leading-8 text-gray-600">From Humble Beginnings to a Beacon of Hope. Explore the milestones that have shaped our mission of compassion and care.</p>
+        </div>
     </div>
 </div>
 
-<div class="py-20 bg-gray-50">
+<div class="py-20 bg-gray-50 overflow-hidden">
     <div class="container mx-auto px-4">
-        <div class="text-center mb-12">
+        <div class="text-center mb-20">
             <h2 class="text-3xl font-bold text-gray-800">A Timeline of Compassion and Care</h2>
             <p class="text-gray-600 mt-2">We began our humble journey in 2012, taking small steps and forging many partnerships all along.</p>
         </div>
 
-        <div class="journey-container mb-20">
-            <svg width="100%" height="3100" viewBox="0 0 800 3100">
-                <path class="journey-path" d="M 400 50 C 600 150, 200 250, 400 350 C 600 450, 200 550, 400 650 C 600 750, 200 850, 400 950 C 600 1050, 200 1150, 400 1250 C 600 1350, 200 1450, 400 1550 C 600 1650, 200 1750, 400 1850 C 600 1950, 200 2050, 400 2150 C 600 2250, 200 2350, 400 2450 C 600 2550, 200 2650, 400 2750 C 600 2850, 200 2950, 400 3050" />
-            </svg>
+        <div class="journey-container">
+            <div style="position: relative;">
+                <svg class="journey-path" width="30" height="100%">
+                     <path d="M 4 0 V 10000" />
+                </svg>
 
-            <x-milestone year="2012" image="{{ url('images/background/bgimg2.jpg') }}" top="50px" left="50%" transform="translateX(-150%)">
-                Age Care Foundation was established as a charitable trust on 24th August 2012.
-            </x-milestone>
+                @php
+                    $milestones = [
+                        [
+                            'year' => '2012',
+                            'title' => 'Where Compassion Took Root',
+                            'text' => 'The beginning of a promise to care with dignity. Sneha Sandhya Age Care Foundation was established as a charitable trust on 24 August 2012, inspired and sponsored by Sneha Sandhya, a society of senior citizens dedicated to elder welfare since 2004. Our journey began at St. Joseph’s Hospice, Visakhapatnam, with outpatient geriatric clinics across the city and regular visits to old age homes.',
+                            'images' => [url('images/journey/2012a.jpg'), url('images/journey/2012b.jpg'), url('images/journey/2012c.jpg')]
+                        ],
+                        [
+                            'year' => '2013',
+                            'title' => 'Care That Reached Further',
+                            'text' => 'Healthcare made accessible, affordable, and free. Our outreach services expanded with additional outpatient clinics and old age home visits. Free health screening for hypertension and diabetes, along with free medicines, became a cornerstone of our commitment to accessible care for the elderly.',
+                            'images' => [url('images/journey/2013a.jpg'), url('images/journey/2013b.jpg'), url('images/journey/2013c.jpg'), url('images/journey/2013d.jpg'), url('images/journey/2013e.jpg'), url('images/journey/2013f.jpg')]
+                        ],
+                        [
+                            'year' => '2014',
+                            'title' => 'Strengthening Supportive Care',
+                            'text' => 'Building capacity to serve those in serious suffering. The Centre for Palliative and Supportive Care moved into the main building of St. Joseph’s Hospital, Visakhapatnam. With improved infrastructure, we began offering more comprehensive palliative care services and saw a steady increase in patient intake. Collaboration with Homi Bhabha Cancer Hospital & Research Centre, Visakhapatnam further strengthened our palliative care services.',
+                            'images' => [url('images/journey/2014a.jpg'), url('images/journey/2014b.jpg')]
+                        ],
+                        [
+                            'year' => '2015',
+                            'title' => 'Taking Care to the Underserved',
+                            'text' => 'Care beyond city limits. Medical outreach camps were extended to interior and rural areas such as Chodavaram, enabling many underserved patients to access care. Simultaneously, awareness programmes were conducted to sensitise communities about the importance and need for palliative care.',
+                            'images' => [url('images/background/bgimg5.jpg'), url('images/background/greenwv.jpg')]
+                        ],
+                        [
+                            'year' => '2016',
+                            'title' => 'Recognition That Encouraged Us',
+                            'text' => 'Affirmation of purpose from public leaders. We were honoured by visits from distinguished guests including Mrs. Poonam Malakondaih, IAS, Principal Secretary (Health), Government of Andhra Pradesh; Mr. T. Krishna Babu, IAS, Chairman, Visakhapatnam Port Trust; and Mr. Pravin Kumar, IAS, District Collector of Visakhapatnam, who appreciated our services to the elderly and the seriously ill.',
+                             'images' => [url('images/background/greenwv.jpg'), url('images/topper/mmm.jpg')]
+                        ],
+                        [
+                            'year' => '2017',
+                            'title' => 'Inspired by a National Pioneer',
+                            'text' => 'A turning point in awareness and advocacy. It was a privilege to host Dr. M. R. Raja Gopal, Chairman of Pallium India Trust and a pioneer of palliative care in India. His interactions with doctors and medical students across Visakhapatnam and neighbouring districts significantly advanced awareness and sensitisation among healthcare providers.',
+                            'images' => [url('images/topper/mmm.jpg'), url('images/background/bgimg1.jpg')]
+                        ],
+                        [
+                            'year' => '2018',
+                            'title' => 'Care at the Doorstep',
+                            'text' => 'When healing travelled to homes. Home-based palliative care services were launched for patients with serious illnesses through a dedicated mobile medical team. This programme was supported by the Pain Relief and Palliative Care Society, Hyderabad, and Two Worlds Cancer Collaboration, Canada for a period of three years. The Foundation also received recognition as a Registered Medical Institution (RMI) from the Drug Control Authority, Government of Andhra Pradesh.',
+                             'images' => [url('images/background/bgimg1.jpg'), url('images/art/art1.JPG')]
+                        ],
+                        [
+                            'year' => '2019',
+                            'title' => 'Responding to Dementia Care Needs',
+                            'text' => 'Specialised care for complex conditions. Home healthcare services were expanded to include specialised support for persons living with dementia.',
+                            'images' => [url('images/art/art1.JPG'), url('images/art/art2.JPG')]
+                        ],
+                        [
+                            'year' => '2020',
+                            'title' => 'Learning Without Borders',
+                            'text' => 'Global expertise, local impact. Dr. Christine Drummond, Palliative Care Physician, and Dr. Seshu Boda, Family Physician, from Australasian Palliative Link International, Australia, visited to share expertise and best practices. An MoU was signed with Pradhama Hospitals, and the hospice services were relocated there.',
+                            'images' => [url('images/art/art2.JPG'), url('images/art/art3.JPG')]
+                        ],
+                        [
+                            'year' => '2021',
+                            'title' => 'Compassion in a Time of Crisis',
+                            'text' => 'Standing with the vulnerable during COVID-19. An MoU was entered into with GVP Institute of Healthcare & Medical Technology, and hospice services were relocated to GVP Medical College Hospital, Visakhapatnam. During the COVID-19 pandemic, the Foundation collaborated with other NGOs to distribute medicines, pulse oximeters, thermometers, masks, and sanitisers to underprivileged and unreached communities.',
+                            'images' => [url('images/art/art3.JPG'), url('images/art/art4.JPG')]
+                        ],
+                        [
+                            'year' => '2022',
+                            'title' => 'A Landmark Moment',
+                            'text' => 'From vision to foundation stone. Bhoomi Pooja was performed on 7 August 2022 for the construction of an Integrated Centre for Geriatric and Palliative Care at Gambheeram, Visakhapatnam, on land generously provided by the Free Polio Surgical & Research Foundation. This marked a defining moment in our journey. In the same year, we partnered with Mahatma Gandhi Cancer Hospital & Research Institute to provide comprehensive palliative care services.',
+                            'images' => [url('images/art/art4.JPG'), url('images/background/bgimg1.jpg')]
+                        ],
+                        [
+                            'year' => '2023',
+                            'title' => 'Strengthening Holistic Partnerships',
+                            'text' => 'Care that sees, understands, and supports. An MoU was signed with L. V. Prasad Eye Institute to provide free eye care to underprivileged senior citizens and residents of old age homes in Visakhapatnam. Collaboration with Dementia India Alliance, Bengaluru further strengthened services for persons living with dementia and their families.',
+                            'images' => [url('images/background/bgimg1.jpg'), url('images/background/bgimg2.jpg')]
+                        ],
+                        [
+                            'year' => '2024',
+                            'title' => 'Building a Centre of Excellence',
+                            'text' => 'Care with Compassion taking concrete shape. Construction of the Integrated Geriatric and Palliative Care Hospital progressed steadily. The overwhelming support from corporates, institutions, and individuals brought us closer to our vision of establishing a centre of excellence committed to compassionate care.',
+                            'images' => [url('images/background/bgimg2.jpg'), url('images/background/bgimg3.jpg')]
+                        ],
+                        [
+                            'year' => '2025',
+                            'title' => 'Care Comes Home',
+                            'text' => 'A long-held dream realised. The Integrated Centre for Geriatric and Palliative Care was completed, and clinical services commenced at Gambheeram, Visakhapatnam, to be a unique healthcare facility providing Geriatric and Palliative care services in the state of Andhra Pradesh. In December 2025, Sneha Sandhya Age Care Foundation, in collaboration with GITAM Institute of Medical Sciences and Research, co-hosted DemCon’25, an international conference organised by Dementia India Alliance, Bengaluru—marking yet another milestone in our commitment to care, learning, and leadership in supportive care.',
+                            'images' => [url('images/background/bgimg3.jpg'), url('images/background/bgimg4.jpg')]
+                        ],
+                    ];
+                @endphp
 
-            <x-milestone year="2013" image="{{ url('images/background/bgimg3.jpg') }}" top="350px" left="50%" transform="translateX(50%)">
-                Further expanded our outreach services by adding more out-patient clinics and old age homes.
-            </x-milestone>
-
-            <x-milestone year="2014" image="{{ url('images/background/bgimg4.jpg') }}" top="650px" left="50%" transform="translateX(-150%)">
-                The center for Palliative and Supportive care moved into the main building of St.Joseph's Hospital.
-            </x-milestone>
-            
-            <x-milestone year="2015" image="{{ url('images/background/bgimg5.jpg') }}" top="950px" left="50%" transform="translateX(50%)">
-                The outreach medical camps were further expanded to interior places like Chodavaram.
-            </x-milestone>
-            
-            <x-milestone year="2017" image="{{ url('images/background/greenwv.jpg') }}" top="1250px" left="50%" transform="translateX(-150%)">
-                Mrs.Poonam Malakondaiah, visited the hospice. Age Care Foundation moved into the new office premises.
-            </x-milestone>
-            
-            <x-milestone year="2019" image="{{ url('images/topper/mmm.jpg') }}" top="1550px" left="50%" transform="translateX(50%)">
-                Dr.M.R.Raja Gopal, Chairman, Pallium India (Trust) was the guest of honour on the Seventh Foundation day of ACF.
-            </x-milestone>
-            
-            <x-milestone year="2020" image="{{ url('images/background/bgimg1.jpg') }}" top="1850px" left="50%" transform="translateX(-150%)">
-                Launched home health care services for the benefit of persons with Dementia (PwD).
-            </x-milestone>
-            
-            <x-milestone year="2021" image="{{ url('images/art/art1.JPG') }}" top="2150px" left="50%" transform="translateX(50%)">
-                Entered into MOU with GVP Institute of Healthcare & Medical Technology and relocated the Hospice.
-            </x-milestone>
-            
-            <x-milestone year="2022" image="{{ url('images/art/art2.JPG') }}" top="2450px" left="50%" transform="translateX(-150%)">
-                Bhoomipooja performed for construction of the integrated center for Geriatric and Palliative Care.
-            </x-milestone>
-            
-            <x-milestone year="2023" image="{{ url('images/art/art3.JPG') }}" top="2750px" left="50%" transform="translateX(50%)">
-                Joined hands with Mahatma Gandhi Cancer Hospital & Research Institute and L.V.Prasad Eye Institute.
-            </x-milestone>
-
-            <x-milestone year="2024" image="{{ url('images/art/art4.JPG') }}" top="3050px" left="50%" transform="translateX(-150%)">
-                Launched a new initiative to provide free meals to seniors in need.
-            </x-milestone>
+                @foreach ($milestones as $milestone)
+                    <div class="milestone-entry">
+                        <div class="milestone-marker"></div>
+                        <div class="milestone-content-block milestone-image-block">
+                            <div class="milestone-slideshow">
+                                @foreach ($milestone['images'] as $image)
+                                    <div><img src="{{ $image }}" alt="Milestone {{ $milestone['year'] }} Image"></div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="milestone-content-block milestone-text-block">
+                            <div class="year">{{ $milestone['year'] }}</div>
+                            <div class="title">{{ $milestone['title'] }}</div>
+                            <p class="text">{{ $milestone['text'] }}</p>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
         </div>
     </div>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const milestones = document.querySelectorAll('.milestone');
+<!-- JQuery and Slick Carousel JS -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-        function showMilestones() {
-            milestones.forEach(milestone => {
-                if (isElementInViewport(milestone)) {
+<script>
+    $(document).ready(function(){
+        const milestones = document.querySelectorAll('.milestone-entry');
+
+        function checkMilestones() {
+            const windowHeight = window.innerHeight;
+
+            milestones.forEach((milestone) => {
+                const rect = milestone.getBoundingClientRect();
+                if (rect.top < windowHeight * 0.85) { 
                     milestone.classList.add('is-visible');
                 }
             });
         }
 
-        function isElementInViewport(el) {
-            const rect = el.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
+        window.addEventListener('scroll', checkMilestones);
+        checkMilestones();
 
-        // Modified to handle multiple milestones in view on load
-        function checkAllMilestones() {
-            let delay = 0;
-            milestones.forEach((milestone, index) => {
-                // Check if the element is in the viewport
-                const rect = milestone.getBoundingClientRect();
-                if (rect.top < window.innerHeight && rect.bottom >= 0) {
-                    setTimeout(() => {
-                        milestone.classList.add('is-visible');
-                    }, delay);
-                    delay += 200; // Stagger the animation
-                }
-            });
-        }
-
-        window.addEventListener('scroll', checkAllMilestones);
-        checkAllMilestones(); // Initial check
+        // Initialize Slick Carousel
+        $('.milestone-slideshow').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: false,
+            dots: true,
+            fade: true,
+            cssEase: 'linear'
+        });
     });
 </script>

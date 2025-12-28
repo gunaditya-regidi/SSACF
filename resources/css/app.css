@@ -403,7 +403,7 @@ nav {
     font-family: 'Brush Script MT', 'Lucida Calligraphy', 'cursive';
     font-style: italic;
     color: #002379;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
     letter-spacing: 1px;
     line-height: 1.1;
 }
@@ -553,7 +553,7 @@ nav {
 
 /* Dignity Section */
 .dignity-section {
-    background-image: url('images/background/greenwv.jpg');
+    background-image: url('/images/background/greenwv.jpg');
     background-size: cover;
     background-position: center;
     padding: 6rem 2rem;
@@ -572,7 +572,7 @@ nav {
 .dignity-image-wrapper img {
     width: 100%;
     border-radius: 1rem;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.281);
 }
 
 .dignity-content {
@@ -586,9 +586,11 @@ nav {
 .dignity-headline {
     font-size: 2.5rem;
     font-weight: 800;
-    color: #1f2937;
-    margin-bottom: 1.5rem;
+    color: #03068a;
+    margin-bottom: 0.2rem; /* Reduced bottom margin for better balance */
+    text-align: center;   /* Centered the headline */
 }
+
 
 .dignity-description {
     font-size: 1.125rem;
@@ -612,9 +614,6 @@ nav {
 
 
 
-
-
-/* New Scrolling Hero Section */
 .scrolling-hero-section {
     background-color: #f8f9fa;
     padding: 6rem 0; /* Adjusted padding */
@@ -634,18 +633,24 @@ nav {
     margin: 0 1rem;
 }
 
-.scrolling-images {
+.hero-scrolling-images {
     display: flex;
     flex-direction: column;
     width: 100%;
-    animation: scroll 50s linear infinite;
+    animation: scroll-normal 50s linear infinite;
 }
 
-.scrolling-images.reverse-scroll {
-    animation: scroll-reverse 50s linear infinite;
+.hero-scrolling-images.reverse-scroll {
+    animation-name: scroll-reverse; /* This scrolls DOWN */
+
 }
 
-.scrolling-images img {
+
+
+
+
+
+.hero-scrolling-images img {
     width: 100%;
     height: auto;
     margin-bottom: 1.5rem;
@@ -653,11 +658,11 @@ nav {
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
-.scrolling-images img:hover {
+.hero-scrolling-images img:hover {
     transform: scale(1.05);
 }
 
-@keyframes scroll {
+@keyframes scroll-normal {
     0% { transform: translateY(0); }
     100% { transform: translateY(-50%); }
 }

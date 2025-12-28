@@ -3,7 +3,13 @@
         ['url' => asset('images/background/bgimg3.jpg'), 'alt' => 'Compassionate senior care in a bright, welcoming environment.'],
         ['url' => asset('images/background/bgimg1.jpg'), 'alt' => 'An elderly woman enjoying a peaceful moment outdoors.'],
         ['url' => asset('images/background/bgimg5.jpg'), 'alt' => 'A caregiver providing gentle support to a senior patient.'],
-        ['url' => asset('images/background/bgimg4.jpg'), 'alt' => 'A close-up of a caregiver holding a patient\'s hand, symbolizing trust and support.'],
+        ['url' => asset('images/background/bgimg4.jpg'), 'alt' => 'A close-up of a caregiver holding a patient hand, symbolizing trust and support.'],
+    ];
+    $heroImages2 = [
+        ['url' => asset('images/background/bgimg1.jpg'), 'alt' => 'A group of seniors engaged in a community activity.'],
+        ['url' => asset('images/background/bgimg3.jpg'), 'alt' => 'A smiling senior man looking out a window.'],
+        ['url' => asset('images/background/bgimg4.jpg'), 'alt' => 'A physical therapist assisting a senior with exercises.'],
+        ['url' => asset('images/background/bgimg2.jpg'), 'alt' => 'Seniors enjoying a meal together in a dining hall.'],
     ];
 @endphp
 
@@ -21,11 +27,10 @@
 
     <section class="scrolling-hero-section">
         <div class="scrolling-column">
-            <div class="scrolling-images reverse-scroll">
+            <div class="hero-scrolling-images reverse-scroll">
                 @foreach (array_reverse($heroImages) as $image)
                     <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}">
                 @endforeach
-                <!-- Repeated images for continuous scroll -->
                 @foreach (array_reverse($heroImages) as $image)
                     <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}">
                 @endforeach
@@ -38,23 +43,23 @@
                     Integrated Center for Geriatric and Palliative Care
                 </h2>
             </div>
-            <h1 class="hero-subheadline titlenew">12+ Years of</h1>
-            <h1 class="hero-subheadline2 titlenew"><span>&#127872;<span> Incredible Service <span>&#127872;<span></h1>
-            
+            <h1 class="hero-subheadline titlenew">13+ Years of</h1>
+            <h1 class="hero-subheadline2 titlenew"><span>&#127872;<span> Impacting Lives <span>&#127872;<span></h1>
             <p class="hero-description">We provide Geriatric care to underprivileged elders and Palliative Care to persons suffering from life limiting illnesses. Our Mission is to deliver high quality Geriatric, Palliative and Dementia care.</p>
+
             <div class="hero-buttons">
-                <a href="#" class="btn-experience">Look into Our Journey</a>
-                <a href="#" class="btn-book-call">Know More &rarr;</a>
+                <a href="{{ route('our-journey') }}" class="btn-experience">Our Journey</a>
+                <a href="{{ route('about') }}" class="btn-book-call">Know More &rarr;</a>
             </div>
         </div>
 
         <div class="scrolling-column">
-            <div class="scrolling-images reverse-scroll">
-                @foreach (array_reverse($heroImages) as $image)
+            <div class="hero-scrolling-images">
+                @foreach (array_reverse($heroImages2) as $image)
                     <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}">
                 @endforeach
                 <!-- Repeated images for continuous scroll -->
-                @foreach (array_reverse($heroImages) as $image)
+                @foreach (array_reverse($heroImages2) as $image)
                     <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}">
                 @endforeach
             </div>
@@ -62,7 +67,7 @@
     </section>
 
     <main>
-        <x-our-services />           
+        <x-our-services />
          <x-core-values />
 
         <x-blog-section :posts="$posts" />

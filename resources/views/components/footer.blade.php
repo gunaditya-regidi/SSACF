@@ -22,7 +22,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-[1fr_auto_1.5fr_auto] items-center gap-6 text-center lg:text-left">
                 <!-- Left Text -->
                 <div>
-                    <p class="text-white text-[15px] leading-relaxed">Connect with us directly on WhatsApp for instant updates on our Activities.</p>
+                    <p class="text-white text-[15px] leading-relaxed">Connect with us directly on WhatsApp for updates and information on our services.</p>
                 </div>
                 
                 <!-- Center Button -->
@@ -36,7 +36,7 @@
                 
                 <!-- Right Text -->
                 <div>
-                    <p class="text-[#8b92a0] text-[15px] leading-relaxed">Follow us at our Social Platforms and get the latest information and activities by Age Care Foundation.</p>
+                    <p class="text-[#8b92a0] text-[15px] leading-relaxed">Follow us at our Social Platforms and lend your voice to spread awareness about our services.</p>
                 </div>
                 
                 <!-- Social Icons -->
@@ -62,23 +62,24 @@
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 border-t border-gray-700 pt-14 pb-12">
             <!-- Left Column - Contact Info -->
             <div class="lg:col-span-1">
-                <img src="{{ asset('images/logos/logo.png') }}" alt="Age Care Foundation Logo" class="h-16 mb-6">
                 <h3 class="font-semibold text-lg text-white mb-6">Contact Us</h3>
                 <div class="space-y-4 text-gray-400">
-                    <p class="flex items-start"><span class="mr-3 mt-1"><i class="fas fa-map-marker-alt"></i></span><span>IIM Vizag Road, Gambheeram<br>Visakhapatnam, Andhra Pradesh <br>India - 531163</span></p>
-                    <p class="flex items-center"><span class="mr-3"><i class="fas fa-envelope"></i></span><span>contact@agecare.org</span></p>
-                    <p class="flex items-center"><span class="mr-3"><i class="fas fa-phone-alt"></i></span><span>+91 98765 43210</span></p>
-                </div>
+                    <p class="flex items-start"><span class="mr-3 mt-1"><i class="fas fa-map-marker-alt"></i></span><span>Regd. Office: # 9-41-31/1, Pithapuram Colony<br>Visakhapatnam, Andhra Pradesh <br>India - 530003</span></p>
+                    <p class="flex items-start"><span class="mr-3 mt-1"><i class="fas fa-map-marker-alt"></i></span><span>Geriatric Palliative Care Centre: Premises No. 153 Part, IIM-Visakhapatnam Road<br>Gambheeram, Visakhapatnam, Andhra Pradesh <br>India - 531163</span></p>
+                    <p class="flex items-center"><span class="mr-3"><i class="fas fa-envelope"></i></span><span>info@agecarefoundation.com</span></p>
+                    <p class="flex items-center"><span class="mr-3"><i class="fas fa-phone-alt"></i></span><span>Helpline Nos: <br>+91 89 85 95 2000, <br>+91 89 85 95 3000; </span></p>
+                    <p class="flex items-center"><span class="mr-3"><i class="fas fa-phone-alt"></i></span><span>Home Care: +91 85 00 00 5611</span></p>
+                    </div>
             </div>
 
             <!-- Middle Column - Important Links -->
             <div class="lg:col-span-1">
                 <h3 class="font-semibold text-lg text-white mb-6">Important Links</h3>
                 <ul class="space-y-4">
-                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Our Services</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Our Approach</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Our Team</a></li>
+                    <li><a href="{{ route('about') }}" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="{{ route('services') }}" class="text-gray-400 hover:text-white transition-colors">Our Services</a></li>
+                    <li><a href="{{ route('our-approach') }}" class="text-gray-400 hover:text-white transition-colors">Our Approach</a></li>
+                    <li><a href="{{ route('our-team') }}" class="text-gray-400 hover:text-white transition-colors">Our Team</a></li>
                 </ul>
             </div>
 
@@ -86,16 +87,15 @@
             <div class="lg:col-span-1">
                 <h3 class="font-semibold text-lg text-white mb-6">Get Involved</h3>
                 <ul class="space-y-4">
-                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Donate</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Volunteer</a></li>
-                    <li><a href="#" class_="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+                    <li><a href="{{ route('donate') }}" class="text-gray-400 hover:text-white transition-colors">Donate</a></li>
+                    <li><a href="{{ route('support-us') }}" class="text-gray-400 hover:text-white transition-colors">Volunteer</a></li>
                 </ul>
             </div>
 
             <!-- Right Column - CTA -->
             <div class="lg:col-span-1">
                 <h2 class="text-2xl font-bold text-white mb-4 leading-tight">Support families and a patient</h2>
-                <a href="#" class="inline-block bg-[#e8580c] text-white font-bold py-3 px-8 rounded-full hover:bg-[#d14e0a] transition-colors shadow-lg">
+                <a href="{{ route('contact') }}" class="inline-block bg-[#e8580c] text-white font-bold py-3 px-8 rounded-full hover:bg-[#d14e0a] transition-colors shadow-lg">
                     Get In Touch
                 </a>
             </div>
@@ -103,11 +103,18 @@
 
         <!-- Bottom Bar -->
         <div class="border-t border-gray-700 pt-7 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p class="text-gray-500 text-sm text-center md:text-left">©2025 Sneha Sandhya Age Care Foundation - All Rights Reserved.</p>
+            <p class="text-gray-500 text-sm text-center md:text-left">©2025 Sneha Sandhya Age Care Foundation - All Rights Reserved | 
+                <a href="{{ route('privacy-policy') }}" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a> |
+                <a href="{{ route('disclaimers') }}" class="text-gray-400 hover:text-white transition-colors">Disclaimers</a>
+            </p>
+            <p class="flex items-center"><span class="mr-3"><i class="fas fa-certificate"></i></span><span>Regd. Charitable Trust No.VSP/274/2012</span></p>
+              
             <div class="flex items-center gap-8">
                 <p class="text-gray-500 text-sm text-center md:text-left">Site Maintained By - 
                 <a href="#" class="text-gray-400 hover:text-white transition-colors">Digital Videos MSME</a></p>
             </div>
+
+              
         </div>
     </div>
     <script>
