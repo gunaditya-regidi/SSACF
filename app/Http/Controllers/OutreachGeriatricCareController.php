@@ -3,62 +3,36 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 
 class OutreachGeriatricCareController extends Controller
 {
     public function index()
     {
         $sliderImages = [
-            ['url' => asset('images/services/orc1.jpeg'), 'title' => 'Community Health Clinics', 'description' => 'Bringing geriatric care directly to underserved communities.'],
-            ['url' => asset('images/services/orc2.jpeg'), 'title' => 'Mobile Health Units', 'description' => 'Our mobile clinics provide on-site care for seniors with limited mobility.'],
-            ['url' => asset('images/services/orc3.jpeg'), 'title' => 'Health Education Workshops', 'description' => 'Empowering seniors with knowledge to manage their health.'],
-            ['url' => asset('images/services/orc4.jpeg'), 'title' => 'Mobile Health Units', 'description' => 'Our mobile clinics provide on-site care for seniors with limited mobility.'],
-            
+            ['url' => asset('images/services/orc1.jpeg'), 'title' => 'Community Clinics', 'description' => 'Bringing healthcare to the doorsteps of the elderly.'],
+            ['url' => asset('images/services/orc2.jpeg'), 'title' => 'Health Awareness', 'description' => 'Educating communities on geriatric health and wellness.'],
+            ['url' => asset('images/services/orc3.jpeg'), 'title' => 'Health Awareness', 'description' => 'Educating communities on geriatric health and wellness.'],
+        
         ];
 
         $highlightCards = [
             [
-                'icon' => asset('images/icons/community.png'),
-                'alt' => 'Community-Based Care',
-                'title' => 'Community-Based Care',
-                'description' => 'Bringing essential geriatric health services directly to local communities.',
+                'icon' => 'fa-hands-holding-child',
+                'title' => 'Bringing Healthcare Closer to the Elderly',
+                'description' => 'Ageing often comes with multiple health challenges, compounded by poverty, isolation, and difficulty in accessing healthcare facilities.<br><br>Recognising this reality, Age Care Foundation conducts regular outpatient geriatric clinics at multiple locations across the city of Visakhapatnam and in select neighbouring villages. These clinics are also organised at old age homes, ensuring that elderly inmates receive timely and dignified medical attention.<br><br>Our outreach clinics serve as a vital lifeline for seniors who are unable to afford private healthcare or travel long distances for treatment.',
             ],
             [
-                'icon' => asset('images/icons/accessibility.png'),
-                'alt' => 'Accessible to All',
-                'title' => 'Accessible to All',
-                'description' => 'Breaking down barriers to care for vulnerable and underserved seniors.',
+                'icon' => 'fa-hand-holding-medical',
+                'title' => 'Services Offered Through Outreach Clinics',
+                'description' => 'The outreach geriatric clinics provide free primary healthcare services, including:<br>&bull; Medical consultations for common and chronic illnesses<br>&bull; Basic health assessments and monitoring<br>&bull; Guidance on disease management and healthy ageing<br>&bull; Counselling and reassurance for elderly patients<br><br>To ensure continuity of care, essential medicines are dispensed free of cost to elderly persons from poor socio-economic backgrounds, helping them manage chronic conditions without financial burden.',
             ],
             [
-                'icon' => asset('images/icons/prevention.png'),
-                'alt' => 'Preventive Health',
-                'title' => 'Preventive Health',
-                'description' => 'Focusing on early detection and proactive health management.',
-            ],
-            [
-                'icon' => asset('images/icons/empowerment.png'),
-                'alt' => 'Health Empowerment',
-                'title' => 'Health Empowerment',
-                'description' => 'Equipping seniors and communities with knowledge and resources.',
+                'icon' => 'fa-users-line',
+                'title' => 'Impact in the Community',
+                'description' => 'Every month, about 600 to 800 elderly persons benefit from these outreach services.<br><br>For many, these clinics are the only reliable source of medical care. By addressing health concerns early and providing regular follow-up, the clinics help prevent complications, reduce suffering, and improve overall quality of life.<br><br>Our outreach programme has made a meaningful difference not only to elders living within the community but also to those residing in old age homes, who often lack access to regular medical services.',
             ],
         ];
 
-        $faqs = [
-            [
-                'question' => 'What is outreach geriatric care?',
-                'answer' => 'Outreach geriatric care is a proactive approach to delivering healthcare to older adults in their own communities. This can include mobile health clinics, community health screenings, and educational workshops.',
-            ],
-            [
-                'question' => 'Who benefits from outreach care?',
-                'answer' => 'Outreach care is especially beneficial for seniors who have difficulty accessing traditional healthcare due to mobility issues, lack of transportation, or living in a remote or underserved area.',
-            ],
-            [
-                'question' => 'What types of services are offered?',
-                'answer' => 'Services can include health assessments, chronic disease management, vaccinations, and education on a wide range of health topics relevant to seniors.',
-            ],
-        ];
-
-        return view('outreach-geriatric-care', compact('sliderImages', 'highlightCards', 'faqs'));
+        return view('outreach-geriatric-care', compact('sliderImages', 'highlightCards'));
     }
 }

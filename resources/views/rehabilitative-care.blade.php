@@ -61,13 +61,13 @@ Our team works closely with patients and families to set realistic goals, track 
 
     
     <!-- Highlight Cards -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 my-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 my-16">
         @foreach ($highlightCards as $card)
             <div class="highlight-card">
-                <i class="fa-solid {{ $card['icon'] }} icon"></i>
-                <div class="flex-grow">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">{{ $card['title'] }}</h3>
-                    <p class="text-gray-600 text-sm">{{ $card['description'] }}</p>
+                <i class="fas {{ $card['icon'] }} icon"></i>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-700">{{ $card['title'] }}</h3>
+                    <p class="text-gray-500">{{ $card['description'] }}</p>
                 </div>
             </div>
         @endforeach

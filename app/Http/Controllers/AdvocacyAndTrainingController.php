@@ -9,53 +9,28 @@ class AdvocacyAndTrainingController extends Controller
     public function index()
     {
         $sliderImages = [
-            ['url' => asset('images/services/ad1.jpeg'), 'title' => 'Empowering Seniors', 'description' => 'Advocating for the rights and well-being of older adults.'],
-            ['url' => asset('images/services/ad2.jpeg'), 'title' => 'Caregiver Training Programs', 'description' => 'Equipping caregivers with the skills and knowledge for confident care.'],
-            ['url' => asset('images/services/advocacy-3.jpeg'), 'title' => 'Community Education', 'description' => 'Raising awareness about the issues facing seniors.'],
+            ['url' => asset('images/services/ad1.jpeg'), 'title' => 'Raising Awareness', 'description' => 'Promoting the rights and well-being of the elderly.'],
+            ['url' => asset('images/services/ad2.jpeg'), 'title' => 'Empowering Caregivers', 'description' => 'Providing training for compassionate and skilled care.'],
         ];
 
         $highlightCards = [
             [
-                'icon' => asset('images/icons/advocacy.png'),
-                'alt' => 'Policy Advocacy',
-                'title' => 'Policy Advocacy',
-                'description' => 'Working to shape policies that protect and support the rights of seniors.',
+                'icon' => 'fa-bullhorn',
+                'title' => 'Advocacy for Dignity and Inclusion',
+                'description' => 'Our advocacy programmes focus on promoting the rights, well-being, and social inclusion of the elderly. We actively raise awareness on geriatric and palliative care, encouraging early recognition of age-related health challenges such as dementia, chronic illnesses, frailty, and caregiver stress.<br><br>By addressing misconceptions around ageing, illness, and end-of-life care, we aim to foster informed conversations that lead to timely care, reduced suffering, and improved quality of life for elders and their families.',
             ],
             [
-                'icon' => asset('images/icons/empowerment.png'),
-                'alt' => 'Patient Empowerment',
-                'title' => 'Patient Empowerment',
-                'description' => 'Ensuring seniors have a voice in their own care and treatment decisions.',
+                'icon' => 'fa-person-chalkboard',
+                'title' => 'Training for Compassionate Care',
+                'description' => 'Training is a vital pillar of our mission. We believe that quality elder care depends on knowledge, skill, and compassionate attitudes. Our training initiatives are designed to equip healthcare professionals, caregivers, volunteers, and community workers with practical skills and ethical understanding required to care for the elderly and the seriously ill.<br><br>Our programmes emphasise:<br>&bull; Person-centred and dignity-based care<br>&bull; Understanding ageing, dementia, and chronic illness<br>&bull; Compassionate communication and caregiver support<br>&bull; Sensitivity to cultural, emotional, and end-of-life needs',
             ],
             [
-                'icon' => asset('images/icons/training.png'),
-                'alt' => 'Caregiver Training',
-                'title' => 'Caregiver Training',
-                'description' => 'Providing comprehensive training for both family and professional caregivers.',
-            ],
-            [
-                'icon' => asset('images/icons/community.png'),
-                'alt' => 'Community Engagement',
-                'title' => 'Community Engagement',
-                'description' => 'Building partnerships to create a more age-friendly community.',
+                'icon' => 'fa-people-roof',
+                'title' => 'Building a Caring Community',
+                'description' => 'At Age Care Foundation, advocacy and training go hand in hand—creating informed individuals, empowered caregivers, and responsive institutions. Together, they help build a community where elders are respected, caregivers are supported, and serious illness is approached with compassion rather than fear.<br><br>Through these efforts, Sneha Sandhya Age Care Foundation continues to work towards a future where ageing is met with dignity, illness with understanding, and care with compassion.',
             ],
         ];
 
-        $faqs = [
-            [
-                'question' => 'What is advocacy in senior care?',
-                'answer' => 'Advocacy in senior care involves working to protect the rights, dignity, and quality of life of older adults. This can include influencing public policy, ensuring access to quality care, and empowering seniors to be active participants in their own healthcare.',
-            ],
-            [
-                'question' => 'Why is training for caregivers important?',
-                'answer' => 'Proper training equips caregivers with the skills and knowledge to provide safe, effective, and compassionate care. It also helps to reduce caregiver stress and prevent burnout.',
-            ],
-            [
-                'question' => 'How can I get involved in advocacy efforts?',
-                'answer' => 'There are many ways to get involved, from contacting your elected officials to volunteering with organizations that support seniors. We offer resources and training to help you become an effective advocate for older adults.',
-            ],
-        ];
-
-        return view('advocacy-and-training', compact('sliderImages', 'highlightCards', 'faqs'));
+        return view('advocacy-and-training', compact('sliderImages', 'highlightCards'));
     }
 }
