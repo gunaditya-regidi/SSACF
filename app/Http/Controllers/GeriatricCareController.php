@@ -9,10 +9,9 @@ class GeriatricCareController extends Controller
     public function index()
     {
         $sliderImages = [
-            ['url' => 'images/services/gc1.jpeg', 'title' => 'Comprehensive Geriatric Assessments', 'description' => 'Holistic evaluations to create personalized care plans.'],
-            ['url' => 'images/services/gc2.jpeg', 'title' => 'Chronic Disease Management', 'description' => 'Expert management of age-related health conditions.'],
-            ['url' => 'images/services/geriatric-3.jpeg', 'title' => 'Healthy Aging Programs', 'description' => 'Promoting wellness and an active lifestyle for seniors.'],
-        ];
+            ['url' => asset('images/services/gc1.jpeg'), 'title' => 'Comprehensive Geriatric Assessments', 'description' => 'Holistic evaluations to create personalized care plans.'],
+            ['url' => asset('images/services/gc2.jpeg'), 'title' => 'Chronic Disease Management', 'description' => 'Expert management of age-related health conditions.'],
+           ];
 
         $highlightCards = [
             [
