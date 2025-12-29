@@ -1,29 +1,22 @@
 
-# Blueprint
+# Age Care Foundation - Website Blueprint
 
 ## Overview
 
-This project is a full-stack web application for Sneha Sandhya Age Care Foundation, built with Laravel. The application provides information about the foundation's services, mission, and team. It also includes a blog, a gallery, and a donation page.
+This document outlines the plan for developing the Age Care Foundation website, a modern and responsive platform built with Laravel. The website will serve as a central hub for information about the foundation, its services, and how to get involved.
 
-## Design and Features
+## Current Implemented Features
 
-*   **Homepage:** A visually appealing homepage with a video background, information about services, and a call to action for donations.
-*   **Services Pages:** Dedicated pages for each of the foundation's services, including Palliative Care, Geriatric Care, and more.
-*   **Blog:** A blog to share news and updates.
-*   **Gallery:** A gallery to showcase photos and videos.
-*   **About Us:** Pages detailing the foundation's mission, team, and journey.
-*   **Contact Page:** A contact form for users to get in touch.
-*   **Donation Page:** A page to facilitate donations.
+*   **Home Page:** A welcoming and informative landing page that provides an overview of the foundation's mission and services.
+*   **Services Pages:** Dedicated pages for each of the foundation's services, including Geriatric Care, Palliative Care, Dementia Care, and more.
+*   **About Us Pages:** Pages that provide information about the foundation's mission, approach, team, and journey.
+*   **Blog:** A blog section with articles and updates about the foundation's work.
+*   **Contact Page:** A simple and user-friendly contact form for users to get in touch with the foundation.
 
-## Current Task: Re-enable Video Background
+## Current Task: Update "Geriatric Care" Page
 
 ### Plan
 
-1.  **DONE** Update the `stunning-visual-art.blade.php` component to use the `asset()` helper and point to the video in the `public` directory.
-2.  **DONE** Uncomment the video sections for both mobile and desktop views.
-3.  **DONE** Run `npm run build` to apply the changes.
-
-### Implemented Changes
-
-*   Updated `resources/views/components/stunning-visual-art.blade.php` to correctly reference the video file from the `public` directory.
-*   Re-enabled the video background feature for both desktop and mobile views.
+1.  **Update `GeriatricCareController.php`:** I have updated the `highlightCards` and `faqs` arrays in the `GeriatricCareController` to include the new content provided by the user.
+2.  **Update `geriatric-care.blade.php`:** I have modified the `geriatric-care.blade.php` file to display the updated highlight cards and FAQs, and to update the main description of the page.
+3.  **Adjust Layout:** I've adjusted the layout of the highlight cards to be in a grid of three columns, and styled them to be consistent with the Palliative Care page.

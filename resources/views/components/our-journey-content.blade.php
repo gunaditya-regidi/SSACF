@@ -232,25 +232,25 @@
                             'year' => '2015',
                             'title' => 'Taking Care to the Underserved',
                             'text' => 'Care beyond city limits. Medical outreach camps were extended to interior and rural areas such as Chodavaram, enabling many underserved patients to access care. Simultaneously, awareness programmes were conducted to sensitise communities about the importance and need for palliative care.',
-                            'images' => [url('images/background/bgimg5.jpg'), url('images/background/greenwv.jpg')]
+                            'images' => [url('images/journey/2015a.jpg'), url('images/journey/2015b.jpg')]
                         ],
                         [
                             'year' => '2016',
                             'title' => 'Recognition That Encouraged Us',
                             'text' => 'Affirmation of purpose from public leaders. We were honoured by visits from distinguished guests including Mrs. Poonam Malakondaih, IAS, Principal Secretary (Health), Government of Andhra Pradesh; Mr. T. Krishna Babu, IAS, Chairman, Visakhapatnam Port Trust; and Mr. Pravin Kumar, IAS, District Collector of Visakhapatnam, who appreciated our services to the elderly and the seriously ill.',
-                             'images' => [url('images/background/greenwv.jpg'), url('images/topper/mmm.jpg')]
+                             'images' => [url('images/journey/2016a.jpg'), url('images/journey/2016b.jpg'), url('images/journey/2016c.jpg')]
                         ],
                         [
                             'year' => '2017',
                             'title' => 'Inspired by a National Pioneer',
                             'text' => 'A turning point in awareness and advocacy. It was a privilege to host Dr. M. R. Raja Gopal, Chairman of Pallium India Trust and a pioneer of palliative care in India. His interactions with doctors and medical students across Visakhapatnam and neighbouring districts significantly advanced awareness and sensitisation among healthcare providers.',
-                            'images' => [url('images/topper/mmm.jpg'), url('images/background/bgimg1.jpg')]
+                            'images' => [url('images/journey/2017a.jpg'), url('images/journey/2017b.jpg')]
                         ],
                         [
                             'year' => '2018',
                             'title' => 'Care at the Doorstep',
                             'text' => 'When healing travelled to homes. Home-based palliative care services were launched for patients with serious illnesses through a dedicated mobile medical team. This programme was supported by the Pain Relief and Palliative Care Society, Hyderabad, and Two Worlds Cancer Collaboration, Canada for a period of three years. The Foundation also received recognition as a Registered Medical Institution (RMI) from the Drug Control Authority, Government of Andhra Pradesh.',
-                             'images' => [url('images/background/bgimg1.jpg'), url('images/art/art1.JPG')]
+                             'images' => [url('images/journey/2018a.jpg'), url('images/journey/2018b.jpg'), url('images/journey/2018c.jpg')]
                         ],
                         [
                             'year' => '2019',

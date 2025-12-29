@@ -18,7 +18,7 @@
          x-transition:leave-end="opacity-0 scale-95"
          class="faq-answer px-6 pb-6 text-gray-600" x-cloak>
         <div class="pt-4 border-t border-gray-200">
-            <p>{{ $slot }}</p>
+            <p style="white-space: pre-line;">{!! $slot !!}</p>
         </div>
     </div>
 </div>

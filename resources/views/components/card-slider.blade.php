@@ -3,7 +3,7 @@
 <div class="bg-white rounded-xl shadow-lg overflow-hidden" x-data="{ activeSlide: 0, slides: {{ json_encode($images) }} }">
     <div class="relative">
         <!-- Slides -->
-        <div class="w-full h-64">
+        <div class="w-full h-80">
             <template x-for="(slide, index) in slides" :key="index">
                 <div x-show="activeSlide === index" 
                      x-transition:enter="transition-opacity duration-500 ease-in-out" 
@@ -13,7 +13,7 @@
                      x-transition:leave-start="opacity-100" 
                      x-transition:leave-end="opacity-0" 
                      class="absolute inset-0">
-                    <img :src="`{{ asset('') }}/${slide.url}`" :alt="slide.title" class="w-full h-full object-cover">
+                    <img :src="slide.url" :alt="slide.title" class="w-full h-full object-cover">
                 </div>
             </template>
         </div>
@@ -38,7 +38,7 @@
 
     <!-- Content -->
     <div class="p-6">
-        <div class="text-center min-h-[100px]">
+        <div class="text-center min-h-[80px]">
          <template x-for="(slide, index) in slides" :key="index">
                 <div x-show="activeSlide === index"
                      x-transition:enter="transition-opacity duration-300 ease-in-out"

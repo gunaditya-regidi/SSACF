@@ -10,10 +10,11 @@
                <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
                <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js" defer></script>
               <!-- Font Awesome for social icons -->
-              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
               <!-- Slick Carousel CSS -->
               <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
               <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+              <link rel="stylesheet" href="{{ asset('css/carousel.css') }}">
               <script src="https://cdn.tailwindcss.com"></script>
               @vite(['resources/css/app.css', 'resources/js/app.js'])
               @stack('styles')
