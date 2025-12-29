@@ -15,6 +15,7 @@ use App\Http\Controllers\HomeCareController;
 use App\Http\Controllers\OutreachGeriatricCareController;
 use App\Http\Controllers\AdvocacyAndTrainingController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\OurFacilitiesController;
 
 Route::get('/', function () {
     return view('welcome', ['posts' => []]);
@@ -91,6 +92,4 @@ Route::get('/disclaimers', function () {
     return view('disclaimers');
 })->name('disclaimers');
 
-Route::get('/our-facilities', function () {
-    return view('our-facilities');
-})->name('our-facilities');
+Route::get('/our-facilities', [OurFacilitiesController::class, 'index'])->name('our-facilities');

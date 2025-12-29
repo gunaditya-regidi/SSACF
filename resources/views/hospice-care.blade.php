@@ -33,7 +33,7 @@
 <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8 service-page-content">
     <div class="flex flex-wrap lg:flex-nowrap items-center -mx-4">
         <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
-            <h1 class="text-5xl font-extrabold text-gray-900 mb-4">Hospice Care</h1>
+            <h1 class="text-5xl font-extrabold text-blue-900 mb-4">Hospice Care</h1>
             <p class="text-xl text-gray-600 mb-6">Hospice care is a special type of care that focuses on quality of life for people who are experiencing an advanced, life-limiting illness. Our goal is to provide comfort, support, and dignity to patients and their families.</p>
         </div>
         <div class="w-full lg:w-1/2 px-4">
@@ -56,7 +56,7 @@
 
     <!-- FAQs -->
     <div class="max-w-4xl mx-auto mt-12">
-        <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">We've Got Answers</h2>
+        <h2 class="text-3xl font-bold text-blue-800 mb-6 text-center">We've Got Answers</h2>
         <div class="space-y-4">
             @foreach ($faqs as $faq)
                 <x-faq-item :question="$faq['question']">
