@@ -11,9 +11,8 @@ class HospiceCareController extends Controller
     {
         $sliderImages = [
             ['url' => asset('images/services/hoc1.jpeg'), 'title' => 'Comfort and Dignity', 'description' => 'Providing compassionate care that focuses on quality of life.'],
-            ['url' => asset('images/services/hospice-2.jpg'), 'title' => 'Symptom Management', 'description' => 'Expert medical care to manage pain and other symptoms.'],
-            ['url' => asset('images/services/hospice-3.jpg'), 'title' => 'Emotional and Spiritual Support', 'description' => 'Caring for the whole person, not just the illness.'],
-        ];
+            ['url' => asset('images/services/hoc2.jpeg'), 'title' => 'Symptom Management', 'description' => 'Expert medical care to manage pain and other symptoms.'],
+           ];
 
         $highlightCards = [
     [
