@@ -9,9 +9,11 @@ class RehabilitativeCareController extends Controller
     public function index()
     {
         $sliderImages = [
-            ['url' => asset('images/services/rehab-1.jpg'), 'title' => 'Physical Therapy', 'description' => 'Restoring mobility and strength through targeted exercises.'],
-            ['url' => asset('images/services/rehab-2.jpg'), 'title' => 'Occupational Therapy', 'description' => 'Helping you regain the skills for daily living.'],
-            ['url' => asset('images/services/rehab-3.jpg'), 'title' => 'Speech-Language Pathology', 'description' => 'Improving communication and swallowing abilities.'],
+            ['url' => asset('images/services/rc1.jpeg'), 'title' => 'Physical Therapy', 'description' => 'Restoring mobility and strength through targeted exercises.'],
+            ['url' => asset('images/services/rc2.jpeg'), 'title' => 'Occupational Therapy', 'description' => 'Helping you regain the skills for daily living.'],
+            ['url' => asset('images/services/rc3.jpeg'), 'title' => 'Speech-Language Pathology', 'description' => 'Improving communication and swallowing abilities.'],
+        
+            ['url' => asset('images/services/rc4.jpeg'), 'title' => 'Expert Therapists', 'description' => 'A dedicated team of licensed therapists committed to your recovery.'],
         ];
 
         $highlightCards = [

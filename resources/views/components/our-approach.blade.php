@@ -49,8 +49,8 @@
                 <div>
                      <div id="celebrating-carousel" class="relative w-full h-80 bg-gray-200 rounded-lg shadow-lg overflow-hidden">
                         <div class="carousel-item active"><img src="{{ url('images/art/art1.JPG') }}" alt="Celebrating Life 1" class="absolute inset-0 w-full h-full object-cover"></div>
-                        <div class="carousel-item"><img src="{{ url('images/art/art3.JPG') }}" alt="Celebrating Life 2" class="absolute inset-0 w-full h-full object-cover"></div>
-                        <div class="carousel-item"><img src="{{ url('images/art/art2.JPG') }}" alt="Celebrating Life 3" class="absolute inset-0 w-full h-full object-cover"></div>
+                        <div class="carousel-item"><img src="{{ url('images/art/cl1.jpeg') }}" alt="Celebrating Life 2" class="absolute inset-0 w-full h-full object-cover"></div>
+                        <div class="carousel-item"><img src="{{ url('images/art/cl2.jpeg') }}" alt="Celebrating Life 3" class="absolute inset-0 w-full h-full object-cover"></div>
                     </div>
                 </div>
             </div>
@@ -81,7 +81,7 @@
             }
 
             showItem(currentItem);
-            setInterval(nextItem, 3000); // Change image every 3 seconds
+            setInterval(nextItem, 1500); // Change image every 1.5 seconds
         }
 
         createCarousel('holistic-carousel');

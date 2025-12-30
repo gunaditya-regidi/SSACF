@@ -4,6 +4,7 @@
 @section('no-splash', true)
 
 @push('styles')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <style>
     .highlight-card {
         background-color: #fff;
@@ -11,17 +12,21 @@
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         padding: 24px;
         display: flex;
-        align-items: center;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;   /* Center items horizontally */
+        text-align: center;    /* Center text */
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .highlight-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     }
-    .highlight-card img {
-        height: 48px;
+    .highlight-icon {
+        font-size: 40px;
+        color: #3b82f6;
         width: 48px;
-        margin-right: 16px;
+        text-align: center;
+        margin-bottom: 16px; /* Add space below the icon */
     }
     .faq-item[x-data*="open: true"] {
         background-color: #f9fafb;
@@ -45,7 +50,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 my-16">
         @foreach ($highlightCards as $card)
             <div class="highlight-card">
-                <img src="{{ $card['icon'] }}" alt="{{ $card['alt'] }}">
+                <i class="fas {{ $card['icon'] }} highlight-icon"></i>
                 <div>
                     <h3 class="text-xl font-semibold text-gray-700">{{ $card['title'] }}</h3>
                     <p class="text-gray-500">{{ $card['description'] }}</p>

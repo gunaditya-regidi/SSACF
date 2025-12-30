@@ -11,6 +11,12 @@ class AdvocacyAndTrainingController extends Controller
         $sliderImages = [
             ['url' => asset('images/services/ad1.jpeg'), 'title' => 'Raising Awareness', 'description' => 'Promoting the rights and well-being of the elderly.'],
             ['url' => asset('images/services/ad2.jpeg'), 'title' => 'Empowering Caregivers', 'description' => 'Providing training for compassionate and skilled care.'],
+            ['url' => asset('images/services/ad3.jpeg'), 'title' => 'Training for Compassionate Care', 'description' => 'Compassionate communication and caregiver support.'],
+            ['url' => asset('images/services/ad4.jpeg'), 'title' => 'Building a Caring Community', 'description' => 'Understanding ageing, dementia, and chronic illness.'],
+            ['url' => asset('images/services/ad5.jpeg'), 'title' => 'Advocacy for Dignity and Inclusion', 'description' => 'Awareness on early recognition of age-related health challenges'],
+            ['url' => asset('images/services/ad6.jpeg'), 'title' => 'Empowering Caregivers', 'description' => 'Providing training for compassionate and skilled care.'],
+            ['url' => asset('images/services/ad7.jpeg'), 'title' => 'Training for Compassionate Care', 'description' => 'Compassionate communication and caregiver support.'],
+            
         ];
 
         $highlightCards = [

@@ -10,9 +10,13 @@ class PalliativeCareController extends Controller
     {
         $sliderImages = [
             ['url' => asset('images/services/pc1.jpeg'), 'title' => 'Comfort in Care', 'description' => 'Our team provides compassionate support to ensure comfort at every stage.'],
-            ['url' => asset('images/services/pc2.jpeg'), 'title' => 'Skilled & Compassionate', 'description' => 'Combining medical expertise with a gentle, understanding approach.'],
             ['url' => asset('images/services/pc3.jpeg'), 'title' => 'A Peaceful Journey', 'description' => 'Creating a calm and serene environment for our patients and their families.'],
-            ['url' => asset('images/services/pc4.jpeg'), 'title' => 'Skilled & Compassionate', 'description' => 'Combining medical expertise with a gentle, understanding approach.'],
+            ['url' => asset('images/services/pc4.jpeg'), 'title' => 'Skilled', 'description' => 'Combining medical expertise with a gentle, understanding approach.'],
+            ['url' => asset('images/services/pc5.jpeg'), 'title' => 'Compassionate', 'description' => 'Presence. Compassion. Palliative care.'],
+            ['url' => asset('images/services/pc6.jpeg'), 'title' => 'A Peaceful Journey', 'description' => 'Creating a calm and serene environment for our patients and their families.'],
+            ['url' => asset('images/services/pc7.jpeg'), 'title' => 'Skilled', 'description' => 'Combining medical expertise with a gentle, understanding approach.'],
+            ['url' => asset('images/services/pc8.jpeg'), 'title' => 'Compassionate', 'description' => 'Presence. Compassion. Palliative care.'],
+            ['url' => asset('images/services/pc9.jpeg'), 'title' => 'Comfort in Care', 'description' => 'Our team provides compassionate support to ensure comfort at every stage.'],
             
         ];
 

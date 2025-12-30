@@ -9,9 +9,11 @@ class TransitionalCareController extends Controller
     public function index()
     {
         $sliderImages = [
-            ['url' => asset('images/services/transitional-1.jpg'), 'title' => 'Hospital-to-Home Transitions', 'description' => 'Seamless support for a safe and successful recovery at home.'],
-            ['url' => asset('images/services/transitional-2.jpg'), 'title' => 'Post-Surgical Care', 'description' => 'Specialized care to help you heal and regain strength after surgery.'],
-            ['url' => asset('images/services/transitional-3.jpg'), 'title' => 'Medication Management', 'description' => 'Ensuring medications are taken correctly to prevent complications.'],
+            ['url' => asset('images/services/tc1.jpeg'), 'title' => 'Hospital-to-Home Transitions', 'description' => 'Seamless support for a safe and successful recovery at home.'],
+            ['url' => asset('images/services/tc2.jpeg'), 'title' => 'Post-Surgical Care', 'description' => 'Specialized care to help you heal and regain strength after surgery.'],
+            ['url' => asset('images/services/tc3.jpeg'), 'title' => 'Medication Management', 'description' => 'Ensuring medications are taken correctly to prevent complications.'],
+        
+            ['url' => asset('images/services/tc4.jpeg'), 'title' => 'Skilled Nursing Care', 'description' => 'Support for wound care, catheter and tube care, injections, medication administration.'],
         ];
 
         $highlightCards = [

@@ -11,7 +11,7 @@
                         <h1 class="text-4xl font-bold text-center text-blue-900 my-8">THE FACILITY</h1>
                         <h2 class="text-2xl font-semibold text-center text-blue-800 mb-8">INTEGRATED GERIATRIC AND PALLIATIVE HEALTH CARE CENTRE</h2>
                         <x-image-carousel :images="$topImages" direction="left-to-right" />
-                        
+                        <br><br>
                         <p class="text-lg text-gray-700 mb-6">
                             Age Care Foundation's endeavour to make available geriatric and palliative health care services to the elderly and the seriously ill received a big fillip when the Free Polio Surgical and Research Foundation, Visakhapatnam provided one acre of land in Visakhapatnam to establish and run a fully integrated centre for Geriatric and Palliative Care, the first of its kind in Andhra Pradesh. This will open new vistas of care and scale up Age Care Foundation's services manyfold.
                         </p>
