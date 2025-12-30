@@ -186,19 +186,18 @@
 
 </style>
 
-<div class="bg-white py-16 sm:py-24">
+<div class="bg-white py-5 sm:py-24">
     <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
         <div class="mx-auto max-w-2xl">
-            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Our Journey</h1>
-            <p class="mt-6 text-lg leading-8 text-gray-600">From Humble Beginnings to a Beacon of Hope. Explore the milestones that have shaped our mission of compassion and care.</p>
-        </div>
+            <h1 class="text-4xl font-bold tracking-tight text-blue-900 sm:text-6xl">Our Journey</h1>
+           </div>
     </div>
 </div>
 
-<div class="py-20 bg-gray-50 overflow-hidden">
+<div class="py-10 bg-gray-50 overflow-hidden">
     <div class="container mx-auto px-4">
         <div class="text-center mb-20">
-            <h2 class="text-3xl font-bold text-gray-800">A Timeline of Compassion and Care</h2>
+            <h2 class="text-3xl font-bold text-gray-800">A Timeline of Care with Compassion</h2>
             <p class="text-gray-600 mt-2">We began our humble journey in 2012, taking small steps and forging many partnerships all along.</p>
         </div>
 
@@ -214,19 +213,19 @@
                             'year' => '2012',
                             'title' => 'Where Compassion Took Root',
                             'text' => 'The beginning of a promise to care with dignity. Sneha Sandhya Age Care Foundation was established as a charitable trust on 24 August 2012, inspired and sponsored by Sneha Sandhya, a society of senior citizens dedicated to elder welfare since 2004. Our journey began at St. Joseph’s Hospice, Visakhapatnam, with outpatient geriatric clinics across the city and regular visits to old age homes.',
-                            'images' => [url('images/journey/2012a.jpg'), url('images/journey/2012b.jpg'), url('images/journey/2012c.jpg')]
+                            'images' => [url('images/journey/2012a.jpg'), url('images/journey/2012b.jpeg'), url('images/journey/2012c.jpeg')]
                         ],
                         [
                             'year' => '2013',
                             'title' => 'Care That Reached Further',
                             'text' => 'Healthcare made accessible, affordable, and free. Our outreach services expanded with additional outpatient clinics and old age home visits. Free health screening for hypertension and diabetes, along with free medicines, became a cornerstone of our commitment to accessible care for the elderly.',
-                            'images' => [url('images/journey/2013a.jpg'), url('images/journey/2013b.jpg'), url('images/journey/2013c.jpg'), url('images/journey/2013d.jpg'), url('images/journey/2013e.jpg'), url('images/journey/2013f.jpg')]
+                            'images' => [url('images/journey/2013a.jpg'), url('images/journey/2013b.jpg'), url('images/journey/2013c.jpg'), url('images/journey/2013d.jpg'), url('images/journey/2013e.jpeg'), url('images/journey/2013f.jpg')]
                         ],
                         [
                             'year' => '2014',
                             'title' => 'Strengthening Supportive Care',
                             'text' => 'Building capacity to serve those in serious suffering. The Centre for Palliative and Supportive Care moved into the main building of St. Joseph’s Hospital, Visakhapatnam. With improved infrastructure, we began offering more comprehensive palliative care services and saw a steady increase in patient intake. Collaboration with Homi Bhabha Cancer Hospital & Research Centre, Visakhapatnam further strengthened our palliative care services.',
-                            'images' => [url('images/journey/2014a.jpg'), url('images/journey/2014b.jpg')]
+                            'images' => [url('images/journey/2014a.jpg'), url('images/journey/2014b.jpeg'), url('images/journey/2014c.jpeg'), url('images/journey/2014d.jpeg')]
                         ],
                         [
                             'year' => '2015',
@@ -262,7 +261,7 @@
                             'year' => '2020',
                             'title' => 'Learning Without Borders',
                             'text' => 'Global expertise, local impact. Dr. Christine Drummond, Palliative Care Physician, and Dr. Seshu Boda, Family Physician, from Australasian Palliative Link International, Australia, visited to share expertise and best practices. An MoU was signed with Pradhama Hospitals, and the hospice services were relocated there.',
-                            'images' => [url('images/journey/2020a.jpeg'), url('images/journey/2020b.jpeg'), url('images/journey/2020c.jpeg'), url('images/journey/2020d.jpeg'), url('images/journey/2020e.jpeg'), url('images/journey/2020f.jpeg') url('images/journey/2020g.jpeg')]
+                            'images' => [url('images/journey/2020a.jpeg'), url('images/journey/2020b.jpeg'), url('images/journey/2020c.jpeg'), url('images/journey/2020d.jpeg'), url('images/journey/2020e.jpeg'), url('images/journey/2020f.jpeg'), url('images/journey/2020g.jpeg')]
                         ],
                         [
                             'year' => '2021',

@@ -9,9 +9,12 @@ class RespiteCareController extends Controller
     public function index()
     {
         $sliderImages = [
-            ['url' => asset('images/services/respite-1.jpg'), 'title' => 'Short-Term Stays', 'description' => 'A safe and welcoming place for your loved one while you take a break.'],
-            ['url' => asset('images/services/respite-2.jpg'), 'title' => '24/7 Care and Support', 'description' => 'Professional care and supervision around the clock.'],
-            ['url' => asset('images/services/respite-3.jpg'), 'title' => 'Peace of Mind for Caregivers', 'description' => 'Rest and recharge knowing your loved one is in good hands.'],
+            ['url' => asset('images/services/rec1.jpeg'), 'title' => 'Short-Term Stays', 'description' => 'A safe and welcoming place for your loved one while you take a break.'],
+            ['url' => asset('images/services/rec2.jpeg'), 'title' => '24/7 Care and Support', 'description' => 'Professional care and supervision around the clock.'],
+            ['url' => asset('images/services/rec3.jpeg'), 'title' => 'Peace of Mind for Caregivers', 'description' => 'Rest and recharge knowing your loved one is in good hands.'],
+            ['url' => asset('images/services/rec4.jpeg'), 'title' => 'Respite Care for Dementia ', 'description' => 'Specialised care for individuals living with dementia.'],
+            ['url' => asset('images/services/rec5.jpeg'), 'title' => 'Daily Living Support', 'description' => 'Assistance with bathing, dressing, feeding, mobility, toileting, and daily routines.'],
+            
         ];
 
         $highlightCards = [

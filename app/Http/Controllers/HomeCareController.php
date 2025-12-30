@@ -12,30 +12,28 @@ class HomeCareController extends Controller
         $sliderImages = [
             ['url' => asset('images/services/hc1.jpeg'), 'title' => 'Personalized In-Home Care', 'description' => 'Professional and compassionate care in the comfort of your own home.'],
             ['url' => asset('images/services/hc2.jpeg'), 'title' => 'Assistance with Daily Living', 'description' => 'Helping with daily tasks to maintain independence.'],
-           ];
+            ['url' => asset('images/services/hc3.jpeg'), 'title' => 'Home Care', 'description' => 'Peace of Mind for Families'],
+              
+        ];
 
         $highlightCards = [
             [
-                'icon' => asset('images/icons/home-care.png'),
-                'alt' => 'In-Home Support',
+                'icon' => 'fa-home',
                 'title' => 'In-Home Support',
                 'description' => 'Providing assistance with daily activities to help seniors live independently at home.',
             ],
             [
-                'icon' => asset('images/icons/compassion.png'),
-                'alt' => 'Compassionate Companionship',
+                'icon' => 'fa-user-friends',
                 'title' => 'Compassionate Companionship',
                 'description' => 'Friendly and supportive caregivers to combat loneliness and isolation.',
             ],
             [
-                'icon' => asset('images/icons/care-plan.png'),
-                'alt' => 'Customized Care Plans',
+                'icon' => 'fa-clipboard-list',
                 'title' => 'Customized Care Plans',
                 'description' => 'Tailored care plans to meet the unique needs and preferences of each individual.',
             ],
             [
-                'icon' => asset('images/icons/peace-of-mind.png'),
-                'alt' => 'Peace of Mind for Families',
+                'icon' => 'fa-hand-holding-heart',
                 'title' => 'Peace of Mind for Families',
                 'description' => 'Knowing your loved one is safe and well-cared for in their own home.',
             ],
