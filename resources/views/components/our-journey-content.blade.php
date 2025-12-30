@@ -232,67 +232,67 @@
                             'year' => '2015',
                             'title' => 'Taking Care to the Underserved',
                             'text' => 'Care beyond city limits. Medical outreach camps were extended to interior and rural areas such as Chodavaram, enabling many underserved patients to access care. Simultaneously, awareness programmes were conducted to sensitise communities about the importance and need for palliative care.',
-                            'images' => [url('images/journey/2015a.jpg'), url('images/journey/2015b.jpg')]
+                            'images' => [url('images/journey/2015a.jpeg'), url('images/journey/2015b.jpeg'),url('images/journey/2015c.jpeg'), url('images/journey/2015d.jpeg'), url('images/journey/2015e.jpeg')]
                         ],
                         [
                             'year' => '2016',
                             'title' => 'Recognition That Encouraged Us',
                             'text' => 'Affirmation of purpose from public leaders. We were honoured by visits from distinguished guests including Mrs. Poonam Malakondaih, IAS, Principal Secretary (Health), Government of Andhra Pradesh; Mr. T. Krishna Babu, IAS, Chairman, Visakhapatnam Port Trust; and Mr. Pravin Kumar, IAS, District Collector of Visakhapatnam, who appreciated our services to the elderly and the seriously ill.',
-                             'images' => [url('images/journey/2016a.jpg'), url('images/journey/2016b.jpg'), url('images/journey/2016c.jpg')]
+                             'images' => [url('images/journey/2016a.jpeg'), url('images/journey/2016b.jpeg'), url('images/journey/2016c.jpeg'), url('images/journey/2016d.jpeg')]
                         ],
                         [
                             'year' => '2017',
                             'title' => 'Inspired by a National Pioneer',
                             'text' => 'A turning point in awareness and advocacy. It was a privilege to host Dr. M. R. Raja Gopal, Chairman of Pallium India Trust and a pioneer of palliative care in India. His interactions with doctors and medical students across Visakhapatnam and neighbouring districts significantly advanced awareness and sensitisation among healthcare providers.',
-                            'images' => [url('images/journey/2017a.jpg'), url('images/journey/2017b.jpg')]
+                            'images' => [url('images/journey/2017a.jpg'), url('images/journey/2017b.jpg'),url('images/journey/2017c.jpeg'), url('images/journey/2017d.jpeg')]
                         ],
                         [
                             'year' => '2018',
                             'title' => 'Care at the Doorstep',
                             'text' => 'When healing travelled to homes. Home-based palliative care services were launched for patients with serious illnesses through a dedicated mobile medical team. This programme was supported by the Pain Relief and Palliative Care Society, Hyderabad, and Two Worlds Cancer Collaboration, Canada for a period of three years. The Foundation also received recognition as a Registered Medical Institution (RMI) from the Drug Control Authority, Government of Andhra Pradesh.',
-                             'images' => [url('images/journey/2018a.jpg'), url('images/journey/2018b.jpg'), url('images/journey/2018c.jpg')]
+                             'images' => [url('images/journey/2018a.jpeg'), url('images/journey/2018b.jpeg'), url('images/journey/2018c.jpeg'), url('images/journey/2018d.jpeg'), url('images/journey/2018e.jpeg')]
                         ],
                         [
                             'year' => '2019',
                             'title' => 'Responding to Dementia Care Needs',
                             'text' => 'Specialised care for complex conditions. Home healthcare services were expanded to include specialised support for persons living with dementia.',
-                            'images' => [url('images/art/art1.JPG'), url('images/art/art2.JPG')]
+                            'images' => [url('images/journey/2019a.jpeg'), url('images/journey/2019b.jpeg'), url('images/journey/2019c.jpeg'),]
                         ],
                         [
                             'year' => '2020',
                             'title' => 'Learning Without Borders',
                             'text' => 'Global expertise, local impact. Dr. Christine Drummond, Palliative Care Physician, and Dr. Seshu Boda, Family Physician, from Australasian Palliative Link International, Australia, visited to share expertise and best practices. An MoU was signed with Pradhama Hospitals, and the hospice services were relocated there.',
-                            'images' => [url('images/art/art2.JPG'), url('images/art/art3.JPG')]
+                            'images' => [url('images/journey/2020a.jpeg'), url('images/journey/2020b.jpeg'), url('images/journey/2020c.jpeg'), url('images/journey/2020d.jpeg'), url('images/journey/2020e.jpeg'), url('images/journey/2020f.jpeg') url('images/journey/2020g.jpeg')]
                         ],
                         [
                             'year' => '2021',
                             'title' => 'Compassion in a Time of Crisis',
                             'text' => 'Standing with the vulnerable during COVID-19. An MoU was entered into with GVP Institute of Healthcare & Medical Technology, and hospice services were relocated to GVP Medical College Hospital, Visakhapatnam. During the COVID-19 pandemic, the Foundation collaborated with other NGOs to distribute medicines, pulse oximeters, thermometers, masks, and sanitisers to underprivileged and unreached communities.',
-                            'images' => [url('images/art/art3.JPG'), url('images/art/art4.JPG')]
+                            'images' => [url('images/journey/2021a.jpeg'), url('images/journey/2021b.jpeg'), url('images/journey/2021c.jpeg'), url('images/journey/2021d.jpeg'), url('images/journey/2021e.jpeg'), url('images/journey/2021f.jpeg'), url('images/journey/2021g.jpeg'), url('images/journey/2021h.jpeg'), url('images/journey/2021i.jpeg')]
                         ],
                         [
                             'year' => '2022',
                             'title' => 'A Landmark Moment',
                             'text' => 'From vision to foundation stone. Bhoomi Pooja was performed on 7 August 2022 for the construction of an Integrated Centre for Geriatric and Palliative Care at Gambheeram, Visakhapatnam, on land generously provided by the Free Polio Surgical & Research Foundation. This marked a defining moment in our journey. In the same year, we partnered with Mahatma Gandhi Cancer Hospital & Research Institute to provide comprehensive palliative care services.',
-                            'images' => [url('images/art/art4.JPG'), url('images/background/bgimg1.jpg')]
+                            'images' => [url('images/journey/2022a.jpeg'), url('images/journey/2022b.jpeg'), url('images/journey/2022c.jpeg'), url('images/journey/2022d.jpeg')]
                         ],
                         [
                             'year' => '2023',
                             'title' => 'Strengthening Holistic Partnerships',
                             'text' => 'Care that sees, understands, and supports. An MoU was signed with L. V. Prasad Eye Institute to provide free eye care to underprivileged senior citizens and residents of old age homes in Visakhapatnam. Collaboration with Dementia India Alliance, Bengaluru further strengthened services for persons living with dementia and their families.',
-                            'images' => [url('images/background/bgimg1.jpg'), url('images/background/bgimg2.jpg')]
+                            'images' => [url('images/journey/2023a.jpeg'), url('images/journey/2023b.jpeg'), url('images/journey/2023c.jpeg'), url('images/journey/2023d.jpeg')]
                         ],
                         [
                             'year' => '2024',
                             'title' => 'Building a Centre of Excellence',
                             'text' => 'Care with Compassion taking concrete shape. Construction of the Integrated Geriatric and Palliative Care Hospital progressed steadily. The overwhelming support from corporates, institutions, and individuals brought us closer to our vision of establishing a centre of excellence committed to compassionate care.',
-                            'images' => [url('images/background/bgimg2.jpg'), url('images/background/bgimg3.jpg')]
+                            'images' => [url('images/journey/2024a.jpeg'), url('images/journey/2024b.jpeg'), url('images/journey/2024c.jpeg'), url('images/journey/2024d.jpeg')]
                         ],
                         [
                             'year' => '2025',
                             'title' => 'Care Comes Home',
                             'text' => 'A long-held dream realised. The Integrated Centre for Geriatric and Palliative Care was completed, and clinical services commenced at Gambheeram, Visakhapatnam, to be a unique healthcare facility providing Geriatric and Palliative care services in the state of Andhra Pradesh. In December 2025, Sneha Sandhya Age Care Foundation, in collaboration with GITAM Institute of Medical Sciences and Research, co-hosted DemCon’25, an international conference organised by Dementia India Alliance, Bengaluru—marking yet another milestone in our commitment to care, learning, and leadership in supportive care.',
-                            'images' => [url('images/background/bgimg3.jpg'), url('images/background/bgimg4.jpg')]
+                            'images' => [url('images/journey/2025a.jpeg'), url('images/journey/2025b.jpeg'), url('images/journey/2025c.jpeg'), url('images/journey/2025d.jpeg'), url('images/journey/2025e.jpeg')]
                         ],
                     ];
                 @endphp

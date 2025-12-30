@@ -47,7 +47,7 @@
         }
     }
     .contact-info-card {
-        background: url('{{ asset('images/background/cont.jpg') }}') center center/cover no-repeat;
+        background: url('{{ asset('images/background/cont.png') }}') center center/cover no-repeat;
         color: #0a009c;
         padding: 2rem;
         border-radius: 12px;
@@ -68,7 +68,7 @@
     }
     .contact-info-card .info-item {
         display: flex;
-        align-items: center;
+        align-items: flex-start; /* Changed for better alignment with multi-line text */
         margin-bottom: 1rem;
         font-size: 0.9rem;
     }
@@ -76,6 +76,8 @@
         width: 20px;
         height: 20px;
         margin-right: 0.75rem;
+        flex-shrink: 0; /* Prevent icon from shrinking */
+        margin-top: 3px; /* Adjust icon position */
     }
     .map-card {
         border-radius: 12px;
@@ -152,25 +154,40 @@
 <main style="background-image: url('{{ asset('images/topper/mmm.jpg') }}'); background-size: cover; background-position: center; padding-bottom: 3rem;">
     <div class="support-us-container">
         <div class="support-us-header">
-            <h1 class="foco">Feel free to reach out to Sneha Sandhya<span class="icon">❤️</span>Age Care Foundation</h1>
-            <p class="txt">Have a question about our services, donations, or how to support our mission? We are here to help you connect.</p>
-        </div>
+            <h1 class="text-3xl font-extrabold text-blue-900 sm:text-4xl tracking-tight">For enquiries, support, or assistance, please reach out to Age Care Foundation</h1>
+       </div>
 
         <div class="main-content-grid">
             <div class="contact-info-card">
-                <h2>Foundation Contact Info</h2>
-                <p>Want to Donate, or Learn more about our services? Reach out to us.</p>
+                <h2>Contact Us</h2>
                 <div class="info-item">
                     <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-                    <span>+91 12345 67890</span>
+                    <div>
+                        <strong>Helpline Nos:</strong><br>
+                        <span>+91 89 85 95 2000</span><br>
+                        <span>+91 89 85 95 3000</span>
+                    </div>
                 </div>
                 <div class="info-item">
-                    <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                    <span>info@snehsandhya.org</span>
+                    <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                    <div>
+                        <strong>Home Care:</strong><br>
+                        <span>+91 85 00 00 5611</span>
+                    </div>
                 </div>
                 <div class="info-item">
                     <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
-                    <span>Age Care Foundation, IIM-Vizag, Road, Gambhiram, 531163</span>
+                    <div>
+                        <strong>Regd.Office:</strong><br>
+                        <span>#9-41-31/1, Pithapuram Colony,<br>Opp. Maddilapalem Bus Complex<br>Visakhapatnam-530 003</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                    <div>
+                        <strong>Geriatric & Palliative Care Hospital:</strong><br>
+                        <span>Premises No.153 Part<br>IIM-Visakhapatnam Road, Gambheeram,<br>Visakhapatnam-530 052</span>
+                    </div>
                 </div>
             </div>
             <div class="map-card">

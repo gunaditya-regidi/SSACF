@@ -60,8 +60,8 @@ class NewsAndEventsController extends Controller
 
             if (Storage::disk('public')->exists($pdf_path)) {
                  $newsletters[] = (object)[
-                    'png' => asset('storage/' . $image_path),
-                    'pdf' => asset('storage/' . $pdf_path),
+                    'png' => '/storage/' . $image_path,
+                    'pdf' => '/storage/' . $pdf_path,
                     'title' => $this->format_title($filename_without_ext),
                 ];
             }
@@ -134,8 +134,8 @@ class NewsAndEventsController extends Controller
 
             if (Storage::disk('public')->exists($pdf_path)) {
                  $newsletters[] = [
-                    'image_url' => asset('storage/' . $image_path),
-                    'pdf_url' => asset('storage/' . $pdf_path),
+                    'image_url' => '/storage/' . $image_path,
+                    'pdf_url' => '/storage/' . $pdf_path,
                     'title' => $this->format_title($filename_without_ext),
                 ];
             }

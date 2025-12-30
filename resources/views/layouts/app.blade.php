@@ -41,12 +41,12 @@
         </div>
     </div>
 
-    @stack('scripts')
     <script
   src="https://code.jquery.com/jquery-3.7.1.js"
   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
   crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.8/pdfobject.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
         $(document).ready(function() {
             const modal = $('#pdf-modal');
@@ -89,5 +89,6 @@
             });
         });
     </script>
+     @stack('scripts')
 </body>
 </html>
