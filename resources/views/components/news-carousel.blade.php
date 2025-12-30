@@ -9,21 +9,12 @@
             </p>
         </div>
 
-        @php
-        $newsletter_images = glob(public_path('newsletters/*.png'));
-        @endphp
-
         <div class="newsletter-carousel">
-            @foreach ($newsletter_images as $image)
-                @php
-                $filename_png = basename($image);
-                $filename_pdf = pathinfo($filename_png, PATHINFO_FILENAME) . '.pdf';
-                $formatted_title = format_title($filename_png);
-                @endphp
+            @foreach ($newsletters as $newsletter)
                 <div class="newsletter-item">
-                    <a href="#" class="open-modal-button" data-url="{{ url('newsletters/' . $filename_pdf) }}" data-title="{{ $formatted_title }}">
-                        <img src="{{ url('newsletters/' . $filename_png) }}" alt="{{ $formatted_title }}" class="newsletter-image">
-                        <span class="newsletter-title">{{ $formatted_title }}</span>
+                    <a href="{{ $newsletter->pdf }}" target="_blank">
+                        <img src="{{ $newsletter->png }}" alt="{{ $newsletter->title }}" class="newsletter-image">
+                        <span class="newsletter-title">{{ $newsletter->title }}</span>
                     </a>
                 </div>
             @endforeach
@@ -62,3 +53,37 @@
     color: #374151; /* text-gray-700 */
 }
 </style>
+
+@push('scripts')
+<script>
+    $(document).ready(function(){
+        $('.newsletter-carousel').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
+    });
+</script>
+@endpush
