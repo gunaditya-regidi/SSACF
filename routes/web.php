@@ -58,6 +58,7 @@ Route::get('/our-approach', function () {
 })->name('our-approach');
 
 Route::get('/news-and-events', [NewsAndEventsController::class, 'index'])->name('news-and-events');
+Route::get('/api/newsletters', [NewsAndEventsController::class, 'getNewsletters'])->name('api.newsletters');
 Route::get('/blog/{slug}', [NewsAndEventsController::class, 'show'])->name('blog.show');
 
 Route::get('/support-us', function () {
