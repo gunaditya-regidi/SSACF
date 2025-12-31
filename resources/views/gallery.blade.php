@@ -35,12 +35,12 @@
     .slick-next:before { content: '\f054'; }
     .slick-disabled { opacity: 0.5; cursor: not-allowed; }
 
-    .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 9999; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: opacity 0.4s ease; }
-    .modal-overlay.show { opacity: 1; visibility: visible; }
+    #image-modal, #panorama-modal, #video-modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 9999; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: opacity 0.4s ease; }
+    #image-modal.show, #panorama-modal.show, #video-modal.show { opacity: 1; visibility: visible; }
     .modal-content-container { position: relative; width: 90%; max-width: 900px; }
     .modal-close-button { position: absolute; top: -45px; right: -15px; font-size: 3rem; color: #fff; background: none; border: none; cursor: pointer; font-weight: 200; z-index: 10001; }
     #modal-image-content { width: 100%; height: auto; max-height: 80vh; border-radius: 0.5rem; object-fit: contain; }
-    #panorama-container { width: 100%; padding-top: 56.25%; position: relative; border-radius: 0.5rem; overflow: hidden; }
+    #panorama-viewer { width: 100%; height: 500px; border-radius: 0.5rem; overflow: hidden; }
     #video-player-container { width: 100%; padding-top: 56.25%; position: relative; background: #000; border-radius: 0.5rem; overflow: hidden; }
     #video-player-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 </style>
@@ -76,7 +76,8 @@
         </div>
         <div class="carousel-controls panorama-carousel-controls"></div>
     </section>
-    <section class="gallery-section">
+  {{--  <section class="gallery-section">
+
         <h2 class="foco">Videos</h2>
         
         <div class="px-12">
@@ -88,11 +89,16 @@
         </div>
          <div class="carousel-controls video-carousel-controls"></div>
     </section>
+
+--}}
+
+
+
 </main>
 
-<div id="image-modal" class="modal-overlay"><div class="modal-content-container"><button class="modal-close-button">&times;</button><img id="modal-image-content" src="" alt=""></div></div>
-<div id="panorama-modal" class="modal-overlay"><div class="modal-content-container"><button class="modal-close-button">&times;</button><div id="panorama-container"></div></div></div>
-<div id="video-modal" class="modal-overlay"><div class="modal-content-container"><button class="modal-close-button">&times;</button><div id="video-player-container"></div></div></div>
+<div id="image-modal" class="modal-overlay"><div class="modal-content-container"><button id="close-image-modal-button" class="modal-close-button">&times;</button><img id="modal-image-content" src="" alt=""></div></div>
+<div id="panorama-modal" class="modal-overlay"><div class="modal-content-container"><button id="close-panorama-modal-button" class="modal-close-button">&times;</button><div id="panorama-viewer"></div></div></div>
+<div id="video-modal" class="modal-overlay"><div class="modal-content-container"><button id="close-video-modal-button" class="modal-close-button">&times;</button><div id="video-player-container"></div></div></div>
 @endsection
 
 @push('scripts')
@@ -127,7 +133,7 @@
 
         $('.panorama-carousel .approach-card').on('click', function() { 
             $('#panorama-modal').addClass('show');
-            pannellumViewer = pannellum.viewer('panorama-container', { 
+            pannellumViewer = pannellum.viewer('panorama-viewer', { 
                 "type": "equirectangular",
                 "panorama": $(this).data('panorama-src'),
                 "autoLoad": true,
