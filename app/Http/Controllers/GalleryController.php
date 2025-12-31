@@ -3,37 +3,28 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class GalleryController extends Controller
 {
     public function index()
     {
-        $images = [
-            ['url' => asset('images/art/art1.JPG'), 'title' => 'Engaging Activities'],
-            ['url' => asset('images/art/art2.JPG'), 'title' => 'Community Fellowship'],
-            ['url' => asset('images/art/art3.JPG'), 'title' => 'Art Therapy'],
-            ['url' => asset('images/art/art4.JPG'), 'title' => 'Creative Expression'],
-            ['url' => asset('images/art/art1.JPG'), 'title' => 'Engaging Activities'],
-            ['url' => asset('images/art/art2.JPG'), 'title' => 'Community Fellowship'],
-        ];
+        $imagePaths = File::glob(public_path('images/gallery/*'));
+        $images = collect($imagePaths)->map(function ($path) {
+            return [
+                'url' => asset('images/gallery/' . basename($path)),
+                'title' => basename($path)
+            ];
+        });
 
-        $panoramas = [
-            [
-                'title' => 'Virtual Tour of our Facility (Sample)',
-                'thumbnail' => 'https://pannellum.org/images/alma.jpg',
-                'panorama' => 'https://pannellum.org/images/alma.jpg'
-            ],
-            [
-                'title' => 'Peaceful Garden Area',
-                'thumbnail' => asset('images/background/greenwv.jpg'),
-                'panorama' => asset('images/background/14.jpg') 
-            ],
-            [
-                'title' => 'Community Hall',
-                'thumbnail' => asset('images/background/bglo.jpg'),
-                'panorama' => asset('images/background/14.jpg')
-            ],
-        ];
+        $panoramaPaths = File::glob(public_path('images/360/*'));
+        $panoramas = collect($panoramaPaths)->map(function ($path) {
+            return [
+                'title' => basename($path),
+                'thumbnail' => asset('images/360/' . basename($path)),
+                'panorama' => asset('images/360/' . basename($path))
+            ];
+        });
 
         $videos = [
             ['youtube_id' => 'z1Y2_C8S2nE', 'title' => 'A Day at Age Care Foundation', 'thumbnail' => 'https://i3.ytimg.com/vi/z1Y2_C8S2nE/maxresdefault.jpg'],

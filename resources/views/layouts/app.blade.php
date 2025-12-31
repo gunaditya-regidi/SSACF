@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="{{ asset('css/carousel.css') }}">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @stack('styles')
 </head>
@@ -41,12 +42,24 @@
         </div>
     </div>
 
+    <div id="panorama-modal" class="fixed inset-0 bg-black bg-opacity-75 z-[100] hidden flex items-center justify-center">
+    <div class="bg-white rounded-lg shadow-xl w-11/12 md:w-4/5 lg:w-3/4 max-w-6xl h-5/6 flex flex-col">
+        <div class="flex justify-between items-center p-4 border-b">
+            <h2 id="panorama-modal-title" class="text-xl font-semibold"></h2>
+            <button id="close-panorama-modal-button" class="text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
+        </div>
+        <div id="panorama-viewer" class="flex-grow h-full"></div>
+    </div>
+</div>
+
+
     <script
   src="https://code.jquery.com/jquery-3.7.1.js"
   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
   crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.8/pdfobject.min.js"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
     <script>
         $(document).ready(function() {
             const modal = $('#pdf-modal');
@@ -85,6 +98,52 @@
                 if ($(e.target).is(modal)) {
                     modal.addClass('hidden');
                     pdfViewer.html('');
+                }
+            });
+
+            const panoramaModal = $('#panorama-modal');
+            const panoramaModalTitle = $('#panorama-modal-title');
+            let pannellumViewer = null;
+
+            $('.panorama-card').on('click', function() {
+                const panoramaSrc = $(this).find('[data-panorama-src]').data('panorama-src');
+                const panoramaTitle = $(this).find('[data-panorama-title]').data('panorama-title');
+
+                panoramaModalTitle.text(panoramaTitle);
+
+                if (pannellumViewer) {
+                    pannellumViewer.destroy();
+                }
+                
+                pannellumViewer = pannellum.viewer('panorama-viewer', {
+                    "type": "equirectangular",
+                    "panorama": panoramaSrc,
+                    "autoLoad": true,
+                    "mouseZoom": true,
+                    "showControls": true,
+                    "hfov": 120,
+                    "compass": true,
+                    "autoRotate": -2
+                });
+
+                panoramaModal.removeClass('hidden');
+            });
+
+            $('#close-panorama-modal-button').on('click', function() {
+                panoramaModal.addClass('hidden');
+                if (pannellumViewer) {
+                    pannellumViewer.destroy();
+                    pannellumViewer = null;
+                }
+            });
+
+            panoramaModal.on('click', function(e) {
+                if ($(e.target).is(panoramaModal)) {
+                    panoramaModal.addClass('hidden');
+                    if (pannellumViewer) {
+                        pannellumViewer.destroy();
+                        pannellumViewer = null;
+                    }
                 }
             });
         });

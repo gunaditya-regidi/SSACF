@@ -26,7 +26,6 @@
     .gallery-section h2 { font-size: 2.25rem; font-weight: 800; margin-bottom: 1.5rem; text-align: center; }
     .card-aspect-ratio { padding-top: 56.25%; position: relative; }
     .card-aspect-ratio img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
-    .card-title { padding: 0.75rem 0.5rem; text-align: center; font-weight: 600; }
 
     .carousel-controls { display: flex; justify-content: center; align-items: center; margin-top: 1.5rem; }
     .slick-arrow { position: static; transform: none; background: #fff; border: 1px solid #d1d5db; border-radius: 9999px; width: 40px; height: 40px; display: flex !important; align-items: center; justify-content: center; box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1); transition: background-color 0.2s, box-shadow 0.2s; margin: 0 8px; }
@@ -41,7 +40,6 @@
     .modal-content-container { position: relative; width: 90%; max-width: 900px; }
     .modal-close-button { position: absolute; top: -45px; right: -15px; font-size: 3rem; color: #fff; background: none; border: none; cursor: pointer; font-weight: 200; z-index: 10001; }
     #modal-image-content { width: 100%; height: auto; max-height: 80vh; border-radius: 0.5rem; object-fit: contain; }
-    #modal-image-title { color: white; text-align: center; margin-top: 1rem; font-size: 1.25rem; font-weight: 600; }
     #panorama-container { width: 100%; padding-top: 56.25%; position: relative; border-radius: 0.5rem; overflow: hidden; }
     #video-player-container { width: 100%; padding-top: 56.25%; position: relative; background: #000; border-radius: 0.5rem; overflow: hidden; }
     #video-player-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
@@ -58,7 +56,7 @@
         <div class="px-12">
             <div class="image-carousel">
                 @foreach ($images as $image)
-                    <div class="px-3"><div class="approach-card" data-image-src="{{ $image['url'] }}" data-image-title="{{ $image['title'] }}"><div class="card-aspect-ratio"><img src="{{ $image['url'] }}" alt="{{ $image['title'] }}"></div><p class="card-title text-white">{{ $image['title'] }}</p></div></div>
+                    <div class="px-3"><div class="approach-card" data-image-src="{{ $image['url'] }}"><div class="card-aspect-ratio"><img src="{{ $image['url'] }}" alt="{{ $image['title'] }}"></div></div></div>
                 @endforeach
             </div>
         </div>
@@ -72,7 +70,7 @@
         <div class="px-12">
             <div class="panorama-carousel">
                 @foreach ($panoramas as $pano)
-                    <div class="px-3"><div class="approach-card" data-panorama-src="{{ $pano['panorama'] }}" data-panorama-title="{{ $pano['title'] }}"><div class="card-aspect-ratio"><img src="{{ $pano['thumbnail'] }}" alt="{{ $pano['title'] }}"><div class="absolute inset-0 flex items-center justify-content-center bg-black bg-opacity-40"><i class="fas fa-vr-cardboard text-white text-4xl"></i></div></div><p class="card-title text-white">{{ $pano['title'] }}</p></div></div>
+                    <div class="px-3"><div class="approach-card" data-panorama-src="{{ $pano['panorama'] }}"><div class="card-aspect-ratio"><img src="{{ $pano['thumbnail'] }}" alt="{{ $pano['title'] }}"><div class="absolute inset-0 flex items-center justify-content-center bg-black bg-opacity-40"><i class="fas fa-vr-cardboard text-white text-4xl"></i></div></div></div></div>
                 @endforeach
             </div>
         </div>
@@ -84,7 +82,7 @@
         <div class="px-12">
             <div class="video-carousel">
                 @foreach ($videos as $video)
-                    <div class="px-3"><div class="approach-card" data-youtube-id="{{ $video['youtube_id'] }}"><div class="card-aspect-ratio"><img src="{{ $video['thumbnail'] }}" alt="{{ $video['title'] }}"><div class="absolute inset-0 flex items-center justify-content-center bg-black bg-opacity-40"><i class="fab fa-youtube text-red-600 text-5xl"></i></div></div><p class="card-title text-white">{{ $video['title'] }}</p></div></div>
+                    <div class="px-3"><div class="approach-card" data-youtube-id="{{ $video['youtube_id'] }}"><div class="card-aspect-ratio"><img src="{{ $video['thumbnail'] }}" alt="{{ $video['title'] }}"><div class="absolute inset-0 flex items-center justify-content-center bg-black bg-opacity-40"><i class="fab fa-youtube text-red-600 text-5xl"></i></div></div></div></div>
                 @endforeach
             </div>
         </div>
@@ -92,7 +90,7 @@
     </section>
 </main>
 
-<div id="image-modal" class="modal-overlay"><div class="modal-content-container"><button class="modal-close-button">&times;</button><img id="modal-image-content" src="" alt=""><p id="modal-image-title"></p></div></div>
+<div id="image-modal" class="modal-overlay"><div class="modal-content-container"><button class="modal-close-button">&times;</button><img id="modal-image-content" src="" alt=""></div></div>
 <div id="panorama-modal" class="modal-overlay"><div class="modal-content-container"><button class="modal-close-button">&times;</button><div id="panorama-container"></div></div></div>
 <div id="video-modal" class="modal-overlay"><div class="modal-content-container"><button class="modal-close-button">&times;</button><div id="video-player-container"></div></div></div>
 @endsection
@@ -122,17 +120,21 @@
             $('#video-player-container').empty();
         }
 
-        $('.image-carousel .approach-card').on('click', function() { $('#modal-image-content').attr('src', $(this).data('image-src')); $('#modal-image-title').text($(this).data('image-title')); $('#image-modal').addClass('show'); });
+        $('.image-carousel .approach-card').on('click', function() { 
+            $('#modal-image-content').attr('src', $(this).data('image-src')); 
+            $('#image-modal').addClass('show'); 
+        });
+
         $('.panorama-carousel .approach-card').on('click', function() { 
             $('#panorama-modal').addClass('show');
             pannellumViewer = pannellum.viewer('panorama-container', { 
                 "type": "equirectangular",
                 "panorama": $(this).data('panorama-src'),
                 "autoLoad": true,
-                "title": $(this).data('panorama-title'),
                 "autoRotate": -2
             });
         });
+
         $('.video-carousel .approach-card').on('click', function() {
             const youtubeId = $(this).data('youtube-id');
             $('#video-player-container').html(`<iframe src="https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
