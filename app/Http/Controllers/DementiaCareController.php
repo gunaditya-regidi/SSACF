@@ -9,9 +9,16 @@ class DementiaCareController extends Controller
     public function index()
     {
         $sliderImages = [
-            ['url' => asset('images/services/dementia-1.jpg'), 'title' => 'Specialized Memory Care', 'description' => 'Safe and supportive environments for individuals with memory loss.'],
-            ['url' => asset('images/services/dementia-2.jpg'), 'title' => 'Cognitive Therapies', 'description' => 'Engaging activities to help maintain cognitive function.'],
-            ['url' => asset('images/services/dementia-3.jpg'), 'title' => 'Family and Caregiver Support', 'description' => 'Providing resources and guidance for those supporting loved ones with dementia.'],
+            ['url' => asset('images/services/dc1.jpeg'), 'title' => 'Specialized Memory Care', 'description' => 'Safe and supportive environments for individuals with memory loss.'],
+            ['url' => asset('images/services/dc2.jpeg'), 'title' => 'Cognitive Therapies', 'description' => 'Engaging activities to help maintain cognitive function.'],
+            ['url' => asset('images/services/dc3.jpeg'), 'title' => 'Family and Caregiver Support', 'description' => 'Providing resources and guidance for those supporting loved ones with dementia.'],
+            ['url' => asset('images/services/dc4.jpeg'), 'title' => 'Person-Centred Daily Care Support', 'description' => 'Safe and supportive environments for individuals with memory loss.'],
+            ['url' => asset('images/services/dc5.jpeg'), 'title' => 'Cognitive Stimulation and Meaningful Engagement', 'description' => 'Structured activities and therapeutic interventions that encourage mental engagement.'],
+            ['url' => asset('images/services/dc6.jpeg'), 'title' => 'Home-Based Dementia Care', 'description' => 'Dementia care services delivered in the comfort and familiarity of the patient’s home.'],
+            ['url' => asset('images/services/dc7.jpeg'), 'title' => 'Medical Management and Monitoring', 'description' => 'Ongoing care for dementia and associated conditions, including medication management.'],
+            ['url' => asset('images/services/dc8.jpeg'), 'title' => 'Early Identification and Assessment', 'description' => 'Comprehensive evaluation of memory, cognition, behaviour, physical health, and functional abilities.'],
+        
+        
         ];
 
         $highlightCards = [
