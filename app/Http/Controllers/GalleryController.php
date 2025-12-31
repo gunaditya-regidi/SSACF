@@ -12,7 +12,7 @@ class GalleryController extends Controller
         $imagePaths = File::glob(public_path('images/gallery/*'));
         $images = collect($imagePaths)->map(function ($path) {
             return [
-                'url' => asset('images/gallery/' . basename($path)),
+                'url' => url('/images/gallery/' . basename($path)),
                 'title' => basename($path)
             ];
         });
@@ -21,8 +21,8 @@ class GalleryController extends Controller
         $panoramas = collect($panoramaPaths)->map(function ($path) {
             return [
                 'title' => basename($path),
-                'thumbnail' => asset('images/360/' . basename($path)),
-                'panorama' => asset('images/360/' . basename($path))
+                'thumbnail' => url('/images/360/' . basename($path)),
+                'panorama' => url('/images/360/' . basename($path))
             ];
         });
 
