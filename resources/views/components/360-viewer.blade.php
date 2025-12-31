@@ -2,18 +2,18 @@
 $panoramas = [
     [
         'title' => 'Main Lounge',
-        'thumbnail' => 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=600',
-        'panorama' => 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        'thumbnail' => 'https://c1.staticflickr.com/5/4122/4774341054_4263a758f8_b.jpg',
+        'panorama' => 'https://c1.staticflickr.com/5/4122/4774341054_4263a758f8_b.jpg',
     ],
     [
         'title' => 'Community Dining Area',
-        'thumbnail' => 'https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?auto=compress&cs=tinysrgb&w=600',
-        'panorama' => 'https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        'thumbnail' => 'https://upload.wikimedia.org/wikipedia/commons/a/a4/First_floor_of_the_Frick_Collection%2C_looking_east_in_the_Garden_Court_from_the_Fragonard_Room.jpg',
+        'panorama' => 'https://upload.wikimedia.org/wikipedia/commons/a/a4/First_floor_of_the_Frick_Collection%2C_looking_east_in_the_Garden_Court_from_the_Fragonard_Room.jpg',
     ],
     [
         'title' => 'Private Room',
-        'thumbnail' => 'https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=600',
-        'panorama' => 'https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        'thumbnail' => 'https://live.staticflickr.com/65535/50543393932_36b53ea6f0_k.jpg',
+        'panorama' => 'https://live.staticflickr.com/65535/50543393932_36b53ea6f0_k.jpg',
     ],
 ];
 @endphp
