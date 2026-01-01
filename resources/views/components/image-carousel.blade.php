@@ -4,12 +4,12 @@
     <div class="carousel-track {{ $direction }}">
         @foreach ($images as $image)
             <div class="carousel-item">
-                <img src="{{ $image['url'] }}" alt="{{ $image['title'] }}" class="w-full h-full object-cover">
+                <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}" class="w-full h-full object-cover">
             </div>
         @endforeach
         @foreach ($images as $image)
             <div class="carousel-item">
-                <img src="{{ $image['url'] }}" alt="{{ $image['title'] }}" class="w-full h-full object-cover">
+                <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}" class="w-full h-full object-cover">
             </div>
         @endforeach
     </div>
