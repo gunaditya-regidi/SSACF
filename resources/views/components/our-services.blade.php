@@ -97,48 +97,87 @@
 @php
 $palliativeImages = [
     ['url' => asset('images/services/pc1.jpeg'), 'alt' => 'A caregiver holding a patient\'s hand.'],
-    ['url' => asset('images/services/pc2.jpeg'), 'alt' => 'Doctor talking to an elderly patient.'],
+    ['url' => asset('images/services/pc5.jpeg'), 'alt' => 'Doctor talking to an elderly patient.'],
     ['url' => asset('images/services/pc3.jpeg'), 'alt' => 'Peaceful room with a comfortable bed.'],
     ['url' => asset('images/services/pc4.jpeg'), 'alt' => 'A senior person looking out a window.'],
-];
+    ['url' => asset('images/services/pc6.jpeg'), 'alt' => 'Peaceful room with a comfortable bed.'],
+    ['url' => asset('images/services/pc7.jpeg'), 'alt' => 'A senior person looking out a window.'],
+    ['url' => asset('images/services/pc8.jpeg'), 'alt' => 'Peaceful room with a comfortable bed.'],
+    ['url' => asset('images/services/pc9.jpeg'), 'alt' => 'A senior person looking out a window.'],
+
+
+    ];
 $geriatricImages = [
     ['url' => asset('images/services/gc1.jpeg'), 'alt' => 'Two senior women smiling together.'],
     ['url' => asset('images/services/gc2.jpeg'), 'alt' => 'Senior man exercising with dumbbells.'],
-];
+    ['url' => asset('images/services/gc3.jpeg'), 'alt' => 'Senior man exercising with dumbbells.'],
+    ];
 $dementiaImages = [
-    ['url' => asset('images/services/pc1.jpeg'), 'alt' => 'Caregiver assisting a senior woman with a puzzle.'],
-    ['url' => asset('images/services/pc2.jpeg'), 'alt' => 'A human brain model.'],
-];
+    ['url' => asset('images/services/dc1.jpeg'), 'alt' => 'Caregiver assisting a senior woman with a puzzle.'],
+    ['url' => asset('images/services/dc2.jpeg'), 'alt' => 'A human brain model.'],
+    ['url' => asset('images/services/dc3.jpeg'), 'alt' => 'Caregiver assisting a senior woman with a puzzle.'],
+    ['url' => asset('images/services/dc4.jpeg'), 'alt' => 'A human brain model.'],
+    ['url' => asset('images/services/dc5.jpeg'), 'alt' => 'Caregiver assisting a senior woman with a puzzle.'],
+    ['url' => asset('images/services/dc6.jpeg'), 'alt' => 'A human brain model.'],
+    ['url' => asset('images/services/dc7.jpeg'), 'alt' => 'Caregiver assisting a senior woman with a puzzle.'],
+    ['url' => asset('images/services/dc8.jpeg'), 'alt' => 'A human brain model.'],
+
+
+    ];
 $transitionalImages = [
-    ['url' => asset('images/services/pc3.jpeg'), 'alt' => 'Caregiver helping a senior patient walk at home.'],
-    ['url' => asset('images/services/pc4.jpeg'), 'alt' => 'Doctor reviewing a patient\'s chart with them.'],
+    ['url' => asset('images/services/tc1.jpeg'), 'alt' => 'Caregiver assisting a senior woman with a puzzle.'],
+    ['url' => asset('images/services/tc2.jpeg'), 'alt' => 'A human brain model.'],
+    ['url' => asset('images/services/tc3.jpeg'), 'alt' => 'Caregiver assisting a senior woman with a puzzle.'],
+    ['url' => asset('images/services/tc4.jpeg'), 'alt' => 'A human brain model.'],
 ];
 $respiteImages = [
-    ['url' => asset('images/services/pc1.jpeg'), 'alt' => 'Caregiver reading a book in a peaceful garden.'],
-    ['url' => asset('images/services/pc2.jpeg'), 'alt' => 'A group of seniors enjoying a social activity.'],
-];
+    ['url' => asset('images/services/rc1.jpeg'), 'alt' => 'Caregiver assisting a senior woman with a puzzle.'],
+    ['url' => asset('images/services/rc2.jpeg'), 'alt' => 'A human brain model.'],
+    ['url' => asset('images/services/rc3.jpeg'), 'alt' => 'Caregiver assisting a senior woman with a puzzle.'],
+    ['url' => asset('images/services/rc4.jpeg'), 'alt' => 'A human brain model.'],
+
+    ];
 $rehabilitativeImages = [
-    ['url' => asset('images/services/pc3.jpeg'), 'alt' => 'Physical therapist assisting a senior with leg exercises.'],
-    ['url' => asset('images/services/pc4.jpeg'), 'alt' => 'Senior using parallel bars for support during therapy.'],
-];
+    
+    ['url' => asset('images/services/rec1.jpeg'), 'alt' => 'Caregiver assisting a senior woman with a puzzle.'],
+    ['url' => asset('images/services/rec2.jpeg'), 'alt' => 'A human brain model.'],
+    ['url' => asset('images/services/rec3.jpeg'), 'alt' => 'Caregiver assisting a senior woman with a puzzle.'],
+    ['url' => asset('images/services/rec4.jpeg'), 'alt' => 'A human brain model.'],
+    ['url' => asset('images/services/rec5.jpeg'), 'alt' => 'A human brain model.'],
+
+  
+    
+    ];
 $hospiceImages = [
-    ['url' => asset('images/services/hc1.jpeg'), 'alt' => 'A nurse providing comfort to a patient in a calm environment.'],
-    ['url' => asset('images/services/hc2.jpeg'), 'alt' => 'A serene and comfortable room designed for peace.'],
+    ['url' => asset('images/services/hoc1.jpeg'), 'alt' => 'A nurse providing comfort to a patient in a calm environment.'],
+    ['url' => asset('images/services/hoc2.jpeg'), 'alt' => 'A serene and comfortable room designed for peace.'],
 ];
 $homeCareImages = [
     ['url' => asset('images/services/hc1.jpeg'), 'alt' => 'A caregiver helping a senior with groceries in their kitchen.'],
     ['url' => asset('images/services/hc2.jpeg'), 'alt' => 'A nurse checking a patient\'s vitals at home.'],
-];
+    ['url' => asset('images/services/hc3.jpeg'), 'alt' => 'A nurse checking a patient\'s vitals at home.'],
+
+    ];
 $outreachImages = [
     ['url' => asset('images/services/orc1.jpeg'), 'alt' => 'A mobile medical van in a rural community.'],
     ['url' => asset('images/services/orc2.jpeg'), 'alt' => 'A doctor conducting a health check-up at a community center.'],
     ['url' => asset('images/services/orc3.jpeg'), 'alt' => 'Volunteers distributing supplies to elderly community members.'],
     ['url' => asset('images/services/orc4.jpeg'), 'alt' => 'A health worker talking to a group of seniors outdoors.'],
-];
+    ['url' => asset('images/services/orc5.jpeg'), 'alt' => 'A doctor conducting a health check-up at a community center.'],
+    ['url' => asset('images/services/orc6.jpeg'), 'alt' => 'Volunteers distributing supplies to elderly community members.'],
+    ['url' => asset('images/services/orc7.jpeg'), 'alt' => 'A health worker talking to a group of seniors outdoors.'],
+    ];
 $advocacyImages = [
     ['url' => asset('images/services/ad1.jpeg'), 'alt' => 'A group of people in a seminar about senior rights.'],
     ['url' => asset('images/services/ad2.jpeg'), 'alt' => 'A person speaking at a podium during a conference.'],
-];
+    ['url' => asset('images/services/ad3.jpeg'), 'alt' => 'A group of people in a seminar about senior rights.'],
+    ['url' => asset('images/services/ad4.jpeg'), 'alt' => 'A person speaking at a podium during a conference.'],
+    ['url' => asset('images/services/ad5.jpeg'), 'alt' => 'A person speaking at a podium during a conference.'],
+    ['url' => asset('images/services/ad6.jpeg'), 'alt' => 'A group of people in a seminar about senior rights.'],
+    ['url' => asset('images/services/ad7.jpeg'), 'alt' => 'A person speaking at a podium during a conference.'],
+
+
+    ];
 @endphp
 
 <section class="our-services-section py-20 relative">

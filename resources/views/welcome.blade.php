@@ -1,13 +1,13 @@
 @php
     $heroImages = [
         ['url' => asset('images/background/bgimg3.jpg'), 'alt' => 'Compassionate senior care in a bright, welcoming environment.'],
-        ['url' => asset('images/background/bgimg1.jpg'), 'alt' => 'An elderly woman enjoying a peaceful moment outdoors.'],
+        ['url' => asset('images/journey/2014b.jpeg'), 'alt' => 'An elderly woman enjoying a peaceful moment outdoors.'],
         ['url' => asset('images/background/bgimg5.jpg'), 'alt' => 'A caregiver providing gentle support to a senior patient.'],
-        ['url' => asset('images/background/bgimg4.jpg'), 'alt' => 'A close-up of a caregiver holding a patient hand, symbolizing trust and support.'],
+        ['url' => asset('images/journey/2015e.jpeg'), 'alt' => 'A close-up of a caregiver holding a patient hand, symbolizing trust and support.'],
     ];
     $heroImages2 = [
-        ['url' => asset('images/background/bgimg1.jpg'), 'alt' => 'A group of seniors engaged in a community activity.'],
-        ['url' => asset('images/background/bgimg3.jpg'), 'alt' => 'A smiling senior man looking out a window.'],
+        ['url' => asset('images/journey/2012a.jpg'), 'alt' => 'A group of seniors engaged in a community activity.'],
+        ['url' => asset('images/journey/2019c.jpeg'), 'alt' => 'A smiling senior man looking out a window.'],
         ['url' => asset('images/background/bgimg4.jpg'), 'alt' => 'A physical therapist assisting a senior with exercises.'],
         ['url' => asset('images/background/bgimg2.jpg'), 'alt' => 'Seniors enjoying a meal together in a dining hall.'],
     ];
