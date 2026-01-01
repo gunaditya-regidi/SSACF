@@ -1,4 +1,3 @@
-{{-- Original Desktop View --}}
 <section class="art-showcase">
    <video autoplay muted loop class="art-background-video">
         <source src="{{ asset('images/video/bgvideo.mp4') }}" type="video/mp4">
@@ -20,15 +19,12 @@
     </div>
 </section>
 
-{{-- New Mobile & Tablet View --}}
 <section class="art-showcase-mobile">
-    {{-- Video is now on top --}}
-    {{-- <video autoplay muted loop class="art-video-mobile">
+    <video autoplay muted loop class="art-video-mobile">
         <source src="{{ asset('images/video/bgvideo.mp4') }}" type="video/mp4">
         Your browser does not support the video tag.
-    </video> --}}
+    </video>
     
-    {{-- Content card is below the video --}}
     <div class="art-content-mobile">
         <h1 class="art-subheadline">Welcome To</h1>
         <h1 class="art-subheadline1">Sneha Sandhya</h1>
