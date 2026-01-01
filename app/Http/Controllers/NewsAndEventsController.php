@@ -41,35 +41,15 @@ class NewsAndEventsController extends Controller
 
                 $posts[] = (object)[
                     'title' => str_replace('-', ' ', ucwords($slug)),
-                    'content' => $converter->convert($content)->getContent(),
+                    'content' => $converter->convertToHtml($content),
                     'slug' => $slug,
                     'image' => $imageUrl,
                 ];
             }
         }
 
-        $newsletter_pngs = Storage::disk('public')->files('newsletters');
-        $png_files = preg_grep('/\\.png$/i', $newsletter_pngs);
-        $newsletters = [];
-
-        foreach ($png_files as $image_path) {
-            $filename_png = basename($image_path);
-            $filename_without_ext = pathinfo($filename_png, PATHINFO_FILENAME);
-            $filename_pdf = $filename_without_ext . '.pdf';
-            $pdf_path = 'newsletters/' . $filename_pdf;
-
-            if (Storage::disk('public')->exists($pdf_path)) {
-                 $newsletters[] = (object)[
-                    'png' => asset('storage/' . $image_path),
-                    'pdf' => asset('storage/' . $pdf_path),
-                    'title' => $this->format_title($filename_without_ext),
-                ];
-            }
-        }
-
         return view('news-and-events', [
-            'posts' => $posts,
-            'newsletters' => $newsletters,
+            'posts' => collect($posts),
         ]);
     }
 
@@ -106,7 +86,7 @@ class NewsAndEventsController extends Controller
             'allow_unsafe_links' => false,
         ]);
 
-        $htmlContent = $converter->convert($content)->getContent();
+        $htmlContent = $converter->convertToHtml($content);
 
         $post = (object)[
             'title' => str_replace('-', ' ', ucwords($slug)),
@@ -118,39 +98,5 @@ class NewsAndEventsController extends Controller
         return view('blog-post', [
             'post' => $post,
         ]);
-    }
-
-    public function getNewsletters()
-    {
-        $newsletter_pngs = Storage::disk('public')->files('newsletters');
-        $png_files = preg_grep('/\\.png$/i', $newsletter_pngs);
-        $newsletters = [];
-
-        foreach ($png_files as $image_path) {
-            $filename_png = basename($image_path);
-            $filename_without_ext = pathinfo($filename_png, PATHINFO_FILENAME);
-            $filename_pdf = $filename_without_ext . '.pdf';
-            $pdf_path = 'newsletters/' . $filename_pdf;
-
-            if (Storage::disk('public')->exists($pdf_path)) {
-                 $newsletters[] = [
-                    'image_url' => asset('storage/' . $image_path),
-                    'pdf_url' => asset('storage/' . $pdf_path),
-                    'title' => $this->format_title($filename_without_ext),
-                ];
-            }
-        }
-        return response()->json($newsletters);
-    }
-
-    private function format_title($filename)
-    {
-        preg_match('/([a-zA-Z]+)(\d+)/', $filename, $matches);
-        if (count($matches) >= 3) {
-            $month = $matches[1];
-            $year = $matches[2];
-            return ucfirst(strtolower($month)) . ' ' . $year;
-        }
-        return str_replace('-', ' ', ucwords($filename));
     }
 }
