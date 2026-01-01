@@ -167,6 +167,16 @@ nav {
     background-color: #f1f1f1;
 }
 
+@media (max-width: 768px) {
+    .nav-links .nav-item,
+    .dropdown-content a {
+        color: #1e40af !important; /* text-blue-800 */
+    }
+}
+
+
+
+
 /* This rule makes standard dropdowns appear on hover */
 .dropdown:hover .dropdown-content {
     display: block;

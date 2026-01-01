@@ -1,13 +1,3 @@
-@once
-<style>
-    @media (max-width: 768px) {
-        .nav-links .nav-item,
-        .dropdown-content a {
-            color: #1e40af !important; /* text-blue-800 */
-        }
-    }
-</style>
-@endonce
 <header>
     <nav>
         <div class="logo">
