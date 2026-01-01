@@ -25,6 +25,11 @@
         <x-dignity-comfort-compassion />
     </div>
 
+    {{-- Carousel for Mobile/Tablet - TOP --}}
+    <div class="block md:hidden my-8">
+        <x-image-carousel :images="$heroImages" />
+    </div>
+
     <section class="scrolling-hero-section">
         <div class="scrolling-column">
             <div class="hero-scrolling-images reverse-scroll">
@@ -65,6 +70,11 @@
             </div>
         </div>
     </section>
+
+    {{-- Carousel for Mobile/Tablet - BOTTOM --}}
+    <div class="block md:hidden my-8">
+        <x-image-carousel :images="$heroImages2" />
+    </div>
 
     <main>
         <x-our-services />
