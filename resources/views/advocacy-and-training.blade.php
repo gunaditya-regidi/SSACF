@@ -28,7 +28,7 @@
         align-self: center;
     }
     .highlight-card .description {
-        text-align: left;
+        text-align: justify;
     }
 </style>
 @endpush

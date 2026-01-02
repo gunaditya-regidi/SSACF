@@ -12,8 +12,7 @@
         padding: 24px;
         display: flex;
         flex-direction: column; /* Ensure vertical alignment */
-        align-items: center; /* Center content horizontally */
-        text-align: center; /* Center text */
+        text-align: justify; /* Center text */
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         height: 100%; /* Make cards of equal height */
     }
@@ -36,16 +35,16 @@
 <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8 service-page-content">
     <div class="flex flex-wrap lg:flex-nowrap items-center -mx-4">
         <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
-            <h1 class="text-5xl font-extrabold text-blue-900 mb-4">Palliative Care</h1>
-            <p class="text-xl text-gray-600 mb-6">Palliative care is specialized medical care for people living with a serious illness. It focuses on providing relief from the symptoms and stress of the illness, with the goal of improving quality of life for both the patient and their family.</p>
+            <h1 class="text-5xl font-extrabold text-blue-900 mb-4 text-justify">Palliative Care</h1>
+            <p class="text-xl text-gray-600 mb-6 text-justify">Palliative care is specialized medical care for people living with a serious illness. It focuses on providing relief from the symptoms and stress of the illness, with the goal of improving quality of life for both the patient and their family.</p>
         </div>
         <div class="w-full lg:w-1/2 px-4">
             <x-card-slider :images="$sliderImages" />
         </div>
     </div>
     
-    <div class="text-center my-16">
-        <p class="text-xl text-gray-700 font-semibold">We deliver our palliative care service as a ‘continuum of care’ from the diagnosis to the end of life of the patient, through our out-patient clinics, day care, in-patient care, home care, hospice care, 24/7 telephonic support <br> and reach beyond to the families through our bereavement care. </p>
+    <div class="my-16">
+        <p class="text-xl text-gray-700 font-semibold text-justify">We deliver our palliative care service as a ‘continuum of care’ from the diagnosis to the end of life of the patient, through our out-patient clinics, day care, in-patient care, home care, hospice care, 24/7 telephonic support <br> and reach beyond to the families through our bereavement care. </p>
     </div>
     
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 my-16">
@@ -60,8 +59,8 @@
         @endforeach
     </div>
 
-    <div class="text-center my-16">
-        <p class="text-xl text-gray-700 font-semibold">At Age Care Foundation, palliative care is not merely a medical service—it is a promise to walk alongside patients and their families during some of life’s most challenging moments.</p>
+    <div class="my-16">
+        <p class="text-xl text-gray-700 font-semibold text-justify">At Age Care Foundation, palliative care is not merely a medical service—it is a promise to walk alongside patients and their families during some of life’s most challenging moments.</p>
     </div>
 
     <!-- FAQs -->

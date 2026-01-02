@@ -84,6 +84,81 @@ From the Persian Queen Atossa, whose Greek slave may have cut off her diseased b
 
 Riveting, urgent, and surprising, The Emperor of All Maladies provides a fascinating glimpse into the future of cancer treatments. It is an illuminating book that provides hope and clarity to those seeking to demystify cancer.
             </x-faq-item>
+            <x-faq-item question="The Day I Die - Dr. N.S. Raju">
+            He was a Senior doctor in a prestigious teaching hospital in Bangalore. He was suffering from oesophageal cancer and knew he would die very shortly. Before he died he penned a few words and shared the same with his classmates.
+
+*The Day I Die*
+
+On the day I die a lot will happen.
+
+A lot will change.
+
+The world will be busy.On the day I die, all the important appointments I made will be left unattended.
+
+The many plans I had yet to complete will remain forever undone.
+
+The calendar that ruled so many of my days will now be irrelevant to me.
+
+All the material things I so chased and guarded and treasured will be left in the hands of others to care for or to discard.
+
+The words of my critics which so burdened me will cease to sting or capture anymore. They will be unable to touch me.
+
+The arguments I believed I’d won here will not serve me or bring me any satisfaction or solace.
+
+All my noisy incoming notifications and texts and calls will go unanswered. Their great urgency will be quieted.
+
+My many nagging regrets will all be resigned to the past, where they should have always been anyway.
+
+Every superficial worry about my body that I ever labored over; about my waistline or hairline or frown lines, will fade away.
+
+My carefully crafted image, the one I worked so hard to shape for others here, will be left to them to complete anyway.
+
+The sterling reputation I once struggled so greatly to maintain will be of little concern for me anymore.
+
+All the small and large anxieties that stole sleep from me each night will be rendered powerless.
+
+The deep and towering mysteries about life and death that so consumed my mind will finally be clarified in a way that they could never be before while I lived.
+
+These things will certainly all be true on the day that I die.
+
+Yet for as much as will happen on that day, one more thing that will happen.
+
+On the day I die, the few people who really know and truly love me will grieve deeply.
+
+They will feel a void.
+
+They will feel cheated.
+
+They will not feel ready.
+
+They will feel as though a part of them has died as well.
+
+And on that day, more than anything in the world they will want more time with me.
+
+I know this from those I love and grieve over.
+
+And so knowing this, while I am still alive I’ll try to remember that my time with them is finite and fleeting and so very precious—and I’ll do my best not to waste a second of it.
+
+I’ll try not to squander a priceless moment worrying about all the other things that will happen on the day I die, because many of those things are either not my concern or beyond my control.
+
+Friends, those other things have an insidious way of keeping you from living even as you live; vying for your attention, competing for your affections.
+
+They rob you of the joy of this unrepeatable, uncontainable, ever-evaporating Now with those who love you and want only to share it with you.
+
+Don’t miss the chance to dance with them while you can.
+
+It’s easy to waste so much daylight in the days before you die.
+
+Don’t let your life be stolen every day by all that you believe matters, because on the day you die, much of it simply won’t.
+
+Yes, you and I will die one day.
+
+But before that day comes, let us live.....
+
+Yes,
+
+*LIVE, don't simply exist!*        
+        </x-faq-item>
         </div>
     </div>
 </section>

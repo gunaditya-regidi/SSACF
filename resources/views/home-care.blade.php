@@ -13,8 +13,7 @@
         padding: 24px;
         display: flex;
         flex-direction: column; /* Stack items vertically */
-        align-items: center;   /* Center items horizontally */
-        text-align: center;    /* Center text */
+        text-align: justify;    /* Center text */
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .highlight-card:hover {
@@ -38,8 +37,8 @@
 <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8 service-page-content">
     <div class="flex flex-wrap lg:flex-nowrap items-center -mx-4">
         <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
-            <h1 class="text-5xl font-extrabold text-blue-900 mb-4">Home Care</h1>
-            <p class="text-xl text-gray-600 mb-6">Home care provides seniors with the support they need to live safely and independently in their own homes. Our services range from assistance with daily activities to skilled nursing care, all delivered with compassion and respect.</p>
+            <h1 class="text-5xl font-extrabold text-blue-900 mb-4 text-justify">Home Care</h1>
+            <p class="text-xl text-gray-600 mb-6 text-justify">Home care provides seniors with the support they need to live safely and independently in their own homes. Our services range from assistance with daily activities to skilled nursing care, all delivered with compassion and respect.</p>
         </div>
         <div class="w-full lg:w-1/2 px-4">
             <x-card-slider :images="$sliderImages" />

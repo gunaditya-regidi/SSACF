@@ -19,9 +19,6 @@ class OurFacilitiesController extends Controller
             ['url' => asset('images/facilities/t8.jpeg'), 'alt' => 'The reception and waiting area of the hospital.'],
             ['url' => asset('images/facilities/t9.jpeg'), 'alt' => 'A patient room with a view of the mountains.'],
             ['url' => asset('images/facilities/t10.jpeg'), 'alt' => 'The exterior of the ACF Hospital building.'],
-        ];
-
-        $bottomImages = [
             ['url' => asset('images/facilities/b1.jpeg'), 'alt' => 'A close-up of the ACF Hospital sign.'],
             ['url' => asset('images/facilities/b2.jpeg'), 'alt' => 'The rooftop garden at the facility.'],
             ['url' => asset('images/facilities/b3.jpeg'), 'alt' => 'An indoor recreational area for patients.'],
@@ -31,8 +28,10 @@ class OurFacilitiesController extends Controller
             ['url' => asset('images/facilities/b7.jpeg'), 'alt' => 'A physiotherapy and rehabilitation room.'],
             ['url' => asset('images/facilities/b8.jpeg'), 'alt' => 'A view from one of the facility balconies.'],
             ['url' => asset('images/facilities/b9.jpeg'), 'alt' => 'The landscaped garden at the front of the hospital.'],
+       
         ];
 
-        return view('our-facilities', compact('topImages', 'bottomImages'));
+
+        return view('our-facilities', compact('topImages'));
     }
 }

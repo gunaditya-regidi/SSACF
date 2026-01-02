@@ -12,8 +12,7 @@
         padding: 24px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        text-align: justify;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .highlight-card:hover {
@@ -34,8 +33,8 @@
 <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8 service-page-content">
     <div class="flex flex-wrap lg:flex-nowrap items-center -mx-4">
         <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
-            <h1 class="text-5xl font-extrabold text-blue-900 mb-4">Dementia Care</h1>
-            <p class="text-xl text-gray-600 mb-6">Dementia is one of the major causes of disability and dependency among older people worldwide. It is an umbrella term for several progressive degenerative diseases of the brain cells, affecting memory, thinking, language, communication and behaviour, that interfere significantly with a person’s ability to maintain their activities of daily living. <br><br>
+            <h1 class="text-5xl font-extrabold text-blue-900 mb-4 text-justify">Dementia Care</h1>
+            <p class="text-xl text-gray-600 mb-6 text-justify">Dementia is one of the major causes of disability and dependency among older people worldwide. It is an umbrella term for several progressive degenerative diseases of the brain cells, affecting memory, thinking, language, communication and behaviour, that interfere significantly with a person’s ability to maintain their activities of daily living. <br><br>
 It can be overwhelming, not only for the people who have it, but also for their carers and families. There is often a lack of awareness and understanding of dementia, resulting in stigmatization and barriers to diagnosis and care. Dementia Care is a specialised, compassionate approach to supporting individuals living with dementia and related cognitive disorders, while also caring for the families who walk this journey with them.
 </p>
         </div>
@@ -45,8 +44,8 @@ It can be overwhelming, not only for the people who have it, but also for their 
     </div>
     
 
-    <div class="text-center my-16">
-        <p class="text-xl text-gray-700 font-semibold">At Age Care Foundation, we recognise that behind every diagnosis is a human being with a life story, relationships, emotions, and the need to feel respected and understood. Our approach moves beyond symptom management to embrace person-centred and family-centred care.<br> We focus on preserving remaining abilities, reducing distress, enhancing quality of life, and creating supportive environments that foster familiarity and reassurance.
+    <div class="my-16">
+        <p class="text-xl text-gray-700 font-semibold text-justify">At Age Care Foundation, we recognise that behind every diagnosis is a human being with a life story, relationships, emotions, and the need to feel respected and understood. Our approach moves beyond symptom management to embrace person-centred and family-centred care.<br> We focus on preserving remaining abilities, reducing distress, enhancing quality of life, and creating supportive environments that foster familiarity and reassurance.
 </p>
     </div>
     
@@ -64,8 +63,8 @@ It can be overwhelming, not only for the people who have it, but also for their 
             </div>
         @endforeach
     </div>
-    <div class="text-center my-16">
-        <p class="text-xl text-gray-700 font-semibold">Collaboration with Dementia India Alliance (DIA), Bengaluru <br>
+    <div class="my-16">
+        <p class="text-xl text-gray-700 font-semibold text-justify">Collaboration with Dementia India Alliance (DIA), Bengaluru <br>
 To strengthen the quality and depth of our dementia care services, Sneha Sandhya Age Care Foundation collaborates with Dementia India Alliance (DIA), Bengaluru, a nationally recognised organisation dedicated to dementia care, advocacy, and education.
 Through this collaboration:
 <br>•	DIA serves as our knowledge and training partner, supporting evidence-based dementia care practices

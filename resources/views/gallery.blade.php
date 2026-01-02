@@ -76,24 +76,6 @@
         </div>
         <div class="carousel-controls panorama-carousel-controls"></div>
     </section>
-  {{--  <section class="gallery-section">
-
-        <h2 class="foco">Videos</h2>
-        
-        <div class="px-12">
-            <div class="video-carousel">
-                @foreach ($videos as $video)
-                    <div class="px-3"><div class="approach-card" data-youtube-id="{{ $video['youtube_id'] }}"><div class="card-aspect-ratio"><img src="{{ $video['thumbnail'] }}" alt="{{ $video['title'] }}"><div class="absolute inset-0 flex items-center justify-content-center bg-black bg-opacity-40"><i class="fab fa-youtube text-red-600 text-5xl"></i></div></div></div></div>
-                @endforeach
-            </div>
-        </div>
-         <div class="carousel-controls video-carousel-controls"></div>
-    </section>
-
---}}
-
-
-
 </main>
 
 <div id="image-modal" class="modal-overlay"><div class="modal-content-container"><button id="close-image-modal-button" class="modal-close-button">&times;</button><img id="modal-image-content" src="" alt=""></div></div>
@@ -118,7 +100,6 @@
 
         $('.image-carousel').slick({...slickOptions, appendArrows: '.image-carousel-controls' });
         $('.panorama-carousel').slick({...slickOptions, appendArrows: '.panorama-carousel-controls' });
-        $('.video-carousel').slick({...slickOptions, appendArrows: '.video-carousel-controls' });
 
         function closeModal() {
             $('.modal-overlay.show').removeClass('show');
@@ -139,12 +120,6 @@
                 "autoLoad": true,
                 "autoRotate": -2
             });
-        });
-
-        $('.video-carousel .approach-card').on('click', function() {
-            const youtubeId = $(this).data('youtube-id');
-            $('#video-player-container').html(`<iframe src="https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
-            $('#video-modal').addClass('show');
         });
 
         $('.modal-close-button').on('click', closeModal);

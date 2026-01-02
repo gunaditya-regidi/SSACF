@@ -9,13 +9,36 @@ class GalleryController extends Controller
 {
     public function index()
     {
-        $imagePaths = File::glob(public_path('images/gallery/*'));
-        $images = collect($imagePaths)->map(function ($path) {
+        $specificImages = [
+            'images/gallery/DJI_0002.JPG',
+            'images/gallery/DJI_0010.JPG',
+            'images/gallery/DJI_0020.JPG',
+            'images/facilities/b1.jpeg',
+            'images/art/art3.JPG',
+            'images/facilities/b5.jpeg',
+            'images/facilities/t7.jpeg',
+            'images/facilities/b7.jpeg',
+            'images/art/art4.JPG',
+            'images/facilities/b4.jpeg',
+            'images/art/art1.JPG',
+            'images/art/art2.JPG',
+        ];
+
+        $journeyImagePaths = File::glob(public_path('images/journey/*'));
+        $journeyImages = collect($journeyImagePaths)->map(function ($path) {
+            return 'images/journey/' . basename($path);
+        })->all();
+
+        $allImages = array_merge($specificImages, $journeyImages);
+
+        $images = collect($allImages)->map(function ($path) {
             return [
-                'url' => url('/images/gallery/' . basename($path)),
+                'url' => asset($path),
                 'title' => basename($path)
             ];
         });
+
+
 
         $panoramaPaths = File::glob(public_path('images/360/*'));
         $panoramas = collect($panoramaPaths)->map(function ($path) {
@@ -26,12 +49,6 @@ class GalleryController extends Controller
             ];
         });
 
-        $videos = [
-            ['youtube_id' => 'z1Y2_C8S2nE', 'title' => 'A Day at Age Care Foundation', 'thumbnail' => 'https://i3.ytimg.com/vi/z1Y2_C8S2nE/maxresdefault.jpg'],
-            ['youtube_id' => 'Ipa5SA09y1E', 'title' => 'Our Commitment to Quality Care', 'thumbnail' => 'https://i3.ytimg.com/vi/Ipa5SA09y1E/maxresdefault.jpg'],
-            ['youtube_id' => 'dQw4w9WgXcQ', 'title' => 'A Message of Hope', 'thumbnail' => 'https://i3.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'],
-        ];
-
-        return view('gallery', compact('images', 'panoramas', 'videos'));
+        return view('gallery', compact('images', 'panoramas'));
     }
 }

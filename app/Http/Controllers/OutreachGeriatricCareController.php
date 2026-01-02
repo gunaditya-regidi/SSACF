@@ -9,13 +9,13 @@ class OutreachGeriatricCareController extends Controller
     public function index()
     {
         $sliderImages = [
-            ['url' => asset('images/services/orc1.jpeg'), 'title' => 'Community Clinics', 'description' => 'Bringing healthcare to the doorsteps of the elderly.'],
-            ['url' => asset('images/services/orc2.jpeg'), 'title' => 'Outreach Clinics', 'description' => 'Medical consultations for common and chronic illnesses'],
-            ['url' => asset('images/services/orc3.jpeg'), 'title' => 'Community Clinics', 'description' => 'Counselling and reassurance for elderly patients.'],
-            ['url' => asset('images/services/orc4.jpeg'), 'title' => 'Outreach Clinics', 'description' => 'Educating communities on geriatric health and wellness.'],
-            ['url' => asset('images/services/orc5.jpeg'), 'title' => 'Community Clinics', 'description' => 'Basic health assessments and monitoring.'],
-            ['url' => asset('images/services/orc6.jpeg'), 'title' => 'Outreach Clinics', 'description' => 'Addressing health concerns early and providing regular follow-up.'],
-            ['url' => asset('images/services/orc7.jpeg'), 'title' => 'Community Clinics', 'description' => 'Educating communities on geriatric health and wellness.'],
+            ['url' => asset('images/services/orc1.jpeg'), 'alt' => 'Community Clinics'],
+            ['url' => asset('images/services/orc2.jpeg'), 'alt' => 'Outreach Clinics'],
+            ['url' => asset('images/services/orc3.jpeg'), 'alt' => 'Community Clinics'],
+            ['url' => asset('images/services/orc4.jpeg'), 'alt' => 'Outreach Clinics'],
+            ['url' => asset('images/services/orc5.jpeg'), 'alt' => 'Community Clinics'],
+            ['url' => asset('images/services/orc6.jpeg'), 'alt' => 'Outreach Clinics'],
+            ['url' => asset('images/services/orc7.jpeg'), 'alt' => 'Community Clinics'],
            
         ];
 

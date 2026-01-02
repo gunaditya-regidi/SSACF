@@ -30,15 +30,19 @@
     </div>
 
     <!-- PDF Modal -->
-    <div id="pdf-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
-        <div class="bg-white rounded-lg shadow-xl w-11/12 md:w-4/5 lg:w-3/4 max-w-6xl h-5/6 flex flex-col">
+    <div id="pdf-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center px-4">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-6xl h-5/6 flex flex-col relative">
             <div class="flex justify-between items-center p-4 border-b">
                 <h2 id="pdf-modal-title" class="text-xl font-semibold"></h2>
-                <button id="close-modal-button" class="text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
             </div>
-            <div id="pdf-viewer" class="flex-grow p-4">
+            <div id="pdf-viewer" class="flex-grow p-1">
 
             </div>
+             <button id="close-modal-button" class="absolute top-1/2 -right-6 transform -translate-y-1/2 bg-white rounded-full p-1 shadow-lg hover:bg-gray-100 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </button>
         </div>
     </div>
 
@@ -66,7 +70,7 @@
             const modalTitle = $('#pdf-modal-title');
             const pdfViewer = $('#pdf-viewer');
 
-            $('.open-modal-button').on('click', function(e) {
+            $(document).on('click', '.open-modal-button', function(e) {
                 e.preventDefault();
                 const url = $(this).data('url');
                 const title = $(this).data('title');

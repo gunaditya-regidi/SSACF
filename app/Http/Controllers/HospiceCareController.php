@@ -10,8 +10,8 @@ class HospiceCareController extends Controller
     public function index()
     {
         $sliderImages = [
-            ['url' => asset('images/services/hoc1.jpeg'), 'title' => 'Comfort and Dignity', 'description' => 'Providing compassionate care that focuses on quality of life.'],
-            ['url' => asset('images/services/hoc2.jpeg'), 'title' => 'Symptom Management', 'description' => 'Expert medical care to manage pain and other symptoms.'],
+            ['url' => asset('images/services/hoc1.jpeg'), 'alt' => 'Comfort and Dignity'],
+            ['url' => asset('images/services/hoc2.jpeg'), 'alt' => 'Symptom Management'],
            ];
 
         $highlightCards = [

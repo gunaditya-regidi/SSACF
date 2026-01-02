@@ -158,17 +158,21 @@
     }
    
     .tax-benefits-section {
-        padding: 1.5rem;
-        border-radius: 10px;
-        margin-top: 3rem;
+        background: linear-gradient(to right, #ef4444, #f97316);
+        padding: 2rem;
+        border-radius: 15px;
+        margin: 3rem auto;
+        color: white;
+        text-align: center;
+
     }
     .tax-benefits-section h3 {
-        font-size: 1.2rem;
-        font-weight: 600;
-        margin-bottom: 0.75rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
     }
     .tax-benefits-section p {
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
     .pad{
         padding: 6rem 2rem;
@@ -236,10 +240,10 @@
 @endpush
 
 @section('content')
-<main style="background-image: url('{{ asset(' images/topper/mmm.jpg') }}'); background-size: cover; background-position: center; padding-bottom: 3rem;">
+<main style="background-image: url('{{ asset('images/topper/mmm.jpg') }}'); background-size: cover; background-position: center; padding-bottom: 3rem;">
     <div class="support-us-container">
         <div class="support-us-header">
-            <h1 class="foco">Support Sneha Sandhya<span class="icon">❤️</span>Age Care Foundation</h1>
+            <h1><span class="foco">Support <i><small>Sneha Sandhya</small></i> <b><span style="font-size: 1.2em;">Age Care Foundation</span></b></span></h1>
             <p>Your contribution can make a significant impact on the lives of seniors. Discover how you can help.</p>
         </div>
 
@@ -254,26 +258,26 @@
                 <div class="approach-card involved-card text-center">
                     <i class="fas fa-hand-holding-heart card-icon"></i>
                     <h3 class="text-white">Donate To Our Cause</h3>
-                    <p class="text-white">Every contribution helps us provide essential care and create a nurturing, safe environment for residents.</p>
+                    <p class="text-white">Every contribution helps us to provide Compassionate Care to the elderly and Critically Ill.</p>
                     <a href="#donation-section" class="card-btn btn-donate">Donate Now</a>
                 </div>
                 <div class="approach-card involved-card text-center">
                     <i class="fas fa-handshake card-icon"></i>
                     <h3 class="text-white">Become a Sustaining Member</h3>
-                    <p class="text-white">We collaborate with organizations to enhance our services. Let's work together for a better future.</p>
-                    <a id="partner-btn" class="card-btn btn-partner">Learn More</a>
+                    <p class="text-white">We collaborate with organizations to enhance our services. Let's work together to improve Quality of Life for the Elderly and Seriously Ill.</p>
+                    <a id="partner-btn" class="card-btn btn-partner">Know More</a>
                 </div>
             </div>
         </div>
 
         <!-- Donation Section -->
-        <div id="donation-section" class="form-card max-w-6xl mx-auto">
+        <div id="donation-section" class="form-card max-w-7xl mx-auto">
             <h2 class="text-black">Make a Donation</h2>
-            <p class="text-center text-gray-600 mb-8">After donating, please fill out the remittance form for our records and future communications.</p>
+            <p class="text-center text-gray-600 mb-8">After Sending Your donation, please fill out the remittance form for our records and future communications.</p>
             <div id="donation-form-container" class="grid md:grid-cols-2 gap-12">
                 <!-- Left Side: Donor Remittance Form -->
                 <div>
-                    <h3 class="text-xl font-semibold mb-4">Donor Remittance Form</h3>
+                    <h3 class="text-2xl font-semibold mb-6">Donor Remittance Form</h3>
                     <form id="donation-form" action="#" method="POST">
                         <div class="form-grid">
                             <div class="form-group">
@@ -283,7 +287,7 @@
                                 <input type="text" id="donor-name" name="donor-name" placeholder="Name *" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" id="donor-address" name="donor-address" placeholder="Address (Optional)">
+                                <textarea id="donor-address" name="donor-address" placeholder="Address *" rows="3" required></textarea>
                             </div>
                              <div class="form-group">
                                 <input type="text" id="donor-pan" name="donor-pan" placeholder="PAN NUMBER *" required>
@@ -317,26 +321,37 @@
                         <p>Visakhapatnam-530013</p>
                         <p>Andhra Pradesh, India</p>
                     </div>
+                    <p><strong>OR</strong></p>
+                       
                     <div class="payment-method mt-6">
                         <img src="{{ asset('images/services/sbi.jpg') }}" alt="SBI Logo" class="h-12 mb-2">
-                         <p><strong>OR</strong></p>
+                        <h3 class="text-white">Favoring: Sneha Sandhya Age Care Foundation</h3>
+                    
                         <p><strong>Account No:</strong> 37707311727</p>
                         <p><strong>IFSC Code:</strong> SBIN0015380</p>
                         <p><strong>Bank:</strong> State Bank of India, Kohinoor-Visakha Branch</p>
                         <p>Pandurangapuram, Visakhapatnam-530003</p>
                         <p>Andhra Pradesh, India</p>
                     </div>
+                    
+                    <p><strong>OR</strong></p>
+                     <div class="payment-method mt-6">
+                        <img src="{{ asset('images/services/ubi.jpg') }}" alt="Union Bank of India Logo" class="h-12 mb-2">
+                        <h3 class="text-white">Favoring: Sneha Sandhya Age Care Foundation</h3>
+                        <p><strong>SB Acc No:</strong> 024510100065518</p>
+                        <p><strong>IFSC Code:</strong> UBIN0802450</p>
+                        <p><strong>Bank:</strong> Union Bank of India</p>
+                        <p>Pithapuram Colony Br., Visakhapatnam</p>
+                    </div>
                     <div class="payment-method mt-6">
                         <p>Demand Draft or Cheque may be drawn in favour of:</p>
                         <p><strong>Sneha Sandhya Age Care Foundation</strong></p>
                     </div>
                     <div class="qr-code-container text-center">
-                        <p class="text-white">Please pay through the QR below.</p>
-                        <img src="{{ asset(' images/services/qr.jpg') }}" alt="Donation QR Code">
-                    </div>
-                     <div class="tax-benefits-section">
-                        <h3 class="text-white">Tax Benefits</h3>
-                        <p>Donations to Sneha Sandhya Age Care Foundation are eligible for tax exemption under Section 80G and 12A of the Income Tax Act. Tax exemption certificates will be provided for all donations.</p>
+                        <h3 class="text-white font-semibold mt-4">Pay using UPI</h3>
+                        <p class="text-white"><strong>UPI ID:</strong> AGE-CARE-FOUNDATION@SBI</p>
+                        <p class="text-white mt-2">You can also scan the QR code below.</p>
+                        <img src="{{ asset('images/services/qr.jpg') }}" alt="Donation QR Code">
                     </div>
                 </div>
             </div>
@@ -344,6 +359,11 @@
                 <svg class="inline-block w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 Thanks for the donation, you will receive a email confirmation shortly.
             </div>
+        </div>
+
+        <div class="tax-benefits-section max-w-6xl mx-auto">
+            <h3>Tax Benefits</h3>
+            <p>Donations to Sneha Sandhya Age Care Foundation are eligible for tax exemption under Section 80G and 12A of the Income Tax Act. Tax exemption certificates will be provided for all donations.</p>
         </div>
 
     </div>
@@ -389,7 +409,7 @@
 <div id="partner-modal" class="modal">
     <div class="modal-content-pdf">
         <span id="close-partner" class="close-btn">&times;</span>
-        <iframe src="{{ asset(' acfdata/sustain.pdf') }}" width="100%" height="100%" style="border:none;"></iframe>
+        <iframe src="{{ asset('/acfdata/sustain.pdf') }}" width="100%" height="100%" style="border:none;"></iframe>
     </div>
 </div>
 @endsection
