@@ -99,6 +99,7 @@
         font-size: 1.1rem;
         line-height: 1.7;
         color: #334155;
+        text-align: justify;
     }
 
     .milestone-marker {

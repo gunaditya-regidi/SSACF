@@ -10,7 +10,7 @@
         border-radius: 12px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         padding: 24px;
-        text-align: center;
+        text-align: justify;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         display: flex;
         flex-direction: column;
@@ -36,8 +36,8 @@
 <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8 service-page-content">
     <div class="flex flex-wrap lg:flex-nowrap items-center -mx-4">
         <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
-            <h1 class="text-5xl font-extrabold text-blue-900 mb-4">Respite Care</h1>
-            <p class="text-xl text-gray-600 mb-6">Respite Care is short-term, planned care provided to an elderly or medically dependent individual, giving family caregivers temporary relief from their caregiving responsibilities. 
+            <h1 class="text-5xl font-extrabold text-blue-900 mb-4 text-justify">Respite Care</h1>
+            <p class="text-xl text-gray-600 mb-6 text-justify">Respite Care is short-term, planned care provided to an elderly or medically dependent individual, giving family caregivers temporary relief from their caregiving responsibilities. 
 
 While caregiving is an act of love and commitment, it can also be physically, emotionally, and mentally demanding. Respite care allows caregivers the time to rest, attend to personal needs, manage work or family commitments, or simply restore their own well-being—knowing that their loved one is safe and well cared for. 
 </p>
@@ -50,8 +50,8 @@ While caregiving is an act of love and commitment, it can also be physically, em
 
 
 
-    <div class="text-center my-16">
-        <p class="text-xl text-gray-700 font-semibold">At Age Care Foundation we understand that stepping away from caregiving, even briefly, can be difficult for families. Our respite care services are designed to provide continuity, reassurance, and professional care, ensuring that the elder or patient experiences care, comfort, dignity, and familiarity during the caregiver’s absence. <br>
+    <div class="my-16">
+        <p class="text-xl text-gray-700 font-semibold text-justify">At Age Care Foundation we understand that stepping away from caregiving, even briefly, can be difficult for families. Our respite care services are designed to provide continuity, reassurance, and professional care, ensuring that the elder or patient experiences care, comfort, dignity, and familiarity during the caregiver’s absence. <br>
 Respite care services are designed to ensure that both the patient and the caregiver feel supported. During the patient’s stay, compassionate nursing care, medical supervision, nutritious meals, and emotional support are provided in a safe, homely environment. Whether for a few days or a few weeks, respite care helps reduce stress and prevent caregiver burnout while ensuring that the loved one continues to receive high-quality, dignified care. It allows caregivers to return refreshed —with renewed energy, patience, and peace of mind —knowing their family member is in good hands.
 
 </p>
@@ -73,8 +73,8 @@ Respite care services are designed to ensure that both the patient and the careg
 
 
 
-    <div class="text-center my-16">
-        <p class="text-xl text-gray-700 font-semibold">Caring for the Caregiver
+    <div class="my-16">
+        <p class="text-xl text-gray-700 font-semibold text-justify">Caring for the Caregiver
 At Age Care Foundation, we recognise that caregivers need care too.<br> Respite care is not a sign of neglect—it is a responsible and compassionate choice that protects the health of caregivers while ensuring consistent, high-quality care for their loved ones.
 <br> By offering reliable respite care, we help families sustain caregiving with renewed strength, balance, and peace of mind.
 Because when caregivers are supported, care becomes stronger—and compassion endures.

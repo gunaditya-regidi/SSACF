@@ -10,7 +10,7 @@
         border-radius: 12px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         padding: 24px;
-        text-align: center;
+        text-align: justify;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         display: flex;
         flex-direction: column;
@@ -36,8 +36,8 @@
 <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8 service-page-content">
     <div class="flex flex-wrap lg:flex-nowrap items-center -mx-4">
         <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
-            <h1 class="text-5xl font-extrabold text-blue-900 mb-4">Hospice Care</h1>
-            <p class="text-xl text-gray-600 mb-6">Hospice Care is a specialised form of compassionate care for individuals living with advanced, life-limiting illnesses, where the focus shifts from cure to care, comfort, dignity, and quality of life. It supports people in the final phase of life by addressing pain and distress
+            <h1 class="text-5xl font-extrabold text-blue-900 mb-4 text-justify">Hospice Care</h1>
+            <p class="text-xl text-gray-600 mb-6 text-justify">Hospice Care is a specialised form of compassionate care for individuals living with advanced, life-limiting illnesses, where the focus shifts from cure to care, comfort, dignity, and quality of life. It supports people in the final phase of life by addressing pain and distress
 Hospice and palliative care both offer relief from pain and other symptoms of a serious illness. 
 <br><br>
 Hospice care is grounded in a simple belief:<br>
@@ -49,8 +49,8 @@ every person deserves to live their final days free from pain, fear, and lonelin
         </div>
     </div>
     
-    <div class="text-center my-16">
-        <p class="text-xl text-gray-700 font-semibold">At Age Care Foundation We recognise that the end of life is not just a medical event, but a deeply personal journey affecting patients, families, and loved ones. Our hospice care approach is holistic and person-centred, addressing physical symptoms as well as emotional, social, and spiritual concerns.<br><br>Our multidisciplinary team walks alongside patients and families with sensitivity, honesty, and compassion—supporting informed decision-making, comfort, and peace at every step.
+    <div class="my-16">
+        <p class="text-xl text-gray-700 font-semibold text-justify">At Age Care Foundation We recognise that the end of life is not just a medical event, but a deeply personal journey affecting patients, families, and loved ones. Our hospice care approach is holistic and person-centred, addressing physical symptoms as well as emotional, social, and spiritual concerns.<br><br>Our multidisciplinary team walks alongside patients and families with sensitivity, honesty, and compassion—supporting informed decision-making, comfort, and peace at every step.
 </p>
     </div>
     
@@ -67,8 +67,8 @@ every person deserves to live their final days free from pain, fear, and lonelin
         @endforeach
     </div>
 
-    <div class="text-center my-16">
-        <p class="text-xl text-gray-700 font-semibold">Honouring Life Until the Very End <br>
+    <div class="my-16">
+        <p class="text-xl text-gray-700 font-semibold text-justify">Honouring Life Until the Very End <br>
 At Age Care Foundation, hospice care is about living fully until the last moment—surrounded by compassion, comfort, and respect. We strive to ensure that no one faces the end of life alone, in pain, or without dignity.<br><br>Because while we may not always be able to add days to life, we can always add life to days.
 </p>
     </div>

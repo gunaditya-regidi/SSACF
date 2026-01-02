@@ -12,8 +12,7 @@
         padding: 24px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        text-align: justify;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .highlight-card:hover {
@@ -34,8 +33,8 @@
 <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8 service-page-content">
     <div class="flex flex-wrap lg:flex-nowrap items-center -mx-4">
         <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
-            <h1 class="text-5xl font-extrabold text-blue-900 mb-4">Transitional Care</h1>
-            <p class="text-xl text-gray-600 mb-6">Transitional care is an essential link in the healing journey and refers to coordinated, short-term healthcare support provided to individuals as they move from one care setting to another—most commonly from hospital to home, or from acute treatment to long-term or rehabilitative care. It focuses on restoring confidence, mobility, and independence, while helping patients and their families adapt to new routines after illness, surgery, or prolonged hospitalization.
+            <h1 class="text-5xl font-extrabold text-blue-900 mb-4 text-justify">Transitional Care</h1>
+            <p class="text-xl text-gray-600 mb-6 text-justify">Transitional care is an essential link in the healing journey and refers to coordinated, short-term healthcare support provided to individuals as they move from one care setting to another—most commonly from hospital to home, or from acute treatment to long-term or rehabilitative care. It focuses on restoring confidence, mobility, and independence, while helping patients and their families adapt to new routines after illness, surgery, or prolonged hospitalization.
 
 These transition periods are often marked by vulnerability, confusion, and increased risk of complications, especially for older adults and those with complex medical needs. This compassionate, well-coordinated approach not only reduces the chances of readmission but also enhances the overall quality of life —helping patients heal with dignity, care, and confidence.
 </p>
@@ -47,8 +46,8 @@ These transition periods are often marked by vulnerability, confusion, and incre
     
 
 
-    <div class="text-center my-16">
-        <p class="text-xl text-gray-700 font-semibold">At Age Care Foundation, transitional care is designed to ensure that this critical phase is safe, supported, and seamless, preventing avoidable readmissions and helping individuals regain stability, confidence, and independence. We recognise that discharge from a hospital does not mean recovery is complete.<br> Many patients require continued medical supervision, nursing care, rehabilitation, medication management, and emotional support during the weeks that follow.</p>
+    <div class="my-16">
+        <p class="text-xl text-gray-700 font-semibold text-justify">At Age Care Foundation, transitional care is designed to ensure that this critical phase is safe, supported, and seamless, preventing avoidable readmissions and helping individuals regain stability, confidence, and independence. We recognise that discharge from a hospital does not mean recovery is complete.<br> Many patients require continued medical supervision, nursing care, rehabilitation, medication management, and emotional support during the weeks that follow.</p>
     </div>
     
 
@@ -65,8 +64,8 @@ These transition periods are often marked by vulnerability, confusion, and incre
         @endforeach
     </div>
 
-    <div class="text-center my-16">
-        <p class="text-xl text-gray-700 font-semibold">A Bridge to Safer Recovery
+    <div class="my-16">
+        <p class="text-xl text-gray-700 font-semibold text-justify">A Bridge to Safer Recovery
 *At Age Care Foundation, transitional care is more than a service—it is a bridge between illness and recovery, between hospital and home. By providing structured support during this crucial phase, we help individuals heal safely, reduce avoidable hospital readmissions, and empower families with confidence and clarity.
 <br>Because recovery does not end at discharge—it begins there, with the right care, at the right time, in the right place.
 

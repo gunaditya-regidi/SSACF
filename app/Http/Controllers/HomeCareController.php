@@ -10,9 +10,9 @@ class HomeCareController extends Controller
     public function index()
     {
         $sliderImages = [
-            ['url' => asset('images/services/hc1.jpeg'), 'title' => 'Personalized In-Home Care', 'description' => 'Professional and compassionate care in the comfort of your own home.'],
-            ['url' => asset('images/services/hc2.jpeg'), 'title' => 'Assistance with Daily Living', 'description' => 'Helping with daily tasks to maintain independence.'],
-            ['url' => asset('images/services/hc3.jpeg'), 'title' => 'Home Care', 'description' => 'Peace of Mind for Families'],
+            ['url' => asset('images/services/hc1.jpeg'), 'alt' => 'Personalized In-Home Care'],
+            ['url' => asset('images/services/hc2.jpeg'), 'alt' => 'Assistance with Daily Living'],
+            ['url' => asset('images/services/hc3.jpeg'), 'alt' => 'Home Care'],
               
         ];
 

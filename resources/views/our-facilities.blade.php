@@ -49,11 +49,12 @@
                         <hr class="my-8 border-gray-300">
 
                         <div class="my-12">
+                        <h3 class="text-2xl font-bold text-center text-blue-900 my-4">Age Care Foundation is eternally grateful to <br>Free Polio Surgical and Research Foundation, <br> Corporates, Institutional & Individual Donors for their generous support.</h3>
+                            
                             <div class="flex justify-center items-center space-x-8 mb-6">
                                 <img src="{{ asset('images/gallery/fa1.jpeg') }}" alt="Facility Image 1" class="w-1/2 md:w-1/3 rounded-lg shadow-lg">
                                 <img src="{{ asset('images/gallery/fa2.jpeg') }}" alt="Facility Image 2" class="w-1/2 md:w-1/3 rounded-lg shadow-lg">
                             </div>
-                            <h3 class="text-2xl font-bold text-center text-blue-900 my-4">Age Care Foundation is eternally grateful to <br>Free Polio Surgical and Research Foundation for their benevolent support.</h3>
                             <p class="text-lg text-gray-700 text-center">
                             No words can be eloquent enough to express our gratitude to all the kind-hearted DONORS who spontaneously came forward to support the noble endeavour.
                             </p>
@@ -61,7 +62,6 @@
 
                         <hr class="my-8 border-gray-300">
 
-                        <x-image-carousel :images="$bottomImages" direction="right-to-left" />
                     </div>
                 </div>
             </div>

@@ -206,7 +206,7 @@ $advocacyImages = [
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Palliative Care</h3>
                             <p class="text-white mb-6">Specialized medical care for people living with serious illness and focuses on providing relief from the symptoms and stress of the ailment.</p>
-                            <a href="/palliative-care" class="cta-button">Learn More</a>
+                            <a href="/palliative-care" class="cta-button">Know More</a>
                         </div>
                         <div class="service-image-scroller overflow-hidden">
                             <div class="scrolling-image-track">
@@ -222,7 +222,7 @@ $advocacyImages = [
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Geriatric Care</h3>
                             <p class="text-white mb-6">Medical sub-specialty that aims to meet the complex health care needs of the elderly.</p>
-                            <a href="/geriatric-care" class="cta-button">Learn More</a>
+                            <a href="/geriatric-care" class="cta-button">Know More</a>
                         </div>
                         <div class="service-image-scroller overflow-hidden">
                             <div class="scrolling-image-track">
@@ -238,7 +238,7 @@ $advocacyImages = [
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Dementia Care</h3>
                             <p class="text-white mb-6">Specialized support for people with cognitive decline, focusing on managing symptoms, maintaining quality of life.</p>
-                            <a href="/dementia-care" class="cta-button">Learn More</a>
+                            <a href="/dementia-care" class="cta-button">Know More</a>
                         </div>
                         <div class="service-image-scroller overflow-hidden">
                             <div class="scrolling-image-track">
@@ -254,7 +254,7 @@ $advocacyImages = [
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Transitional Care</h3>
                             <p class="text-white mb-6">Coordinated and continuous healthcare provided to patients as they move from one care setting to another—such as from hospital to home, from acute care to rehabilitation, or from curative treatment to supportive or palliative care.</p>
-                            <a href="/transitional-care" class="cta-button">Learn More</a>
+                            <a href="/transitional-care" class="cta-button">Know More</a>
                         </div>
                         <div class="service-image-scroller overflow-hidden">
                             <div class="scrolling-image-track">
@@ -270,7 +270,7 @@ $advocacyImages = [
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Respite Care</h3>
                             <p class="text-white mb-6">Short-term, temporary health care service provided to individuals who are elderly, chronically ill, or living with disabilities, in order to give a much-needed break or relief to their primary caregivers.</p>
-                            <a href="/respite-care" class="cta-button">Learn More</a>
+                            <a href="/respite-care" class="cta-button">Know More</a>
                         </div>
                         <div class="service-image-scroller overflow-hidden">
                             <div class="scrolling-image-track">
@@ -286,7 +286,7 @@ $advocacyImages = [
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Rehabilitative Care</h3>
                             <p class="text-white mb-6">Form of healthcare focused on helping individuals recover, restore, or improve physical, cognitive, and functional abilities that have been affected by illness, injury, surgery, or prolonged hospitalization and enhance overall well-being and independence.</p>
-                            <a href="/rehabilitative-care" class="cta-button">Learn More</a>
+                            <a href="/rehabilitative-care" class="cta-button">Know More</a>
                         </div>
                         <div class="service-image-scroller overflow-hidden">
                             <div class="scrolling-image-track">
@@ -302,7 +302,7 @@ $advocacyImages = [
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Hospice Care</h3>
                             <p class="text-white mb-6">Specialized form of care provided to people with life-limiting or terminal illnesses when the focus shifts from cure to comfort. It aims to relieve pain and distressing symptoms and focuses on care, dignity, and quality of life.</p>
-                            <a href="/hospice-care" class="cta-button">Learn More</a>
+                            <a href="/hospice-care" class="cta-button">Know More</a>
                         </div>
                         <div class="service-image-scroller overflow-hidden">
                             <div class="scrolling-image-track">
@@ -318,7 +318,7 @@ $advocacyImages = [
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Home Care</h3>
                             <p class="text-white mb-6">For patients living with advanced or chronic health conditions, bringing health care right to the patient’s doorstep through home-based Palliative and Geriatric Care Services.</p>
-                            <a href="/home-care" class="cta-button">Learn More</a>
+                            <a href="/home-care" class="cta-button">Know More</a>
                         </div>
                         <div class="service-image-scroller overflow-hidden">
                             <div class="scrolling-image-track">
@@ -334,7 +334,7 @@ $advocacyImages = [
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Outreach Geriatric Care</h3>
                             <p class="text-white mb-6">Primary health care services to the elderly in the community and those who are living in old age homes in and around Visakhapatnam through mobile clinics ensuring accessible healthcare to the underserved and underprivileged.</p>
-                            <a href="/outreach-geriatric-care" class="cta-button">Learn More</a>
+                            <a href="/outreach-geriatric-care" class="cta-button">Know More</a>
                         </div>
                         <div class="service-image-scroller overflow-hidden">
                             <div class="scrolling-image-track">
@@ -350,7 +350,7 @@ $advocacyImages = [
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Advocacy & Training</h3>
                             <p class="text-white mb-6">Focus on promoting the rights and well-being of older adults, spreading awareness about geriatric and palliative care, and encouraging early recognition of age-related health challenges such as dementia and chronic illness. Imparting training to the family caregivers and healthcare professionals on Geriatric and Palliative Care.</p>
-                            <a href="/advocacy-and-training" class="cta-button">Learn More</a>
+                            <a href="/advocacy-and-training" class="cta-button">Know More</a>
                         </div>
                         <div class="service-image-scroller overflow-hidden">
                             <div class="scrolling-image-track">

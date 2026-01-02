@@ -15,7 +15,7 @@
             <li class="dropdown">
                 <a href="{{ route('about') }}" class="nav-item {{ request()->routeIs('about', 'our-team', 'our-journey') ? 'active' : '' }}">About Us <span class="dropdown-caret">▼</span></a>
                 <div class="dropdown-content">
-                <a href="{{ route('our-facilities') }}">Our Facilities</a>
+                <a href="{{ route('our-facilities') }}">Our Facility</a>
                     <a href="{{ route('our-team') }}">Our Team</a>
                    <a href="{{ route('our-journey') }}">Our Journey</a>
                 </div>

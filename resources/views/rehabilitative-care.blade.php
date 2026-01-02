@@ -10,7 +10,7 @@
         border-radius: 12px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         padding: 24px;
-        text-align: center;
+        text-align: justify;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         display: flex;
         flex-direction: column;
@@ -36,8 +36,8 @@
 <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8 service-page-content">
     <div class="flex flex-wrap lg:flex-nowrap items-center -mx-4">
         <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
-            <h1 class="text-5xl font-extrabold text-gray-900 mb-4">Rehabilitative Care</h1>
-            <p class="text-xl text-blue-600 mb-6">Rehabilitative Care focuses on helping individuals regain, restore, or maintain physical, functional, and cognitive abilities following illness, injury, surgery, or prolonged hospitalisation. It plays a vital role in enabling people to return to their highest possible level of independence, mobility, and confidence.<br> <br>
+            <h1 class="text-5xl font-extrabold text-blue-900 mb-4 text-justify">Rehabilitative Care</h1>
+            <p class="text-xl text-gray-600 mb-6 text-justify">Rehabilitative Care focuses on helping individuals regain, restore, or maintain physical, functional, and cognitive abilities following illness, injury, surgery, or prolonged hospitalisation. It plays a vital role in enabling people to return to their highest possible level of independence, mobility, and confidence.<br> <br>
 Rehabilitative care is not just about recovery—it is about reclaiming daily life with dignity, purpose, and hope.
 </p>
         </div>
@@ -48,8 +48,8 @@ Rehabilitative care is not just about recovery—it is about reclaiming daily li
 
 
 
-    <div class="text-center my-16">
-        <p class="text-xl text-gray-700 font-semibold">At Age Care Foundation we recognise that recovery is a gradual and highly individual process, especially for older adults and those with complex medical conditions. Our rehabilitative care model is person-centred, goal-oriented, and interdisciplinary, combining medical oversight with therapeutic interventions and emotional encouragement.
+    <div class="my-16">
+        <p class="text-xl text-gray-700 font-semibold text-justify">At Age Care Foundation we recognise that recovery is a gradual and highly individual process, especially for older adults and those with complex medical conditions. Our rehabilitative care model is person-centred, goal-oriented, and interdisciplinary, combining medical oversight with therapeutic interventions and emotional encouragement.
 
 Our team works closely with patients and families to set realistic goals, track progress, and adapt care plans—ensuring safety, motivation, and continuity at every stage of recovery.
 
@@ -76,8 +76,8 @@ Our team works closely with patients and families to set realistic goals, track 
 
 
 
-    <div class="text-center my-16">
-        <p class="text-xl text-gray-700 font-semibold">Supporting Recovery with Compassion
+    <div class="my-16">
+        <p class="text-xl text-gray-700 font-semibold text-justify">Supporting Recovery with Compassion
 At Age Care Foundation, rehabilitative care is guided by empathy, patience, and encouragement. We understand that even small gains can be deeply meaningful, especially for older adults striving to regain independence.
 
 Our goal is not only to help individuals recover physical abilities, but to restore confidence, self-worth, and participation in daily life—while supporting families throughout the rehabilitation journey.

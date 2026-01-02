@@ -12,8 +12,7 @@
         padding: 24px;
         display: flex;
         flex-direction: column; /* Ensure vertical alignment */
-        align-items: center; /* Center content horizontally */
-        text-align: center; /* Center text */
+        text-align: justify; /* Center text */
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         height: 100%; /* Make cards of equal height */
     }
@@ -36,8 +35,8 @@
 <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8 service-page-content">
     <div class="flex flex-wrap lg:flex-nowrap items-center -mx-4">
         <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
-            <h1 class="text-5xl font-extrabold text-blue-900 mb-4">Geriatric Care</h1>
-            <p class="text-xl text-gray-600 mb-6">Geriatric Care is a specialised branch of healthcare dedicated to promoting the health, independence, dignity, and overall well-being of older adults. As people age, their needs often become complex—marked by multiple medical conditions like Organ failure, Cancer, Heart disease, Stroke, Dementia etc., reduced mobility, cognitive changes, emotional vulnerabilities, and a growing need for support in daily living.
+            <h1 class="text-5xl font-extrabold text-blue-900 mb-4 text-justify">Geriatric Care</h1>
+            <p class="text-xl text-gray-600 mb-6 text-justify">Geriatric Care is a specialised branch of healthcare dedicated to promoting the health, independence, dignity, and overall well-being of older adults. As people age, their needs often become complex—marked by multiple medical conditions like Organ failure, Cancer, Heart disease, Stroke, Dementia etc., reduced mobility, cognitive changes, emotional vulnerabilities, and a growing need for support in daily living.
 Geriatric care addresses these challenges through a holistic, person-centred approach that looks beyond illness to the individual as a whole.
 </p>
         </div>
@@ -46,8 +45,8 @@ Geriatric care addresses these challenges through a holistic, person-centred app
         </div>
     </div>
 
-    <div class="text-center my-16">
-        <p class="text-xl text-gray-700 font-semibold">We understand that ageing is not merely a medical journey but a life transition that affects individuals and families alike. Our integrated geriatric care model combines preventive, curative, rehabilitative, and supportive services, <br>delivered by a multidisciplinary team of geriatricians, nurses, physiotherapists, counsellors, and trained caregivers.</p>
+    <div class="my-16">
+        <p class="text-xl text-gray-700 font-semibold text-justify">We understand that ageing is not merely a medical journey but a life transition that affects individuals and families alike. Our integrated geriatric care model combines preventive, curative, rehabilitative, and supportive services, <br>delivered by a multidisciplinary team of geriatricians, nurses, physiotherapists, counsellors, and trained caregivers.</p>
     </div>
     
     <!-- Highlight Cards -->
@@ -63,8 +62,8 @@ Geriatric care addresses these challenges through a holistic, person-centred app
         @endforeach
     </div>
 
-    <div class="text-center my-16">
-        <p class="text-xl text-gray-700 font-semibold">A Commitment to Dignity in Ageing <br>
+    <div class="my-16">
+        <p class="text-xl text-gray-700 font-semibold text-justify">A Commitment to Dignity in Ageing <br>
 At Age Care Foundation, we believe that ageing deserves care, respect, and compassion—not neglect or isolation. Our geriatric care services are designed not only to extend life, but to enhance its quality—supporting elders to live their later years with reassurance, dignity, and a sense of being valued. Because caring for the elderly is not just a service—it is a responsibility, a privilege, and a reflection of our shared humanity.
 </p>
     </div>

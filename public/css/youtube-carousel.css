@@ -1,0 +1,84 @@
+.youtube-carousel-container {
+    position: relative;
+    padding: 50px 0;
+    margin: 0 20px;
+}
+
+.youtube-carousel {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 20px; /* For scrollbar */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #888 #f1f1f1; /* Firefox */
+}
+
+.youtube-carousel::-webkit-scrollbar {
+    height: 12px;
+}
+
+.youtube-carousel::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.youtube-carousel::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+
+.youtube-carousel-item {
+    flex: 0 0 30%; /* Show 3 items at once */
+    margin: 0 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .youtube-carousel-item {
+        flex: 0 0 80%; /* Show 1 item at a time on smaller screens */
+    }
+}
+
+.carousel-controls { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 2rem; 
+}
+
+.slick-arrow {
+    background-color: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex !important; 
+    align-items: center; 
+    justify-content: center; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin: 0 15px;
+}
+
+
+.slick-arrow:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.slick-arrow:before {
+    font-family: 'FontAwesome';
+    font-size: 20px;
+    color: #374151;
+}
+
+.slick-prev:before {
+    content: '\f053';
+}
+
+.slick-next:before {
+    content: '\f054';
+}
+
+.slick-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
