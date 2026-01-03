@@ -13,8 +13,8 @@
             </h2>
         </div>
         <div class="art-buttons">
-            <a href="#" class="btn-upload-more">Our Services</a>
-            <a href="#" class="btn-view-gallery">More Info &rarr;</a>
+            <a href="{{ route('services') }}" class="btn-upload-more">Our Services</a>
+            <a href="{{ route('about') }}" class="btn-view-gallery">More Info &rarr;</a>
         </div>
     </div>
 </section>
