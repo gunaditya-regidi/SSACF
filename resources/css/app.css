@@ -240,13 +240,6 @@ nav {
 
 /* END: Added for Mobile Responsiveness */
 
-
-
-
-
-
-
-
 .art-showcase {
     position: relative;
     overflow: hidden;
@@ -530,24 +523,33 @@ nav {
     }
     
     .art-subheadline1 {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         margin-bottom: 0.3rem;
     }
     
     .art-subheadline2 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         margin-bottom: 1.5rem;
         letter-spacing: 0.5px;
     }
+
+    
+.art-headline-wrapper {
+    margin: 5px;
+    text-align: center;
+    width: 100%;
+}
+
     
     .art-headline {
-        font-size: 0.8rem;
-        padding: 0.7rem 1.2rem;
-        width: 95%;
+        font-size: 10px;
+        padding: 0.1rem 0.2rem;
+        width: auto;
     }
     
     .art-headline span {
-        margin: 0 0.3rem;
+        display: none;
+        margin: 0 0.2rem;
     }
     
     .art-buttons {
