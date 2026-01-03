@@ -14,7 +14,7 @@
                                 <p class="text-sm text-gray-500 mb-2">{{ \Carbon\Carbon::parse($post['date'])->format('F j, Y') }}</p>
                             @endif
                             <p class="text-gray-600 mb-4">{{ Str::limit(strip_tags($post['content']), 100) }}</p>
-                            <a href="{{ route('blog.show', $post['slug']) }}" class="text-blue-600 hover:text-blue-800 font-semibold">Read More</a>
+                            <a href="{{ route('news-and-events.show', $post['slug']) }}" class="text-blue-600 hover:text-blue-800 font-semibold">Read More</a>
                         </div>
                     </article>
                 @endforeach

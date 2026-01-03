@@ -59,8 +59,8 @@
         </div>
 
         <!-- Main Content Grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 border-t border-gray-700 pt-14 pb-12">
-            <!-- Left Column - Contact Info -->
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 border-t border-gray-700 pt-14 pb-12">
+            <!-- Contact Info -->
             <div class="lg:col-span-1">
                 <h3 class="font-semibold text-lg text-white mb-6">Contact Us</h3>
                 <div class="space-y-4 text-gray-400">
@@ -69,32 +69,55 @@
                     <p class="flex items-center"><span class="mr-3"><i class="fas fa-envelope"></i></span><span>info@agecarefoundation.com</span></p>
                     <p class="flex items-center"><span class="mr-3"><i class="fas fa-phone-alt"></i></span><span>Helpline Nos: <br>+91 89 85 95 2000, <br>+91 89 85 95 3000; </span></p>
                     <p class="flex items-center"><span class="mr-3"><i class="fas fa-phone-alt"></i></span><span>Home Care: +91 85 00 00 5611</span></p>
-                    </div>
+                </div>
             </div>
 
-            <!-- Middle Column - Important Links -->
+            <!-- Links -->
             <div class="lg:col-span-1">
                 <h3 class="font-semibold text-lg text-white mb-6">Important Links</h3>
-                <ul class="space-y-4">
+                <ul class="space-y-2 mb-8">
                     <li><a href="{{ route('about') }}" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                    <li><a href="{{ route('services') }}" class="text-gray-400 hover:text-white transition-colors">Our Services</a></li>
+                    
+                    <li><a href="{{ route('our-facilities') }}" class="text-gray-400 hover:text-white transition-colors">Our Facility</a></li>
+                    <li><a href="{{ route('our-journey') }}" class="text-gray-400 hover:text-white transition-colors">Our Journey</a></li>
                     <li><a href="{{ route('our-approach') }}" class="text-gray-400 hover:text-white transition-colors">Our Approach</a></li>
                     <li><a href="{{ route('our-team') }}" class="text-gray-400 hover:text-white transition-colors">Our Team</a></li>
+                    <li><a href="{{ route('gallery') }}" class="text-gray-400 hover:text-white transition-colors">Gallery</a></li>
+                    
+                    <li><a href="{{ route('news-and-events') }}" class="text-gray-400 hover:text-white transition-colors">Resources</a></li>
                 </ul>
-            </div>
-
-            <!-- Middle Column 2 - Get Involved -->
-            <div class="lg:col-span-1">
                 <h3 class="font-semibold text-lg text-white mb-6">Get Involved</h3>
-                <ul class="space-y-4">
-                    <li><a href="{{ route('donate') }}" class="text-gray-400 hover:text-white transition-colors">Donate</a></li>
+                <ul class="space-y-2">
+                    <li><a href="{{ route('support-us') }}" class="text-gray-400 hover:text-white transition-colors">Donate</a></li>
                     <li><a href="{{ route('support-us') }}" class="text-gray-400 hover:text-white transition-colors">Volunteer</a></li>
+                    <li><a href="{{ route('support-us') }}" class="text-gray-400 hover:text-white transition-colors">Become a Sustaining Member</a></li>
                 </ul>
             </div>
 
-            <!-- Right Column - CTA -->
+            <!-- Our Services -->
             <div class="lg:col-span-1">
-                <h2 class="text-2xl font-bold text-white mb-4 leading-tight">Support families and a patient</h2>
+                <h3 class="font-semibold text-lg text-white mb-6">Our Services</h3>
+                <div class="grid grid-cols-1 gap-4">
+                    <ul class="space-y-4">
+                        <li><a href="{{ route('palliative-care') }}" class="text-gray-400 hover:text-white transition-colors">Palliative Care</a></li>
+                        <li><a href="{{ route('geriatric-care') }}" class="text-gray-400 hover:text-white transition-colors">Geriatric Care</a></li>
+                        <li><a href="{{ route('dementia-care') }}" class="text-gray-400 hover:text-white transition-colors">Dementia Care</a></li>
+                        <li><a href="{{ route('transitional-care') }}" class="text-gray-400 hover:text-white transition-colors">Transitional Care</a></li>
+                        <li><a href="{{ route('respite-care') }}" class="text-gray-400 hover:text-white transition-colors">Respite Care</a></li>
+                    </ul>
+                    <ul class="space-y-4">
+                        <li><a href="{{ route('home-care') }}" class="text-gray-400 hover:text-white transition-colors">Home Care</a></li>
+                        <li><a href="{{ route('hospice-care') }}" class="text-gray-400 hover:text-white transition-colors">Hospice Care</a></li>
+                        <li><a href="{{ route('rehabilitative-care') }}" class="text-gray-400 hover:text-white transition-colors">Rehabilitative Care</a></li>
+                        <li><a href="{{ route('outreach-geriatric-care') }}" class="text-gray-400 hover:text-white transition-colors">Outreach Geriatric Care</a></li>
+                        <li><a href="{{ route('advocacy-and-training') }}" class="text-gray-400 hover:text-white transition-colors">Advocacy & Training</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="lg:col-span-1">
+                <h2 class="text-3xl font-bold text-white mb-4 leading-tight">Connect with us to seek guidance, support, or care for the elderly and the seriously ill.</h2>
                 <a href="{{ route('contact') }}" class="inline-block bg-[#e8580c] text-white font-bold py-3 px-8 rounded-full hover:bg-[#d14e0a] transition-colors shadow-lg">
                     Get In Touch
                 </a>

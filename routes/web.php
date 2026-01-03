@@ -16,9 +16,60 @@ use App\Http\Controllers\OutreachGeriatricCareController;
 use App\Http\Controllers\AdvocacyAndTrainingController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\OurFacilitiesController;
+use Illuminate\Support\Str;
+use Carbon\Carbon;
 
 Route::get('/', function () {
-    return view('welcome', ['posts' => []]);
+    $blogController = new BlogController();
+    $latestPosts = $blogController->getLatestPosts(2);
+
+    // Logic to get the latest newsletter
+    $newsletter_files = File::files(public_path('newsletters'));
+    $latest_newsletter_data = null;
+    $latest_date = null;
+
+    $pdf_files = collect($newsletter_files)->filter(function ($file) {
+        return strtolower($file->getExtension()) === 'pdf';
+    });
+
+    foreach ($pdf_files as $pdf) {
+        $filename = $pdf->getFilenameWithoutExtension();
+        try {
+            $date = Carbon::parse($filename);
+
+            if (is_null($latest_date) || $date->isAfter($latest_date)) {
+                $latest_date = $date;
+
+                // Find corresponding image
+                $image_path = null;
+                $image_extensions = ['png', 'jpg', 'jpeg'];
+                foreach ($image_extensions as $ext) {
+                    $potential_image_filename = $filename . '.' . $ext;
+                    $found_files = collect(File::files(public_path('newsletters')))->filter(function($file) use ($potential_image_filename) {
+                        return strtolower($file->getFilename()) === strtolower($potential_image_filename);
+                    });
+                    
+                    if($found_files->isNotEmpty()) {
+                         $image_path = asset('newsletters/' . $found_files->first()->getFilename());
+                         break;
+                    }
+                }
+
+                $latest_newsletter_data = (object) [
+                    'title' => $date->format('F Y') . ' Newsletter',
+                    'image' => $image_path,
+                    'pdf_url' => asset('newsletters/' . $pdf->getFilename()),
+                ];
+            }
+        } catch (\Exception $e) {
+            // Ignore files that do not parse
+        }
+    }
+
+    return view('welcome', [
+        'posts' => $latestPosts,
+        'latestNewsletter' => $latest_newsletter_data,
+    ]);
 })->name('home');
 
 Route::get('/about', function () {

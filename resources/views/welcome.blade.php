@@ -12,24 +12,18 @@
         ['url' => asset('images/background/bgimg2.jpg'), 'alt' => 'Seniors enjoying a meal together in a dining hall.'],
     ];
 @endphp
-
 @extends('layouts.app')
-
 @section('title', 'Age Care Foundation')
-
 @section('content')
     <x-splash-screen />
     <x-stunning-visual-art />
-
     <div class="my-8">
         <x-dignity-comfort-compassion />
     </div>
-
-    {{-- Carousel for Mobile/Tablet - TOP --}}
+    
     <div class="block md:hidden my-8">
         <x-image-carousel :images="$heroImages" />
     </div>
-
     <section class="scrolling-hero-section">
         <div class="scrolling-column">
             <div class="hero-scrolling-images reverse-scroll">
@@ -41,7 +35,6 @@
                 @endforeach
             </div>
         </div>
-
         <div class="hero-content">
             <div class="hero-headline-wrapper">
                 <h2 class="hero-headline">
@@ -51,19 +44,16 @@
             <h1 class="hero-subheadline titlenew">13+ Years of</h1>
             <h1 class="hero-subheadline2 titlenew"><span>&#127872;<span> Impacting Lives <span>&#127872;<span></h1>
             <p class="hero-description">We provide Geriatric care to underprivileged elders and Palliative Care to persons suffering from life limiting illnesses. Our Mission is to deliver high quality Geriatric, Palliative and Dementia care.</p>
-
             <div class="hero-buttons">
                 <a href="{{ route('our-journey') }}" class="btn-experience">Our Journey</a>
                 <a href="{{ route('about') }}" class="btn-book-call">Know More &rarr;</a>
             </div>
         </div>
-
         <div class="scrolling-column">
             <div class="hero-scrolling-images">
                 @foreach (array_reverse($heroImages2) as $image)
                     <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}">
                 @endforeach
-                <!-- Repeated images for continuous scroll -->
                 @foreach (array_reverse($heroImages2) as $image)
                     <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}">
                 @endforeach
@@ -71,19 +61,66 @@
         </div>
     </section>
 
-    {{-- Carousel for Mobile/Tablet - BOTTOM --}}
+    
     <div class="block md:hidden my-8">
         <x-image-carousel :images="$heroImages2" />
     </div>
 
     <main>
         <x-our-services />
-         <x-core-values />
-
-        <x-blog-section :posts="$posts" />
+        <div class="container mx-auto px-4 py-10 max-w-7xl">
+        <h2 class="text-3xl font-bold text-center text-blue-800 mb-12">Core Values</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-users text-4xl text-blue-800 mb-4"></i>
+                <h3 class="text-xl font-bold text-blue-800 mb-2">Patient First</h3>
+                <p class="text-Black text-justify">We believe that the patient comes first in our order of priorities followed immediately by his/her family.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-heart text-4xl text-blue-800 mb-4"></i>
+                <h3 class="text-xl font-bold text-blue-800 mb-2">Compassion</h3>
+                <p class="text-Black text-justify">We will work with compassion in all our dealings with patients, their families, our staff and the community we serve.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-hands-helping text-4xl text-blue-800 mb-4"></i>
+                <h3 class="text-xl font-bold text-blue-800 mb-2">Community</h3>
+                <p class="text-Black text-justify">We recognize that community is the foundational fabric of our society. We hope to build strong, lasting and loving partnerships with our colleagues, volunteers and community entities to work with us as one team, meeting all our community’s Supportive Care needs.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-fist-raised text-4xl text-blue-800 mb-4"></i>
+                <h3 class="text-xl font-bold text-blue-800 mb-2">Empowerment</h3>
+                <p class="text-Black text-justify">We acknowledge that power differentials in healthcare can make it difficult for individuals to ask for their needs to be met. We will give individuals information and resources that help them advocate for themselves and their families. We will facilitate / provide Information so that patients and families are enabled to make informed decisions.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-balance-scale text-4xl text-blue-800 mb-4"></i>
+                <h3 class="text-xl font-bold text-blue-800 mb-2">Equity</h3>
+                <p class="text-Black text-justify">We recognize that there are significant disparities in our community and within the provision of healthcare services. We will pay careful attention to them when we design and deliver our services.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-handshake text-4xl text-blue-800 mb-4"></i>
+                <h3 class="text-xl font-bold text-blue-800 mb-2">Integrity</h3>
+                <p class="text-Black text-justify">We commit to conduct our work honestly and strive to be dependable, forthcoming and open. As we work with communities, both within and outside the organization, ours will be an attitude of humility, acknowledging the limits of our own expertise. We will strive to build integrity into every aspect of our work.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-user-shield text-4xl text-blue-800 mb-4"></i>
+                <h3 class="text-xl font-bold text-blue-800 mb-2">Dignity</h3>
+                <p class="text-Black text-justify">We recognize that every individual has a right to be treated with respect and dignity even when their goals, values and priorities may be different from our own. We will help to educate and build conditions that uphold the dignity of all patients.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-award text-4xl text-blue-800 mb-4"></i>
+                <h3 class="text-xl font-bold text-blue-800 mb-2">Quality and Excellence</h3>
+                <p class="text-Black text-justify">We will work to inculcate excellence in everything we do and build, and continuously improve quality in the services we provide, while ensuring that each and every patient receives the same quality of care, irrespective of their social or economic status.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-leaf text-4xl text-blue-800 mb-4"></i>
+                <h3 class="text-xl font-bold text-blue-800 mb-2">Sustainability</h3>
+                <p class="text-Black text-justify">All our efforts will keep sustainability and environmental protection in mind at all times</p>
+            </div>
+        </div>
+    </div>
         <x-get-involved />
+        <x-latest-articles :posts="$posts" :latest-newsletter="$latestNewsletter" />
     </main>
-
     <div id="pdf-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
         <div class="relative bg-white rounded-lg shadow-xl w-11/11 md:w-3/4 lg:w-1/2">
             <div class="p-4 border-b">
