@@ -78,34 +78,20 @@
         background-color: #0033a0;
     }
 
-    /* Newsletter Carousel Styles */
+    /* Newsletter Styles */
     .newsletter-section {
         background-color: #f8f9fa;
         padding: 50px 0;
     }
-    .scroller {
+    .newsletter-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 2rem;
         max-width: 1200px;
         margin: auto;
-        overflow: hidden;
-        -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-        mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-    }
-    .scroller__inner {
-        display: flex;
-        gap: 1rem;
-        animation: scroll 40s linear infinite;
-    }
-    .scroller:hover .scroller__inner {
-        animation-play-state: paused;
-    }
-    @keyframes scroll {
-        to {
-            transform: translateX(-50%);
-        }
+        padding: 0 2rem;
     }
     .newsletter-item {
-        flex: 0 0 auto;
-        width: 250px;
         text-align: center;
         cursor: pointer;
         text-decoration: none;
@@ -166,32 +152,33 @@
         <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Newsletters</h2>
         <p class="mt-4 text-lg text-gray-500">Stay updated with our latest newsletters. Click to read.</p>
     </div>
-    <div class="scroller">
-        <div class="scroller__inner">
-            @php
-                $image_files = collect(File::files(public_path('newsletters')))->filter(function ($file) {
-                    return in_array(strtolower($file->getExtension()), ['png', 'jpg', 'jpeg']);
-                });
-                $pdf_files = collect(File::files(public_path('newsletters')))->filter(function ($file) {
-                    return strtolower($file->getExtension()) === 'pdf';
-                })->keyBy(function ($file) {
-                    return strtolower($file->getFilenameWithoutExtension());
-                });
-            @endphp
+    <div class="newsletter-grid">
+        @php
+            $image_files = collect(File::files(public_path('newsletters')))->filter(function ($file) {
+                return in_array(strtolower($file->getExtension()), ['png', 'jpg', 'jpeg']);
+            })->sortByDesc(function ($file) {
+                return $file->getFilename();
+            });
 
-            @foreach ($image_files as $image)
-                @php
-                    $image_name = strtolower($image->getFilenameWithoutExtension());
-                    $pdf = $pdf_files->get($image_name);
-                @endphp
-                @if ($pdf)
-                    <a href="#" class="newsletter-item open-modal-button" data-url="{{ asset('newsletters/' . $pdf->getFilename()) }}" data-title="{{ $image->getFilenameWithoutExtension() }}">
-                        <img src="{{ asset('newsletters/' . $image->getFilename()) }}" alt="{{ $image->getFilenameWithoutExtension() }}" class="newsletter-image">
-                        <div class="newsletter-title">{{ $image->getFilenameWithoutExtension() }}</div>
-                    </a>
-                @endif
-            @endforeach
-        </div>
+            $pdf_files = collect(File::files(public_path('newsletters')))->filter(function ($file) {
+                return strtolower($file->getExtension()) === 'pdf';
+            })->keyBy(function ($file) {
+                return strtolower($file->getFilenameWithoutExtension());
+            });
+        @endphp
+
+        @foreach ($image_files as $image)
+            @php
+                $image_name = strtolower($image->getFilenameWithoutExtension());
+                $pdf = $pdf_files->get($image_name);
+            @endphp
+            @if ($pdf)
+                <a href="#" class="newsletter-item open-modal-button" data-url="{{ asset('newsletters/' . $pdf->getFilename()) }}" data-title="{{ $image->getFilenameWithoutExtension() }}">
+                    <img src="{{ asset('newsletters/' . $image->getFilename()) }}" alt="{{ $image->getFilenameWithoutExtension() }}" class="newsletter-image">
+                    <div class="newsletter-title">{{ $image->getFilenameWithoutExtension() }}</div>
+                </a>
+            @endif
+        @endforeach
     </div>
 </section>
 
