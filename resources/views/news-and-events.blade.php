@@ -173,7 +173,7 @@
                 $pdf = $pdf_files->get($image_name);
             @endphp
             @if ($pdf)
-                <a href="#" class="newsletter-item open-modal-button" data-url="{{ asset('newsletters/' . $pdf->getFilename()) }}" data-title="{{ $image->getFilenameWithoutExtension() }}">
+                <a href="{{ asset('newsletters/' . $pdf->getFilename()) }}" target="_blank" class="newsletter-item">
                     <img src="{{ asset('newsletters/' . $image->getFilename()) }}" alt="{{ $image->getFilenameWithoutExtension() }}" class="newsletter-image">
                     <div class="newsletter-title">{{ $image->getFilenameWithoutExtension() }}</div>
                 </a>

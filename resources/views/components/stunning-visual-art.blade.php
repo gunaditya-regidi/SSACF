@@ -1,16 +1,14 @@
 <section class="art-showcase">
-   <video autoplay muted loop class="art-background-video">
+    <video autoplay muted loop class="art-background-video">
         <source src="{{ asset('images/video/bgvideo.mp4') }}" type="video/mp4">
         Your browser does not support the video tag.
     </video> 
     <div class="art-content">
-        <h1 class="art-subheadline">Welcome To</h1>
-        <h1 class="art-subheadline1">Sneha Sandhya</h1>
-        <h1 class="art-subheadline2">AGE CARE FOUNDATION</h1>
-        <div class="art-headline-wrapper">
-            <h2 class="art-headline">
-                <span>&#10022;</span> Where Care Comes First <span>&#10022;</span>
-            </h2>
+        <div class="art-text-content">
+            <h1 class="art-subheadline">Welcome To</h1>
+            <h1 class="art-subheadline1">Sneha Sandhya</h1>
+            <h1 class="art-subheadline2">AGE CARE FOUNDATION</h1>
+            <h2 class="art-headline">Where Care Comes First</h2>
         </div>
         <div class="art-buttons">
             <a href="{{ route('services') }}" class="btn-upload-more">Our Services</a>
