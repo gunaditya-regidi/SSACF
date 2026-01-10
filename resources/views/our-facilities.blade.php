@@ -13,7 +13,7 @@
                         <x-image-carousel :images="$topImages" direction="left-to-right" />
                         <br><br>
                         <p class="text-lg text-gray-700 mb-6">
-                            Age Care Foundation's endeavour to make available geriatric and palliative health care services to the elderly and the seriously ill received a big fillip when the Free Polio Surgical and Research Foundation, Visakhapatnam provided one acre of land in Visakhapatnam to establish and run a fully integrated centre for Geriatric and Palliative Care, the first of its kind in Andhra Pradesh. This will open new vistas of care and scale up Age Care Foundation's services manyfold.
+                            Age Care Foundation's endeavour to make available specialised geriatric and palliative health care services to the elderly and the seriously ill received a big fillip when the Free Polio Surgical and Research Foundation, Visakhapatnam provided one acre of land in Visakhapatnam to establish and run a fully integrated centre for Geriatric and Palliative Care, the first of its kind in Andhra Pradesh. This will open new vistas of care and scale up Age Care Foundation's services manyfold.
                         </p>
 
                         <p class="text-lg text-gray-700 mb-6">
@@ -35,7 +35,7 @@
                         </ul>
 
                         <p class="text-lg text-gray-700 mb-6">
-                            In a world where longevity is increasing but quality of life often declines with age, Age Care Foundation has taken a visionary step to bridge the gap between medical care and compassionate living. The Foundation’s Integrated Geriatric and Palliative Care Hospital at Gambheeram, Visakhapatnam, stands as a pioneering model dedicated to serving the elderly and the critically ill with empathy, dignity, and holistic support.
+                            In a world where longevity is increasing but quality of life often declines with age and chronic illnesses, Age Care Foundation has taken this initiative to provide holistic, patient/family-centered approach, focusing on complex needs, optimizing quality of life, managing severe symptoms (pain, breathlessness, fatigue), addressing psychosocial/spiritual issues, using multidisciplinary teams.
                         </p>
 
                         <p class="text-lg text-gray-700 mb-6">
@@ -43,7 +43,7 @@
                         </p>
 
                         <p class="text-lg text-gray-700 mb-6">
-                            At its core, a hospital addresses the growing and often overlooked needs of India’s ageing population—those struggling with chronic diseases and limited access to affordable care. At ACF Hospital, elders receive comprehensive medical attention for age-related conditions, supported by physiotherapy, counselling, and emotional support. For patients facing serious or life-limiting illnesses, the palliative care wing offers pain and symptom relief, psychological support, and also end-of-life care.
+                            The center provides care with skill, compassion, and dignity, delivering high-quality, respectful support that values the individual's worth, independence, and choices. It's about seeing the person, not just the condition, fostering a sense of safety and respect through attentive actions, active listening, and tailored approaches.
                         </p>
 
                         <hr class="my-8 border-gray-300">
@@ -55,9 +55,7 @@
                                 <img src="{{ asset('images/gallery/fa1.jpeg') }}" alt="Facility Image 1" class="w-1/2 md:w-1/3 rounded-lg shadow-lg">
                                 <img src="{{ asset('images/gallery/fa2.jpeg') }}" alt="Facility Image 2" class="w-1/2 md:w-1/3 rounded-lg shadow-lg">
                             </div>
-                            <p class="text-lg text-gray-700 text-center">
-                            No words can be eloquent enough to express our gratitude to all the kind-hearted DONORS who spontaneously came forward to support the noble endeavour.
-                            </p>
+                         
                         </div>
 
                         <hr class="my-8 border-gray-300">
