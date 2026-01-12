@@ -264,7 +264,7 @@
                 <div class="approach-card involved-card text-center">
                     <i class="fas fa-handshake card-icon"></i>
                     <h3 class="text-white">Become a Sustaining Member</h3>
-                    <p class="text-white">We collaborate with organizations to enhance our services. Let's work together to improve Quality of Life for the Elderly and Seriously Ill.</p>
+                    <p class="text-white">collaborate to enhance our services. Let's work together to improve Quality of Life for the Elderly and Seriously Ill.</p>
                     <a id="partner-btn" class="card-btn btn-partner">Know More</a>
                 </div>
             </div>
