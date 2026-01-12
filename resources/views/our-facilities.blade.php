@@ -38,9 +38,7 @@
                             In a world where longevity is increasing but quality of life often declines with age and chronic illnesses, Age Care Foundation has taken this initiative to provide holistic, patient/family-centered approach, focusing on complex needs, optimizing quality of life, managing severe symptoms (pain, breathlessness, fatigue), addressing psychosocial/spiritual issues, using multidisciplinary teams.
                         </p>
 
-                        <p class="text-lg text-gray-700 mb-6">
-                            Conceived with the belief that health care should be provided with “compassion and dignity,” the hospital provides a continuum of care that integrates geriatric medicine and palliative care under one roof. It is designed not merely as a healthcare facility but as a sanctuary of healing, where medical excellence meets human warmth.
-                        </p>
+                
 
                         <p class="text-lg text-gray-700 mb-6">
                             The center provides care with skill, compassion, and dignity, delivering high-quality, respectful support that values the individual's worth, independence, and choices. It's about seeing the person, not just the condition, fostering a sense of safety and respect through attentive actions, active listening, and tailored approaches.
@@ -49,7 +47,7 @@
                         <hr class="my-8 border-gray-300">
 
                         <div class="my-12">
-                        <h3 class="text-2xl font-bold text-center text-blue-900 my-4">Age Care Foundation is eternally grateful to <br>Free Polio Surgical and Research Foundation, <br> Corporates, Institutional & Individual Donors for their generous support.</h3>
+                        <h3 class="text-2xl font-bold text-center text-blue-900 my-4">Age Care Foundation is grateful to <br>Free Polio Surgical and Research Foundation, <br> Corporates, Institutional & Individual Donors for their generous support.</h3>
                             
                             <div class="flex justify-center items-center space-x-8 mb-6">
                                 <img src="{{ asset('images/gallery/fa1.jpeg') }}" alt="Facility Image 1" class="w-1/2 md:w-1/3 rounded-lg shadow-lg">
