@@ -42,7 +42,7 @@
                 </h2>
             </div>
             <h1 class="hero-subheadline titlenew">13+ Years of</h1>
-            <h1 class="hero-subheadline2 titlenew"><span>&#127872;<span> Impacting Lives <span>&#127872;<span></h1>
+            <h1 class="hero-subheadline2 titlenew">Impacting Lives</h1>
             <p class="hero-description text-justify">We provide Geriatric care to underprivileged elders and Palliative Care to persons suffering from life limiting illnesses. Our Mission is to deliver high quality Geriatric, Palliative and Dementia care.</p>
             <div class="hero-buttons">
                 <a href="{{ route('our-journey') }}" class="btn-experience">Our Journey</a>
