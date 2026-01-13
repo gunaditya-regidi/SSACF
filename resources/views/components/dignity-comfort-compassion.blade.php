@@ -4,8 +4,11 @@
             <img src="{{ asset('images/services/pc1.jpeg') }}" alt="A caregiver providing compassionate support to an elderly woman.">
         </div>
         <div class="dignity-content">
-            <h2 class="dignity-headline">Providing Care with Compassion and Honouring Dignity of Life</h2>
-            <p class="dignity-description text-justify">At Sneha Sandhya Age Care Foundation, we believe that every life deserves to be lived with care, dignity and comfort— even in the face of serious illness. Through holistic supportive specialised medical care, we serve the elderly and the seriously ill with compassion, offering relief from suffering and strength to families during life’s most vulnerable journeys.”</p>
+            <h2 class="dignity-headline">Providing care with
+Competence and Compassion
+Dignity in Health Care
+</h2>
+            <p class="dignity-description text-justify">At Age Care Foundation, we believe that upholding dignity is fundamental in ensuring that patients not only receive proper medical care but also feel valued and respected. The services focus on improving quality of life for the elderly and individuals living with serious or life-limiting illnesses through compassionate, high quality, person-centered care.</p>
             <div class="dignity-tags items-center">
                 <span class="dignity-tag">Palliative Care</span>
                 <span class="dignity-tag">Geriatric Care</span>
@@ -25,10 +28,9 @@
                 <div class="text-center mb-4">
                     <i class="fas fa-user-shield text-4xl text-indigo-600"></i>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Honoring Dignity</h3>
-                <p class="text-gray-700 text-center">
-                    We preserve self-worth, autonomy, and identity. Our care respects each individual's choices and personal history, ensuring they feel valued regardless of their condition.
-                </p>
+                <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Honoring Dignity of Life</h3>
+                <p class="text-gray-700 text-justify">
+                Honoring the dignity of life in aging and sickness means approaching care with a focus on preserving an individual's sense of self-worth, autonomy, and identity, regardless of their physical or cognitive condition. </p>
             </div>
 
             <!-- Column 2: Holistic Approach -->
@@ -37,8 +39,8 @@
                     <i class="fas fa-hands-holding-circle text-4xl text-indigo-600"></i>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Holistic Approach</h3>
-                <p class="text-gray-700 text-center">
-                    We focus on the whole person—mind, body, and spirit. Our multidisciplinary teams manage symptoms, address psychosocial needs, and work with families to enhance quality of life.
+                <p class="text-gray-700 text-justify">
+                Geriatric and palliative care align on a holistic, patient- and family-centered approach focused on quality of life rather than cure. They address complex needs through symptom control, psychosocial and spiritual support, and coordinated multidisciplinary teams. Central to both is goal-setting and advance care planning to improve comfort, function, and dignity in serious or chronic illness.
                 </p>
             </div>
 
@@ -48,8 +50,8 @@
                     <i class="fas fa-hand-holding-heart text-4xl text-indigo-600"></i>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Compassionate Care</h3>
-                <p class="text-gray-700 text-center">
-                    We combine expert skill with genuine kindness. By listening attentively and communicating clearly, we build trust and create a safe, supportive environment for everyone we serve.
+                <p class="text-gray-700 text-justify">
+                Providing care with skill, compassion, and dignity means pairing clinical excellence with empathy, respect, and ethical accountability. It prioritizes the individual’s values, independence, privacy, and informed decision-making through clear communication and trust-building. The focus is on treating the person—not just the condition—by delivering personalized, attentive, and respectful care that enhances overall well-being.
                 </p>
             </div>
         </div>

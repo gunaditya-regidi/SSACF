@@ -13,8 +13,7 @@
                         <x-image-carousel :images="$topImages" direction="left-to-right" />
                         <br><br>
                         <p class="text-lg text-gray-700 mb-6">
-                            Age Care Foundation's endeavour to make available specialised geriatric and palliative health care services to the elderly and the seriously ill received a big fillip when the Free Polio Surgical and Research Foundation, Visakhapatnam provided one acre of land in Visakhapatnam to establish and run a fully integrated centre for Geriatric and Palliative Care, the first of its kind in Andhra Pradesh. This will open new vistas of care and scale up Age Care Foundation's services manyfold.
-                        </p>
+                        Age Care Foundation's endeavour to make available health care services to the elderly and the seriously ill received a big fillip when the Free Polio Surgical and Research Foundation, Visakhapatnam provided one acre of land in Visakhapatnam to establish and run a fully integrated centre for Geriatric and Palliative Care, the first of its kind in Andhra Pradesh. This will open new vistas of care and scale up Age Care Foundation's services manyfold.</p>
 
                         <p class="text-lg text-gray-700 mb-6">
                             The bhoomipooja for the project was performed on 7th Aug 2022 and construction started in Dec 2022. The project work is completed and inpatient admissions to the healthcare facility commenced on 22nd September 2025. The gigantic task would not have been possible without the wholehearted, kind and generous philanthropic support from many corporate, institutional and individual donors, backed by the committed team of age care foundation.
@@ -51,7 +50,7 @@
                             
                             <div class="flex justify-center items-center space-x-8 mb-6">
                                 <img src="{{ asset('images/gallery/fa1.jpeg') }}" alt="Facility Image 1" class="w-1/2 md:w-1/3 rounded-lg shadow-lg">
-                                <img src="{{ asset('images/gallery/fa2.jpeg') }}" alt="Facility Image 2" class="w-1/2 md:w-1/3 rounded-lg shadow-lg">
+                                <img src="{{ asset('images/gallery/fa2.jpg') }}" alt="Facility Image 2" class="w-1/2 md:w-1/3 rounded-lg shadow-lg">
                             </div>
                          
                         </div>

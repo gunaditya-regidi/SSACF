@@ -10,7 +10,11 @@
             <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
                 <div class="bg-white bg-opacity-75 p-6 rounded-lg">
                     <h3 class="text-2xl font-bold text-black mb-4">Holistic Care Approach</h3>
-                    <p class="text-black leading-relaxed" style="text-align: justify;">At Sneha Sandhya Age Care Foundation, we believe that caring for the elderly and those with serious or life-limiting illnesses means caring for the whole person, not just the disease. Our holistic approach to geriatric and palliative care addresses physical health, emotional well-being, mental and cognitive needs, social connections, and spiritual concerns.<br><br>Through integrated medical care, rehabilitation, counselling, family support, and compassionate end-of-life care, we strive to relieve suffering, preserve dignity, and enhance quality of life at every stage of ageing and illness.<br><br>By working closely with patients and families, and by seamlessly integrating care across home, community, hospital, and hospice settings, we ensure continuity, comfort, and respect—because every life deserves care that is complete, compassionate, and humane.</p>
+                    <p class="text-black leading-relaxed" style="text-align: justify;">
+                    At Sneha Sandhya Age Care Foundation, we believe that caring for the elderly and those with serious or life-limiting illnesses means caring for the whole person, not just the disease. Our holistic approach to geriatric and palliative care addresses physical health, emotional well-being, mental and cognitive needs, social and spiritual concerns.
+
+By working closely with patients and families, and by seamlessly integrating care across home, community, hospital, and hospice settings, we ensure continuity, comfort, and respect because every life deserves care that is complete, compassionate, and humane.
+                    </p>
                 </div>
                 <div>
                     <div id="holistic-carousel" class="relative w-full h-96 rounded-lg shadow-lg overflow-hidden">
@@ -25,7 +29,10 @@
             <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
                 <div class="md:order-last bg-white bg-opacity-75 p-6 rounded-lg">
                     <h3 class="text-2xl font-bold text-black mb-4">Family Care Approach</h3>
-                    <p class="text-black leading-relaxed" style="text-align: justify;">We recognize that our patient is central to his or her family and the family suffers as much if not more, when a diagnosis of a grave illness is made. Patients because of their serious illness and the heavy symptom burden, many a time lose the ability of carrying out even the activities of their daily living. This imposes tremendous stress and emotional burden on the family members. Hence, we also embrace the family and extend our ‘family care approach’. Our physicians, nurses, counsellors and volunteers actively involve families in care planning and decision-making, while providing education, emotional support, and respite to help them cope with caregiving responsibilities. By supporting caregivers alongside patients, we ensure continuity, dignity, and compassionate care.<br><br>Across home, hospital, hospice, and community settings, we walk alongside families—offering guidance, reassurance, and respect—because caring for families strengthens care for those who matter most.</p>
+                    <p class="text-black leading-relaxed" style="text-align: justify;">
+                    A family care approach in palliative care treats the patient and family as the "unit of care," providing holistic support by addressing the needs (physical, emotional, spiritual, practical) of both the ill individual and their loved ones, recognizing families as "hidden patients" affected by the illness, using tools like family meetings to make decisions and align goals.
+                    Across home, hospital, hospice, and community settings, we walk alongside families—offering guidance, reassurance, and respect—because caring for families strengthens care for those who matter most.
+                </p>
                 </div>
                 <div>
                      <div id="family-carousel" class="relative w-full h-96 rounded-lg shadow-lg overflow-hidden">

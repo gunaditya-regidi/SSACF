@@ -21,7 +21,7 @@ use Carbon\Carbon;
 
 Route::get('/', function () {
     $blogController = new BlogController();
-    $latestPosts = $blogController->getLatestPosts(2);
+    $latestPosts = $blogController->getLatestPosts(3);
 
     // Logic to get the latest newsletter
     $newsletter_files = File::files(public_path('newsletters'));

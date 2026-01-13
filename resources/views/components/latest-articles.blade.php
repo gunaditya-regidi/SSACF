@@ -2,13 +2,18 @@
 
 <div class="latest-articles py-12 bg-gray-100">
     <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="latest-articles-col md:col-span-2">
-                <h2 class="text-3xl font-bold text-gray-800 mb-6">Latest Articles</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="latest-articles-col md:col-span-3">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Latest Events</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     @foreach ($posts as $post)
                         <x-event-card :post="collect($post)->all()" />
                     @endforeach
+                </div>
+                <div class="text-right mt-8">
+                    <a href="{{ route('news-and-events') }}" class="text-blue-500 hover:underline">
+                        View More
+                    </a>
                 </div>
             </div>
             <div class="latest-newsletter-col">
@@ -29,6 +34,11 @@
                         </a>
                     </div>
                 @endif
+                <div class="text-right mt-8">
+                    <a href="{{ route('news-and-events') }}" class="text-blue-500 hover:underline">
+                        View More
+                    </a>
+                </div>
             </div>
         </div>
     </div>

@@ -15,6 +15,7 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
                 'dancing-script': ['Dancing Script', 'cursive'],
+                'bebas-neue': ['Bebas Neue', 'sans-serif'],
             },
         },
     },

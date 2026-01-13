@@ -271,11 +271,11 @@ nav {
 }
 
 .dignity-headline {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 800;
     color: #03068a;
-    margin-bottom: 0.2rem; /* Reduced bottom margin for better balance */
     text-align: center;   /* Centered the headline */
+    line-height: 1.2;
 }
 
 
@@ -288,6 +288,7 @@ nav {
 .dignity-tags {
     display: flex;
     gap: 1rem;
+    justify-content: center;
 }
 
 .dignity-tag {

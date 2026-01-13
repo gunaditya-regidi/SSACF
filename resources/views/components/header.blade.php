@@ -1,4 +1,4 @@
-<header>
+<header class="bg-[linear-gradient(145deg,_#231249,_#3a1a63,_#8a2f7c,_#c95c82)]">
     <nav>
         <div class="logo">
             <a href="{{ url('/') }}">
