@@ -226,6 +226,19 @@ nav {
     transform: scale(1.05);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes scroll-horizontal {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
