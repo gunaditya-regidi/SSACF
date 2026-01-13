@@ -2,20 +2,24 @@
     <div class="max-w-[1400px] mx-auto px-8 py-14">
         
         <!-- Newsletter Subscription -->
-        <div id="newsletter-container" class="bg-[#ffd900] rounded-2xl px-8 py-6 mb-8">
-            <div class="flex flex-col md:flex-row items-center justify-between">
-                <h3 class="text-black font-semibold text-lg mb-4 md:mb-0 md:mr-6">Subscribe to our Newsletter</h3>
-                <form id="newsletter-form" action="#" method="POST" class="flex w-full md:w-auto">
-                    <input type="email" name="email" class="bg-[#ffffff] border-transparent rounded-l-md py-2 px-4 text-black w-full md:w-80 focus:ring-2 focus:ring-[#e8580c] focus:border-transparent" placeholder="Enter your email address">
-                    <button type="submit" class="bg-[#030333] text-white font-bold py-2 px-6 rounded-r-md hover:bg-[#d14e0a] transition-colors whitespace-nowrap">Subscribe</button>
-                </form>
+        @if(session('success'))
+            <div class="text-center p-4 bg-green-100 text-green-800 rounded-lg">
+                <svg class="inline-block w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                {{ session('success') }}
             </div>
-        </div>
-         <div id="newsletter-success-message" class="hidden text-center p-4 bg-green-100 text-green-800 rounded-lg">
-               <svg class="inline-block w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-               You have successfully subscribed to our newsletter.
+        @else
+            <div id="newsletter-container" class="bg-[#ffd900] rounded-2xl px-8 py-6 mb-8">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <h3 class="text-black font-semibold text-lg mb-4 md:mb-0 md:mr-6">Subscribe to our Newsletter</h3>
+                    <form id="newsletter-form" action="{{ route('form.store') }}" method="POST" class="flex w-full md:w-auto">
+                        @csrf
+                        <input type="hidden" name="form_type" value="newsletter">
+                        <input type="email" name="email" class="bg-[#ffffff] border-transparent rounded-l-md py-2 px-4 text-black w-full md:w-80 focus:ring-2 focus:ring-[#e8580c] focus:border-transparent" placeholder="Enter your email address" required>
+                        <button type="submit" class="bg-[#030333] text-white font-bold py-2 px-6 rounded-r-md hover:bg-[#d14e0a] transition-colors whitespace-nowrap">Subscribe</button>
+                    </form>
+                </div>
             </div>
-
+        @endif
 
         <!-- Top Section - WhatsApp Banner -->
         <div class="bg-[#2c3238] rounded-2xl px-8 py-6 mb-16">
@@ -140,16 +144,4 @@
               
         </div>
     </div>
-    <script>
-        // Handle Newsletter Form Submission
-        const newsletterForm = document.getElementById('newsletter-form');
-        const newsletterContainer = document.getElementById('newsletter-container');
-        const newsletterSuccessMessage = document.getElementById('newsletter-success-message');
-
-        newsletterForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            newsletterContainer.style.display = 'none';
-            newsletterSuccessMessage.style.display = 'block';
-        });
-    </script>
 </footer>

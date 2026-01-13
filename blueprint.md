@@ -2,35 +2,34 @@
 
 ## Overview
 
-This project is a full-stack web application for the Sneha Sandhya Age Care Foundation, built with Laravel. The application is designed to showcase the foundation's mission, services, and journey through a modern, intuitive, and visually appealing interface. It features a blog, news and events section, detailed service pages, and an extensive gallery.
+This project is a Laravel-based web application for the Age Care Foundation. It is designed to provide information about the foundation's services, mission, and team. It also includes a blog, a gallery, and a contact form.
 
-## Style, Design, and Features
+## Features
 
-### General
+- **Homepage:** Displays a splash screen, a hero section with a call to action, information about the foundation's services, core values, and latest articles.
+- **About Us Page:** Provides information about the foundation's mission, vision, and team.
+- **Services Pages:** Detailed information about the various services offered by the foundation.
+- **Blog:** A simple blog to share news and updates.
+- **Gallery:** A gallery to showcase photos of the foundation's work.
+- **Contact Page:** A contact form for users to get in touch with the foundation.
+- **Newsletter Signup:** A newsletter signup form in the footer.
+- **Form Submission:** All form submissions (contact and newsletter) are stored in the database.
 
-*   **Layout:** The application uses a responsive, single-column layout with a consistent header and footer across all pages.
-*   **Typography:** The primary font is Figtree, with a clean and readable style. Headings are bold and oversized to create a clear visual hierarchy.
-*   **Color Palette:** The color scheme is centered around a professional and trustworthy blue, with accents of gray and white.
-*   **Navigation:** The main navigation bar provides easy access to all key sections of the site, including Home, About, Services, and more.
+## Design and Styling
 
-### Key Features
+- **Framework:** Tailwind CSS
+- **Colors:** The primary color is blue, with yellow as an accent color.
+- **Typography:** The primary font is Figtree, with Dancing Script and Bebas Neue used for headings.
 
-*   **Blog:** A fully functional blog with individual post pages and a main listing page.
-*   **News and Events:** A dedicated section for news articles and upcoming events, with a dynamic, filterable layout.
-*   **Service Pages:** Detailed pages for each of the foundation's services, including Palliative Care, Geriatric Care, and more.
-*   **Our Journey:** An interactive timeline showcasing the foundation's history and key milestones.
-*   **Gallery:** A visually rich gallery with high-quality images and a clean, grid-based layout.
-*   **FAQ Section:** A dedicated FAQ page with expandable answers for a clean and user-friendly experience.
+## Current Task: Form Submission
 
-## Current Change: Text Justification
+### Plan
 
-### Plan and Steps
-
-*   **Objective:** Justify the text content in the "Books," "FAQ," and "Articles" sections to create a more polished and professional appearance.
-*   **Steps Completed:**
-    1.  **Justify FAQ Answers:** Modified the `faq-item.blade.php` component to apply `text-align: justify;` to the FAQ answer text.
-    2.  **Justify "Our Journey" Descriptions:** Updated the `our-journey-content.blade.php` component to justify the description text for each milestone.
-    3.  **Justify "Advocacy and Training" Descriptions:** Applied `text-align: justify;` to the description text in the highlight cards on the `advocacy-and-training.blade.php` page.
-    4.  **Justify "Our Approach" Descriptions:** Added an inline style to justify the text content in the "Holistic Care Approach," "Family Care Approach," and "Celebrating Life" sections of the `our-approach.blade.php` component.
-
-I have now addressed all the initial requests and have created a `blueprint.md` file to document the project's current state. Please let me know if you have any other questions or if there's anything else I can help you with.
+1.  **Create a new migration** for a `form_submissions` table to store the form data. - **Done**
+2.  **Run the migration** to create the new table. - **Done**
+3.  **Create a new model** called `FormSubmission` to interact with the new table. - **Done**
+4.  **Create a new controller** called `FormSubmissionController` to handle the form submissions. - **Done**
+5.  **Add a new route** to `routes/web.php` to handle the form submissions. - **Done**
+6.  **Update the contact form** to submit to the new route. - **Done**
+7.  **Update the newsletter form** to submit to the new route. - **Done**
+8.  **Create a `blueprint.md` file** to document the project. - **Done**

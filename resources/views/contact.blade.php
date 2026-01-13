@@ -204,7 +204,14 @@
 
         <div id="contact-form-container" class="form-card max-w-4xl mx-auto">
             <h2>Get In Touch</h2>
-            <form id="contact-form" action="#" method="POST">
+            @if(session('success'))
+                <div class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg">
+                    {{ session('success') }}
+                </div>
+            @endif
+            <form id="contact-form" action="{{ route('form.store') }}" method="POST">
+                @csrf
+                <input type="hidden" name="form_type" value="contact">
                 <div class="form-grid">
                     <div class="form-group">
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -224,25 +231,6 @@
                 </div>
             </form>
         </div>
-         <div id="contact-success-message" class="hidden text-center p-4 bg-green-100 text-green-800 rounded-lg max-w-4xl mx-auto">
-            <svg class="inline-block w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            Thanks for contacting us, our team will reach out in 2 working days.
-        </div>
     </div>
 </main>
 @endsection
-
-@push('scripts')
-<script>
-    // Handle Contact Form Submission
-    const contactForm = document.getElementById('contact-form');
-    const contactFormContainer = document.getElementById('contact-form-container');
-    const contactSuccessMessage = document.getElementById('contact-success-message');
-
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        contactFormContainer.style.display = 'none';
-        contactSuccessMessage.style.display = 'block';
-    });
-</script>
-@endpush

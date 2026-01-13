@@ -236,6 +236,9 @@
         width: auto;
         margin: 1rem auto 0;
     }
+    .hidden {
+        display: none;
+    }
 </style>
 @endpush
 
@@ -246,6 +249,13 @@
             <h1><span class="foco">Support <i><small>Sneha Sandhya</small></i> <b><span style="font-size: 1.2em;">Age Care Foundation</span></b></span></h1>
             <p>Your contribution can make a significant impact on the lives of seniors. Discover how you can help.</p>
         </div>
+        
+        @if(session('volunteer_success'))
+            <div class="max-w-7xl mx-auto my-4 p-4 bg-green-100 text-green-800 rounded-lg text-center">
+                <svg class="inline-block w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                {{ session('volunteer_success') }}
+            </div>
+        @endif
 
         <div class="pad">
             <div class="cards-container">
@@ -273,39 +283,36 @@
         <!-- Donation Section -->
         <div id="donation-section" class="form-card max-w-7xl mx-auto">
             <h2 class="text-black">Make a Donation</h2>
+            
+            @if(session('donation_success'))
+                <div class="text-center p-4 mb-6 bg-green-100 text-green-800 rounded-lg">
+                    <svg class="inline-block w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    {{ session('donation_success') }}
+                </div>
+            @endif
+
             <p class="text-center text-gray-600 mb-8">After Sending Your donation, please fill out the remittance form for our records and future communications.</p>
-            <div id="donation-form-container" class="grid md:grid-cols-2 gap-12">
-                <!-- Left Side: Donor Remittance Form -->
-                <div>
-                    <h3 class="text-2xl font-semibold mb-6">Donor Remittance Form</h3>
-                    <form id="donation-form" action="#" method="POST">
-                        <div class="form-grid">
-                            <div class="form-group">
-                                <input type="email" id="donor-email" name="donor-email" placeholder="Email *" required>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Left Side: Remittance Form -->
+                <div id="donation-left-col">
+                    <div id="remittance-form-wrapper">
+                        <h3 class="text-2xl font-semibold mb-6">Donor Remittance Form</h3>
+                        <form id="donation-form" action="{{ route('donation.store') }}" method="POST">
+                            @csrf
+                            <div class="form-grid">
+                                <div class="form-group"><input type="email" id="donor-email" name="email" placeholder="Email *" required></div>
+                                <div class="form-group"><input type="text" id="donor-name" name="name" placeholder="Name *" required></div>
+                                <div class="form-group"><textarea id="donor-address" name="address" placeholder="Address *" rows="3" required></textarea></div>
+                                <div class="form-group"><input type="text" id="donor-pan" name="pan" placeholder="PAN NUMBER *" required></div>
+                                <div class="form-group"><input type="tel" id="donor-phone" name="phone" placeholder="Mobile Number *" required></div>
+                                <div class="form-group"><input type="text" id="transaction-id" name="transaction_id" placeholder="Remittance Ref. No / Transaction ID *" required></div>
+                                <div class="form-group"><input type="text" id="donor-amount" name="amount" placeholder="Donation Amount Rs. *" required></div>
                             </div>
-                            <div class="form-group">
-                                <input type="text" id="donor-name" name="donor-name" placeholder="Name *" required>
+                            <div class="submit-btn-container">
+                                <button type="submit" class="submit-btn">Submit</button>
                             </div>
-                            <div class="form-group">
-                                <textarea id="donor-address" name="donor-address" placeholder="Address *" rows="3" required></textarea>
-                            </div>
-                             <div class="form-group">
-                                <input type="text" id="donor-pan" name="donor-pan" placeholder="PAN NUMBER *" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" id="donor-phone" name="donor-phone" placeholder="Mobile Number *" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" id="transaction-id" name="transaction-id" placeholder="Remittance Ref. No / Transaction ID *" required>
-                            </div>
-                             <div class="form-group">
-                                <input type="text" id="donor-amount" name="donor-amount" placeholder="Donation Amount Rs. *" required>
-                            </div>
-                        </div>
-                        <div class="submit-btn-container">
-                            <button type="submit" class="submit-btn">Submit</button>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
 
                 <!-- Right Side: Donation Details -->
@@ -318,30 +325,25 @@
                         <p><strong>Account No:</strong> 4842135000003091</p>
                         <p><strong>IFSC Code:</strong> KVBL0004842</p>
                         <p><strong>Bank:</strong> Karur Vysya Bank, Seethammadhara Branch</p>
-                        <p>Visakhapatnam-530013</p>
-                        <p>Andhra Pradesh, India</p>
+                        <p>Visakhapatnam-530013</p><p>Andhra Pradesh, India</p>
                     </div>
                     <p><strong>OR</strong></p>
-                       
                     <div class="payment-method mt-6">
                         <img src="{{ asset('images/services/sbi.jpg') }}" alt="SBI Logo" class="h-12 mb-2">
                         <h3 class="text-white">Favoring: Sneha Sandhya Age Care Foundation</h3>
-                    
                         <p><strong>Account No:</strong> 37707311727</p>
                         <p><strong>IFSC Code:</strong> SBIN0015380</p>
                         <p><strong>Bank:</strong> State Bank of India, Kohinoor-Visakha Branch</p>
                         <p>Pandurangapuram, Visakhapatnam-530003</p>
                         <p>Andhra Pradesh, India</p>
                     </div>
-                    
                     <p><strong>OR</strong></p>
                      <div class="payment-method mt-6">
                         <img src="{{ asset('images/services/ubi.jpg') }}" alt="Union Bank of India Logo" class="h-12 mb-2">
                         <h3 class="text-white">Favoring: Sneha Sandhya Age Care Foundation</h3>
                         <p><strong>SB Acc No:</strong> 024510100065518</p>
                         <p><strong>IFSC Code:</strong> UBIN0802450</p>
-                        <p><strong>Bank:</strong> Union Bank of India</p>
-                        <p>Pithapuram Colony Br., Visakhapatnam</p>
+                        <p><strong>Bank:</strong> Union Bank of India</p><p>Pithapuram Colony Br., Visakhapatnam</p>
                     </div>
                     <div class="payment-method mt-6">
                         <p>Demand Draft or Cheque may be drawn in favour of:</p>
@@ -355,17 +357,12 @@
                     </div>
                 </div>
             </div>
-             <div id="donation-success-message" class="hidden text-center p-4 bg-green-100 text-green-800 rounded-lg">
-                <svg class="inline-block w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                Thanks for the donation, you will receive a email confirmation shortly.
-            </div>
         </div>
 
         <div class="tax-benefits-section max-w-6xl mx-auto">
             <h3>Tax Benefits</h3>
             <p>Donations to Sneha Sandhya Age Care Foundation are eligible for tax exemption under Section 80G and 12A of the Income Tax Act. Tax exemption certificates will be provided for all donations.</p>
         </div>
-
     </div>
 </main>
 
@@ -373,35 +370,20 @@
 <div id="volunteer-modal" class="modal">
     <div class="modal-content">
         <span id="close-volunteer" class="close-btn">&times;</span>
-        <div id="volunteer-form-container" >
-            <h2 class="text-black">Become a Volunteer</h2>
-            <form id="volunteer-form" action="#" method="POST">
-                <div class="form-grid">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                     <div class="form-group">
-                        <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="interest" name="interest" placeholder="Area of Interest (e.g., companionship, activities)" required>
-                    </div>
-                    <div class="form-group full-width">
-                        <textarea id="skills" name="skills" rows="5" placeholder="Tell us about your skills & availability" required></textarea>
-                    </div>
-                </div>
-                <div class="submit-btn-container">
-                    <button type="submit" class="submit-btn">Submit Application</button>
-                </div>
-            </form>
-        </div>
-        <div id="volunteer-success-message" class="hidden text-center p-4 bg-green-100 text-green-800 rounded-lg">
-             <svg class="inline-block w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            Thanks for your Interest in becoming a volunteer we will get back to you in 2 Working days.
-        </div>
+        <h2 class="text-black">Become a Volunteer</h2>
+        <form id="volunteer-form" action="{{ route('volunteer.store') }}" method="POST">
+            @csrf
+            <div class="form-grid">
+                <div class="form-group"><input type="text" id="name" name="name" placeholder="Your Name" required></div>
+                <div class="form-group"><input type="email" id="email" name="email" placeholder="Your Email" required></div>
+                <div class="form-group"><input type="tel" id="phone" name="phone" placeholder="Your Phone" required></div>
+                <div class="form-group"><input type="text" id="interest" name="area_of_interest" placeholder="Area of Interest (e.g., companionship, activities)" required></div>
+                <div class="form-group full-width"><textarea id="skills" name="skills_availability" rows="5" placeholder="Tell us about your skills & availability" required></textarea></div>
+            </div>
+            <div class="submit-btn-container">
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </div>
+        </form>
     </div>
 </div>
 
@@ -416,64 +398,36 @@
 
 @push('scripts')
 <script>
-    // Get modals
-    var volunteerModal = document.getElementById("volunteer-modal");
-    var partnerModal = document.getElementById("partner-modal");
+    document.addEventListener('DOMContentLoaded', function () {
+        // Get modals
+        var volunteerModal = document.getElementById("volunteer-modal");
+        var partnerModal = document.getElementById("partner-modal");
 
-    // Get buttons that open the modals
-    var volunteerBtn = document.getElementById("volunteer-btn");
-    var partnerBtn = document.getElementById("partner-btn");
+        // Get buttons that open modals
+        var volunteerBtn = document.getElementById("volunteer-btn");
+        var partnerBtn = document.getElementById("partner-btn");
 
-    // Get the <span> elements that close the modals
-    var closeVolunteer = document.getElementById("close-volunteer");
-    var closePartner = document.getElementById("close-partner");
+        // Get elements that close modals
+        var closeVolunteer = document.getElementById("close-volunteer");
+        var closePartner = document.getElementById("close-partner");
 
-    // When the user clicks the button, open the modal 
-    volunteerBtn.onclick = function() {
-        volunteerModal.style.display = "block";
-    }
-    partnerBtn.onclick = function() {
-        partnerModal.style.display = "block";
-    }
+        // Open modals
+        volunteerBtn.onclick = function() { volunteerModal.style.display = "block"; }
+        partnerBtn.onclick = function() { partnerModal.style.display = "block"; }
 
-    // When the user clicks on <span> (x), close the modal
-    closeVolunteer.onclick = function() {
-        volunteerModal.style.display = "none";
-    }
-    closePartner.onclick = function() {
-        partnerModal.style.display = "none";
-    }
+        // Close modals
+        closeVolunteer.onclick = function() { volunteerModal.style.display = "none"; }
+        closePartner.onclick = function() { partnerModal.style.display = "none"; }
 
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == volunteerModal) {
-            volunteerModal.style.display = "none";
+        // Close modals when clicking outside of them
+        window.onclick = function(event) {
+            if (event.target == volunteerModal) {
+                volunteerModal.style.display = "none";
+            }
+            if (event.target == partnerModal) {
+                partnerModal.style.display = "none";
+            }
         }
-        if (event.target == partnerModal) {
-            partnerModal.style.display = "none";
-        }
-    }
-
-    // Handle Volunteer Form Submission
-    const volunteerForm = document.getElementById('volunteer-form');
-    const volunteerFormContainer = document.getElementById('volunteer-form-container');
-    const volunteerSuccessMessage = document.getElementById('volunteer-success-message');
-
-    volunteerForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        volunteerFormContainer.style.display = 'none';
-        volunteerSuccessMessage.style.display = 'block';
-    });
-
-    // Handle Donation Form Submission
-    const donationForm = document.getElementById('donation-form');
-    const donationFormContainer = document.getElementById('donation-form-container');
-    const donationSuccessMessage = document.getElementById('donation-success-message');
-
-    donationForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        donationFormContainer.style.display = 'none';
-        donationSuccessMessage.style.display = 'block';
     });
 </script>
 @endpush

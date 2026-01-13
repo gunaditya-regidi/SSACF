@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('newsletter_subscribers', function (Blueprint $table) {
+        Schema::create('form_submissions', function (Blueprint $table) {
             $table->id();
-            $table->string('email')->unique();
-            $table->boolean('is_active')->default(true);
+            $table->string('form_type');
+            $table->json('data');
             $table->timestamps();
         });
     }
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('newsletter_subscribers');
+        Schema::dropIfExists('form_submissions');
     }
 };

@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Volunteer extends Model
+class Donation extends Model
 {
     use HasFactory;
 
@@ -15,10 +15,12 @@ class Volunteer extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'name', 
-        'email', 
+        'email',
+        'name',
+        'address',
+        'pan',
         'phone',
-        'area_of_interest',
-        'skills_availability',
+        'transaction_id',
+        'amount',
     ];
 }

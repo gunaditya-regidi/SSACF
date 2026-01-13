@@ -16,6 +16,9 @@ use App\Http\Controllers\OutreachGeriatricCareController;
 use App\Http\Controllers\AdvocacyAndTrainingController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\OurFacilitiesController;
+use App\Http\Controllers\FormSubmissionController;
+use App\Http\Controllers\VolunteerController;
+use App\Http\Controllers\DonationController;
 use Illuminate\Support\Str;
 use Carbon\Carbon;
 
@@ -116,6 +119,9 @@ Route::get('/support-us', function () {
     return view('support-us');
 })->name('support-us');
 
+Route::post('/volunteer', [VolunteerController::class, 'store'])->name('volunteer.store');
+Route::post('/donation', [DonationController::class, 'store'])->name('donation.store');
+
 Route::get('/palliative-care', [PalliativeCareController::class, 'index'])->name('palliative-care');
 
 Route::get('/geriatric-care', [GeriatricCareController::class, 'index'])->name('geriatric-care');
@@ -145,3 +151,5 @@ Route::get('/disclaimers', function () {
 })->name('disclaimers');
 
 Route::get('/our-facilities', [OurFacilitiesController::class, 'index'])->name('our-facilities');
+
+Route::post('/form-submission', [FormSubmissionController::class, 'store'])->name('form.store');
