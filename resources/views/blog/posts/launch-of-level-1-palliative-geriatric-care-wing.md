@@ -2,6 +2,7 @@
 title: Launch of Level-1 Palliative & Geriatric Care Wing (Block-C)
 date: 2025-11-10 00:00:00
 images:
+  - /images/articles/kv.jpeg
   - /images/gallery/DVC03956.JPG
   - /images/gallery/DVC03970.JPG
   - /images/gallery/DVC03984.JPG

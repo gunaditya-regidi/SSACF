@@ -44,3 +44,60 @@
         </ul>
     </nav>
 </header>
+
+<script>
+$(document).ready(function() {
+    const $mobileMenu = $('#mobile-menu');
+    const $navLinks = $('#nav-links');
+    const $dropdowns = $('.dropdown');
+
+    // Toggle mobile menu
+    $mobileMenu.on('click', function() {
+        $navLinks.toggleClass('active');
+        // Close any open dropdowns when closing the main menu
+        if (!$navLinks.hasClass('active')) {
+            $dropdowns.removeClass('open');
+        }
+    });
+
+    // Handle dropdown behavior
+    $dropdowns.each(function() {
+        const $this = $(this);
+        const $link = $this.children('a');
+
+        $link.on('click', function(e) {
+            // Check if we are in mobile view
+            if (window.matchMedia('(max-width: 768px)').matches) {
+                // If the dropdown is already open, let the link work
+                if ($this.hasClass('open')) {
+                    return;
+                }
+                // Otherwise, prevent default, close others, and open this one
+                e.preventDefault();
+                $dropdowns.removeClass('open');
+                $this.addClass('open');
+            }
+        });
+
+        // On desktop, we still want hover behavior, so we disable mobile clicks
+        $this.on('mouseenter', function() {
+            if (!window.matchMedia('(max-width: 768px)').matches) {
+                $dropdowns.removeClass('open');
+                $(this).addClass('open');
+            }
+        }).on('mouseleave', function() {
+            if (!window.matchMedia('(max-width: 768px)').matches) {
+                $(this).removeClass('open');
+            }
+        });
+    });
+
+    // Close mobile menu when clicking outside of it
+    $(document).on('click', function(e) {
+        if ($navLinks.hasClass('active') && !$navLinks.is(e.target) && $navLinks.has(e.target).length === 0 && !$mobileMenu.is(e.target) && $mobileMenu.has(e.target).length === 0) {
+            $navLinks.removeClass('active');
+            $dropdowns.removeClass('open');
+        }
+    });
+});
+</script>

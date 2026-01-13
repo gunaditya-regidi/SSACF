@@ -4,7 +4,7 @@
             <img src="{{ asset('images/services/pc1.jpeg') }}" alt="A caregiver providing compassionate support to an elderly woman.">
         </div>
         <div class="dignity-content">
-            <h2 class="dignity-headline">Providing care with
+            <h2 class="dignity-headline">Providing Care with
 Competence and Compassion
 Dignity in Health Care
 </h2>
@@ -51,7 +51,7 @@ Dignity in Health Care
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Compassionate Care</h3>
                 <p class="text-gray-700 text-justify">
-                Providing care with skill, compassion, and dignity means pairing clinical excellence with empathy, respect, and ethical accountability. It prioritizes the individual’s values, independence, privacy, and informed decision-making through clear communication and trust-building. The focus is on treating the person—not just the condition—by delivering personalized, attentive, and respectful care that enhances overall well-being.
+                Providing Care with skill, compassion, and dignity means pairing clinical excellence with empathy, respect, and ethical accountability. It prioritizes the individual’s values, independence, privacy, and informed decision-making through clear communication and trust-building. The focus is on treating the person—not just the condition—by delivering personalized, attentive, and respectful care that enhances overall well-being.
                 </p>
             </div>
         </div>

@@ -2,6 +2,7 @@
 title: A Shared Vision of Healing, Hope & Humanity
 date: 2025-11-11 00:00:00
 images:
+  - /images/articles/sa.jpeg
   - /images/gallery/DVC04097.JPG
   - /images/gallery/DVC04103.png
   - /images/gallery/DVC04109.JPG

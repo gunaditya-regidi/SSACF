@@ -86,7 +86,7 @@
             </div>
             <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
                 <i class="fas fa-leaf text-4xl text-blue-800 mb-4"></i>
-                <h3 class="text-xl font-bold text-blue-800-800 mb-2">Sustainability</h3>
+                <h3 class="text-xl font-bold text-blue-800 mb-2">Sustainability</h3>
                 <p class="text-Black text-justify">All our efforts will keep sustainability and environmental protection in mind at all times</p>
             </div>
         </div>

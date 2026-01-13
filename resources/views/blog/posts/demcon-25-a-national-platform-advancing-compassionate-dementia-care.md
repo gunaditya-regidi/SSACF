@@ -2,6 +2,7 @@
 title: DemCon’25 A Conference for Compassionate Dementia Care
 date: 2025-12-06 00:00:00
 images:
+  - /images/articles/de.jpeg
   - /images/articles/DVC05043.JPG
   - /images/articles/DVC05051.JPG
   - /images/articles/DVC05077.JPG
