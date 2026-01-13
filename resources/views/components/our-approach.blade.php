@@ -2,7 +2,7 @@
     <div class="container mx-auto px-4">
         <div class="text-center mb-16">
             <h2 class="text-4xl font-extrabold foco sm:text-5xl">Our Approach to Care</h2>
-            <p class="mt-4 text-xl text-black">A compassionate and holistic model for senior well-being.</p>
+            <p class="mt-4 text-xl text-black">A compassionate and holistic model for the well-being of the Elderly and the Seriously Ill.</p>
         </div>
 
         <!-- Holistic Care Approach: Content Left, Carousel Right -->

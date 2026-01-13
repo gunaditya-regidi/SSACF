@@ -606,7 +606,20 @@ footer {
   .footer-grid { grid-template-columns: 1fr; }
   .hero-content { padding: 2rem; }
   .hero-content h1 { font-size: 2rem; }
-  .transparent-buttons { justify-content: center; }
+  
+  .hero-buttons {
+    gap: 0.5rem; /* Reduce the gap between buttons */
+    justify-content: center; /* Ensure they are centered */
+    flex-wrap: nowrap; /* Prevent buttons from wrapping */
+  }
+
+  .btn-experience,
+  .btn-book-call {
+    padding: 0.7rem 1rem; /* Reduce padding to make buttons smaller */
+    text-align: center; /* Ensure text is centered */
+    white-space: nowrap; /* Prevent text from wrapping into two lines */
+    font-size: 0.9rem; /* Slightly reduce font size on mobile */
+  }
 
   .dignity-content {
     padding: 1.5rem;

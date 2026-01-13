@@ -47,7 +47,7 @@
         }
     }
     .contact-info-card {
-        background: url('{{ asset('images/background/cont.png') }}') center center/cover no-repeat;
+        background: url('{{ asset('images/background/cont.jpg') }}') center center/cover no-repeat;
         color: #0a009c;
         padding: 2rem;
         border-radius: 12px;
@@ -56,22 +56,26 @@
         justify-content: center;
         min-height: 350px;
     }
+
     .contact-info-card h2 {
         font-size: 1.75rem;
         font-weight: 700;
         margin-bottom: 0.5rem;
     }
+
     .contact-info-card p {
         font-size: 1rem;
         margin-bottom: 1.5rem;
         max-width: 300px;
     }
+
     .contact-info-card .info-item {
         display: flex;
         align-items: flex-start; /* Changed for better alignment with multi-line text */
         margin-bottom: 1rem;
         font-size: 0.9rem;
     }
+
     .contact-info-card .info-item svg {
         width: 20px;
         height: 20px;

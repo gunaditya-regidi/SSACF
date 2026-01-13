@@ -48,7 +48,7 @@
                     <div class="text-left md:ml-10">
                         <h1 class="text-xl md:text-xl text-white fade-in-up delay-1"><span class="font-dancing-script italic font-bold">Sneha Sandhya</span></h1>
                         <h1 class="text-4xl md:text-4xl font-bold text-yellow-400 fade-in-up delay-2 font-bebas-neue">AGE CARE FOUNDATION</h1>
-                        <p class="text-sky-200 text-sm sm:text-base text-right fade-in-up delay-3">Where Care Comes First</p>
+                        <p class="text-white text-sm sm:text-base text-right fade-in-up delay-3"><span class="font-dancing-script italic font-bold">Where Care Comes First</span></p>
                     </div>
                     <div class="flex-shrink-0 flex items-center gap-3 mt-4 md:mt-0 fade-in-up delay-4">
                         <a href="{{ route('services') }}" class="inline-flex items-center justify-center px-6 py-2.5 bg-white text-gray-900 font-semibold rounded-full shadow-md hover:bg-gray-200 transition-all duration-300">

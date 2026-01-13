@@ -247,7 +247,7 @@
     <div class="support-us-container">
         <div class="support-us-header">
             <h1><span class="foco">Support <i><small>Sneha Sandhya</small></i> <b><span style="font-size: 1.2em;">Age Care Foundation</span></b></span></h1>
-            <p>Your contribution can make a significant impact on the lives of seniors. Discover how you can help.</p>
+            <p>Your contribution can make a significant impact on the lives of Elderly and Seriously Ill. Discover how you can help.</p>
         </div>
         
         @if(session('volunteer_success'))
@@ -317,7 +317,7 @@
 
                 <!-- Right Side: Donation Details -->
                 <div class="approach-card p-6">
-                    <h3 class="text-white text-xl font-semibold mb-4">Donation Details</h3>
+                    <h3 class="text-white text-xl font-semibold mb-4">Account Details</h3>
                     <p class="text-sm">Donations may be remitted by RTGS/NEFT/IMPS</p>
                     <div class="payment-method mt-4">
                         <img src="{{ asset('images/services/kvb.png') }}" alt="Karur Vysya Bank Logo" class="h-12 mb-2">
