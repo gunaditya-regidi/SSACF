@@ -246,8 +246,11 @@
 <main style="background-image: url('{{ asset('images/topper/mmm.jpg') }}'); background-size: cover; background-position: center; padding-bottom: 3rem;">
     <div class="support-us-container">
         <div class="support-us-header">
-            <h1><span class="foco">Support <i><small>Sneha Sandhya</small></i> <b><span style="font-size: 1.2em;">Age Care Foundation</span></b></span></h1>
-            <p>Your contribution can make a significant impact on the lives of Elderly and Seriously Ill. Discover how you can help.</p>
+            <div class="flex flex-col md:flex-row items-center justify-center">
+                <h1 class="text-4xl font-bold foco md:mr-4">Support</h1>
+                <img src="{{ asset('images/art/agc1.png') }}" alt="Sneha Sandhya Age Care Foundation" class="h-20 mt-4 md:mt-0">
+            </div>
+            <p class="mt-4">Your contribution can make a significant impact on the lives of Elderly and Seriously Ill. Discover how you can help.</p>
         </div>
         
         @if(session('volunteer_success'))
