@@ -19,7 +19,7 @@
             <x-cta-card 
                 icon="fas fa-hands-helping" 
                 title="Volunteer" 
-                description="Lend your time & skills to make an impact in the lives of the elderly and critically ill." 
+                description="Lend your time and skills to make an impact in the lives of the elderly and critically ill." 
                 buttonText="Become a Volunteer" 
                 buttonLink="/support-us#volunteer-form" 
             />

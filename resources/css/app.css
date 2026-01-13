@@ -161,13 +161,6 @@ nav {
     background-color: #f1f1f1;
 }
 
-@media (max-width: 768px) {
-    .nav-links .nav-item,
-    .dropdown-content a {
-        color: #1e40af !important; /* text-blue-800 */
-    }
-}
-
 /* This rule makes standard dropdowns appear on hover */
 .dropdown:hover .dropdown-content {
     display: block;
@@ -225,19 +218,6 @@ nav {
 .scrolling-image-track img:hover {
     transform: scale(1.05);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @keyframes scroll-horizontal {
     from { transform: translateX(0); }
@@ -647,6 +627,11 @@ footer {
   .dignity-tags {
     flex-wrap: wrap;
   }
+
+  .nav-links .nav-item,
+    .dropdown-content a {
+        color: #1e40af !important; /* text-blue-800 */
+    }
 }
 
 /* Splash Screen */
@@ -717,4 +702,16 @@ footer {
 
 .hidden {
     display: none;
+}
+
+/* Hide mobile-only links by default on desktop */
+.dropdown-content a.mobile-only {
+    display: none;
+}
+
+/* Show mobile-only links on mobile */
+@media (max-width: 768px) {
+    .dropdown-content a.mobile-only {
+        display: block;
+    }
 }

@@ -15,6 +15,7 @@
             <li class="dropdown">
                 <a href="{{ route('about') }}" class="nav-item {{ request()->routeIs('about', 'our-team', 'our-journey') ? 'active' : '' }}">About Us <span class="dropdown-caret">▼</span></a>
                 <div class="dropdown-content">
+                <a href="{{ route('about') }}" class="mobile-only">About us Overview</a>
                 <a href="{{ route('our-facilities') }}">Our Facility</a> 
                     <a href="{{ route('our-team') }}">Our Team</a>
                    <a href="{{ route('our-journey') }}">Our Journey</a>
@@ -24,6 +25,7 @@
                 <a href="{{ route('services') }}" class="nav-item {{ request()->routeIs('services', 'palliative-care', 'geriatric-care', 'dementia-care', 'transitional-care', 'respite-care', 'rehabilitative-care', 'hospice-care', 'home-care', 'outreach-geriatric-care', 'advocacy-and-training') ? 'active' : '' }}">Our Services <span class="dropdown-caret">▼</span></a>
                 {{-- This is the dropdown that will now be two columns --}}
                 <div class="dropdown-content services-dropdown">
+                    <a href="{{ route('services') }}" class="mobile-only">Our Services Overview</a>
                     <a href="{{ route('palliative-care') }}">Palliative Care</a>
                     <a href="{{ route('geriatric-care') }}">Geriatric Care</a>
                     <a href="{{ route('dementia-care') }}">Dementia Care</a>
