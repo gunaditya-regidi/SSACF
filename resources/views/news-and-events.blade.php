@@ -83,13 +83,36 @@
         background-color: #f8f9fa;
         padding: 50px 0;
     }
-    .newsletter-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 2rem;
+    .newsletter-carousel-container {
+        position: relative;
         max-width: 1200px;
         margin: auto;
         padding: 0 2rem;
+    }
+    .newsletter-carousel .slick-slide {
+        padding: 0 15px;
+    }
+    .newsletter-carousel .slick-prev,
+    .newsletter-carousel .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        color: #0046d9;
+        cursor: pointer;
+        z-index: 10;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .newsletter-carousel .slick-prev {
+        left: -20px;
+    }
+    .newsletter-carousel .slick-next {
+        right: -20px;
     }
     .newsletter-item {
         text-align: center;
@@ -98,7 +121,7 @@
     }
     .newsletter-image {
         width: 100%;
-        height: 300px;
+        height: 200px;
         object-fit: cover;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -152,33 +175,39 @@
         <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Newsletters</h2>
         <p class="mt-4 text-lg text-gray-500">Stay updated with our latest newsletters. Click to read.</p>
     </div>
-    <div class="newsletter-grid">
-        @php
-            $image_files = collect(File::files(public_path('newsletters')))->filter(function ($file) {
-                return in_array(strtolower($file->getExtension()), ['png', 'jpg', 'jpeg']);
-            })->sortByDesc(function ($file) {
-                return $file->getFilename();
-            });
-
-            $pdf_files = collect(File::files(public_path('newsletters')))->filter(function ($file) {
-                return strtolower($file->getExtension()) === 'pdf';
-            })->keyBy(function ($file) {
-                return strtolower($file->getFilenameWithoutExtension());
-            });
-        @endphp
-
-        @foreach ($image_files as $image)
+    <div class="newsletter-carousel-container">
+        <div class="newsletter-carousel">
             @php
-                $image_name = strtolower($image->getFilenameWithoutExtension());
-                $pdf = $pdf_files->get($image_name);
+                $image_files = collect(File::files(public_path('newsletters')))->filter(function ($file) {
+                    return in_array(strtolower($file->getExtension()), ['png', 'jpg', 'jpeg']);
+                })->sortByDesc(function ($file) {
+                    $filename = $file->getFilenameWithoutExtension();
+                    $dateString = preg_replace('/([a-zA-Z]+)(\d{4})/', '$1 $2', $filename);
+                    return strtotime($dateString) ?: $file->getMTime();
+                });
+
+                $pdf_files = collect(File::files(public_path('newsletters')))->filter(function ($file) {
+                    return strtolower($file->getExtension()) === 'pdf';
+                })->keyBy(function ($file) {
+                    return strtolower($file->getFilenameWithoutExtension());
+                });
             @endphp
-            @if ($pdf)
-                <a href="#" class="newsletter-item open-modal-button" data-url="{{ asset('newsletters/' . $pdf->getFilename()) }}" data-title="{{ $image->getFilenameWithoutExtension() }}">
-                    <img src="{{ asset('newsletters/' . $image->getFilename()) }}" alt="{{ $image->getFilenameWithoutExtension() }}" class="newsletter-image">
-                    <div class="newsletter-title">{{ $image->getFilenameWithoutExtension() }}</div>
-                </a>
-            @endif
-        @endforeach
+
+            @foreach ($image_files as $image)
+                @php
+                    $image_name = strtolower($image->getFilenameWithoutExtension());
+                    $pdf = $pdf_files->get($image_name);
+                @endphp
+                @if ($pdf)
+                    <div class="newsletter-item">
+                        <a href="#" class="open-modal-button" data-url="{{ asset('newsletters/' . $pdf->getFilename()) }}" data-title="{{ $image->getFilenameWithoutExtension() }}">
+                            <img src="{{ asset('newsletters/' . $image->getFilename()) }}" alt="{{ $image->getFilenameWithoutExtension() }}" class="newsletter-image">
+                            <div class="newsletter-title">{{ $image->getFilenameWithoutExtension() }}</div>
+                        </a>
+                    </div>
+                @endif
+            @endforeach
+        </div>
     </div>
 </section>
 
@@ -187,7 +216,6 @@
         $videos = [
             ['id' => 'cOhqVWwDVNs', 'title' => 'Dr Vidya Viswanath\'s talk at Palliative Care Congress in Vatican', 'credits' => 'Pallium India'],
             ['id' => 'r8lBLUSFLEE', 'title' => 'A Caregiver\'s Prayer', 'credits' => 'jeanie powell'],
-            ['id' => '9U9X4Ssb_qY', 'title' => 'Help without expectation', 'credits' => 'Leonz P'],
             ['id' => 'QglpwO8POvI', 'title' => 'A journey Let\'s Talk Series', 'credits' => 'milfordcarecentre'],
             ['id' => 'lDHhg76tMHc', 'title' => 'Palliative Care: YOU Are a BRIDGE', 'credits' => 'Get Palliative Care'],
             ['id' => 'JzT6IRx_okk', 'title' => '#LastWords', 'credits' => 'Last Words'],
@@ -246,6 +274,36 @@
                     settings: {
                         slidesToShow: 1,
                     }
+                }
+            ]
+        });
+
+        $('.newsletter-carousel').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: true,
+            dots: false,
+            infinite: true,
+            prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+            nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+            responsive: [
+                {
+                    breakpoint: 1280,
+                    settings: { slidesToShow: 4 }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: { slidesToShow: 3 }
+                },
+                {
+                    breakpoint: 768,
+                    settings: { slidesToShow: 2 }
+                },
+                {
+                    breakpoint: 640,
+                    settings: { slidesToShow: 1 }
                 }
             ]
         });
