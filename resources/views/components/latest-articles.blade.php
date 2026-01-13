@@ -20,7 +20,7 @@
                 <h2 class="text-3xl font-bold text-gray-800 mb-6">Latest Newsletter</h2>
                 @if ($latestNewsletter)
                     <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-                         <a href="{{ $latestNewsletter->pdf_url }}" target="_blank" class="open-modal-button" data-url="{{ $latestNewsletter->pdf_url }}" data-title="{{ $latestNewsletter->title }}">
+                         <a href="#" class="open-modal-button" data-url="{{ $latestNewsletter->pdf_url }}" data-title="{{ $latestNewsletter->title }}">
                             @if($latestNewsletter->image)
                                 <img src="{{ $latestNewsletter->image }}" alt="{{ $latestNewsletter->title }}" class="w-full h-48 object-cover">
                             @else
