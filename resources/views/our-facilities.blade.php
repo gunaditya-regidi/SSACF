@@ -12,10 +12,10 @@
                         <h2 class="text-2xl font-semibold text-center text-blue-800 mb-8">INTEGRATED GERIATRIC AND PALLIATIVE HEALTH CARE CENTRE</h2>
                         <x-image-carousel :images="$topImages" direction="left-to-right" />
                         <br><br>
-                        <p class="text-lg text-gray-700 mb-6">
+                        <p class="text-lg text-gray-700 mb-6 text-justify">
                         Age Care Foundation's endeavour to make available health care services to the elderly and the seriously ill received a big fillip when the Free Polio Surgical and Research Foundation, Visakhapatnam provided one acre of land in Visakhapatnam to establish and run a fully integrated centre for Geriatric and Palliative Care, the first of its kind in Andhra Pradesh. This will open new vistas of care and scale up Age Care Foundation's services manyfold.</p>
 
-                        <p class="text-lg text-gray-700 mb-6">
+                        <p class="text-lg text-gray-700 mb-6 text-justify">
                             The bhoomipooja for the project was performed on 7th Aug 2022 and construction started in Dec 2022. The project work is completed and inpatient admissions to the healthcare facility commenced on 22nd September 2025. The gigantic task would not have been possible without the wholehearted, kind and generous philanthropic support from many corporate, institutional and individual donors, backed by the committed team of age care foundation.
                         </p>
 
@@ -33,13 +33,13 @@
                             <li>Equipped with 100kv solar power under green initiative.</li>
                         </ul>
 
-                        <p class="text-lg text-gray-700 mb-6">
+                        <p class="text-lg text-gray-700 mb-6 text-justify">
                             In a world where longevity is increasing but quality of life often declines with age and chronic illnesses, Age Care Foundation has taken this initiative to provide holistic, patient/family-centered approach, focusing on complex needs, optimizing quality of life, managing severe symptoms (pain, breathlessness, fatigue), addressing psychosocial/spiritual issues, using multidisciplinary teams.
                         </p>
 
                 
 
-                        <p class="text-lg text-gray-700 mb-6">
+                        <p class="text-lg text-gray-700 mb-6 text-justify">
                             The center provides care with skill, compassion, and dignity, delivering high-quality, respectful support that values the individual's worth, independence, and choices. It's about seeing the person, not just the condition, fostering a sense of safety and respect through attentive actions, active listening, and tailored approaches.
                         </p>
 

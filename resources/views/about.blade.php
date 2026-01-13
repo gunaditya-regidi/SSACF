@@ -69,7 +69,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center">
                 <h2 class="text-4xl font-extrabold foco sm:text-5xl tracking-tight">About Us</h2>
-                <p class="mt-4 text-lg text-black">Discover the story behind Sneha Sandhya Age Care Foundation—our mission, our values, and our unwavering commitment to senior wellness.</p>
+                <p class="mt-4 text-lg text-black">Discover the story behind Sneha Sandhya Age Care Foundation—our mission, our values, and our unwavering commitment, <br> to care for the elderly and the critically ill.</p>
             </div>
         </div>
     </section>

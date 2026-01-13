@@ -250,7 +250,7 @@
                 <h1 class="text-4xl font-bold foco md:mr-4">Support</h1>
                 <img src="{{ asset('images/art/agc1.png') }}" alt="Sneha Sandhya Age Care Foundation" class="h-20 mt-4 md:mt-0">
             </div>
-            <p class="mt-4">Your contribution can make a significant impact on the lives of Elderly and Seriously Ill. Discover how you can help.</p>
+            <p class="mt-4">Your contribution can make a significant impact on the lives of Elderly and Seriously Ill.<br>Discover how you can help.</p>
         </div>
         
         @if(session('volunteer_success'))
@@ -265,8 +265,8 @@
                 <div class="approach-card involved-card text-center">
                     <i class="fas fa-hands-helping card-icon"></i>
                     <h3 class="text-white">Volunteer With Us</h3>
-                    <p class="text-white">Your time and skills can make a huge difference in the lives of our seniors. Join our dedicated team.</p>
-                    <a id="volunteer-btn" class="card-btn btn-volunteer">Apply Now</a>
+                    <p class="text-white">Your time and skills can make a huge difference in the lives of elderly and ailing. Join our dedicated team.</p>
+                    <a id="volunteer-btn" class="card-btn btn-volunteer">Join Now</a>
                 </div>
                 <div class="approach-card involved-card text-center">
                     <i class="fas fa-hand-holding-heart card-icon"></i>
@@ -277,7 +277,7 @@
                 <div class="approach-card involved-card text-center">
                     <i class="fas fa-handshake card-icon"></i>
                     <h3 class="text-white">Become a Sustaining Member</h3>
-                    <p class="text-white">collaborate to enhance our services. Let's work together to improve Quality of Life for the Elderly and Seriously Ill.</p>
+                    <p class="text-white">Collaborate to enhance our services. Let's work together to improve Quality of Life for the Elderly and Seriously Ill.</p>
                     <a id="partner-btn" class="card-btn btn-partner">Know More</a>
                 </div>
             </div>
@@ -384,7 +384,7 @@
                 <div class="form-group full-width"><textarea id="skills" name="skills_availability" rows="5" placeholder="Tell us about your skills & availability" required></textarea></div>
             </div>
             <div class="submit-btn-container">
-                <button type="submit" class="submit-btn">Submit Application</button>
+                <button type="submit" class="submit-btn">Submit</button>
             </div>
         </form>
     </div>
