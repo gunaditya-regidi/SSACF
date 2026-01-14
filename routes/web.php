@@ -155,6 +155,15 @@ Route::get('/our-facilities', [OurFacilitiesController::class, 'index'])->name('
 
 Route::post('/form-submission', [FormSubmissionController::class, 'store'])->name('form.store');
 
+Route::get('/run-migrations', function () {
+    try {
+        Artisan::call('migrate', ['--force' => true]);
+        return 'Migrations executed successfully!';
+    } catch (\Exception $e) {
+        return 'Error running migrations: ' . $e->getMessage();
+    }
+});
+
 Route::get('/create-storage-link', function () {
     Artisan::call('config:clear');
     $output = "Configuration cache cleared.<br>";
