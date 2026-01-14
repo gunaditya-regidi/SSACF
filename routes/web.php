@@ -153,3 +153,18 @@ Route::get('/disclaimers', function () {
 Route::get('/our-facilities', [OurFacilitiesController::class, 'index'])->name('our-facilities');
 
 Route::post('/form-submission', [FormSubmissionController::class, 'store'])->name('form.store');
+
+Route::get('/create-storage-link', function () {
+    $targetFolder = storage_path('app/public');
+    $linkFolder = $_SERVER['DOCUMENT_ROOT'] . '/storage';
+    if (file_exists($linkFolder)) {
+        return 'The "public/storage" directory already exists.';
+    }
+    if (!file_exists($targetFolder)) {
+        File::makeDirectory($targetFolder, 0755, true, true);
+    }
+    app('files')->link(
+        $targetFolder, $linkFolder
+    );
+    return 'The [public/storage] directory has been linked.';
+});
