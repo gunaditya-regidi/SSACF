@@ -224,7 +224,7 @@ nav {
     to { transform: translateX(-50%); }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1227px) {
     .service-content-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
@@ -554,7 +554,7 @@ footer {
   .hero-content h1 { font-size: 2.5rem; }
 }
 
-@media (max-width: 1226px) {
+@media (max-width: 1227px) {
   /* Mobile Navigation */
   .menu-toggle {
     display: flex;
@@ -710,7 +710,7 @@ footer {
 }
 
 /* Show mobile-only links on mobile */
-@media (max-width: 1226px) {
+@media (max-width: 1227px) {
     .dropdown-content a.mobile-only {
         display: block;
     }

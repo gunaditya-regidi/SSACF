@@ -69,7 +69,7 @@ $(document).ready(function() {
 
         $link.on('click', function(e) {
             // Check if we are in mobile view
-            if (window.matchMedia('(max-width: 1226px)').matches) {
+            if (window.matchMedia('(max-width: 1227px)').matches) {
                 // If the dropdown is already open, let the link work
                 if ($this.hasClass('open')) {
                     return;
@@ -83,12 +83,12 @@ $(document).ready(function() {
 
         // On desktop, we still want hover behavior, so we disable mobile clicks
         $this.on('mouseenter', function() {
-            if (!window.matchMedia('(max-width: 1226px)').matches) {
+            if (!window.matchMedia('(max-width: 1227px)').matches) {
                 $dropdowns.removeClass('open');
                 $(this).addClass('open');
             }
         }).on('mouseleave', function() {
-            if (!window.matchMedia('(max-width: 1226px)').matches) {
+            if (!window.matchMedia('(max-width: 1227px)').matches) {
                 $(this).removeClass('open');
             }
         });
