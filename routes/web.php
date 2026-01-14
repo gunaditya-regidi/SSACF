@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\NewsAndEventsController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PalliativeCareController;
@@ -155,16 +156,24 @@ Route::get('/our-facilities', [OurFacilitiesController::class, 'index'])->name('
 Route::post('/form-submission', [FormSubmissionController::class, 'store'])->name('form.store');
 
 Route::get('/create-storage-link', function () {
+    Artisan::call('config:clear');
+    $output = "Configuration cache cleared.<br>";
+
     $targetFolder = storage_path('app/public');
     $linkFolder = $_SERVER['DOCUMENT_ROOT'] . '/storage';
+
     if (file_exists($linkFolder)) {
-        return 'The "public/storage" directory already exists.';
+        $output .= 'The "public/storage" directory already exists.';
+        return $output;
     }
     if (!file_exists($targetFolder)) {
         File::makeDirectory($targetFolder, 0755, true, true);
     }
-    app('files')->link(
-        $targetFolder, $linkFolder
-    );
-    return 'The [public/storage] directory has been linked.';
+    try {
+        app('files')->link($targetFolder, $linkFolder);
+        $output .= 'The [public/storage] directory has been linked.';
+    } catch (\Exception $e) {
+        $output .= 'Error creating symlink: ' . $e->getMessage();
+    }
+    return $output;
 });
