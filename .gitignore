@@ -1,3 +1,13 @@
 /node_modules
+/storage/*.key
 /vendor
-/dist
+.env
+.env.backup
+.env.production
+.phpunit.result.cache
+homestead.yaml
+homestead.json
+/public/storage
+/storage/app/public
+npm-debug.log
+yarn-error.log
