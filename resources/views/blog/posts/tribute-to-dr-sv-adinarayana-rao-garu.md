@@ -24,4 +24,4 @@ He will be remembered with deep gratitude, respect, and affection—as a healer,
 May his life continue to inspire service with skill, compassion with action, and success with humility.
 
 
-Raju NS
+Dr.N.S.Raju
