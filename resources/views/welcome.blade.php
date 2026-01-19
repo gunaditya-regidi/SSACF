@@ -123,7 +123,7 @@
         </div>
     </div>
         <x-get-involved />
-        <x-latest-articles :posts="$posts" :latest-newsletter="$latestNewsletter" />
+       
     </main>
     <div id="pdf-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
         <div class="relative bg-white rounded-lg shadow-xl w-11/11 md:w-3/4 lg:w-1/2">
