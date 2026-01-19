@@ -4,7 +4,7 @@
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div class="latest-articles-col md:col-span-3">
-                <h2 class="text-3xl font-bold text-gray-800 mb-6">Latest Events</h2>
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Current Updates & Announcements</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     @foreach ($posts as $post)
                         <x-event-card :post="collect($post)->all()" />

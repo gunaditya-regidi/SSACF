@@ -150,8 +150,6 @@ $rehabilitativeImages = [
     ['url' => asset('images/services/rec4.jpeg'), 'alt' => 'A human brain model.'],
     ['url' => asset('images/services/rec5.jpeg'), 'alt' => 'A human brain model.'],
 
-  
-    
     ];
 $hospiceImages = [
     ['url' => asset('images/services/hoc1.jpeg'), 'alt' => 'A nurse providing comfort to a patient in a calm environment.'],
@@ -355,7 +353,7 @@ $advocacyImages = [
                     <div class="service-content-grid">
                         <div class="service-text">
                             <h3 class="text-3xl font-bold text-white mb-4">Advocacy & Training</h3>
-                            <p class="text-white mb-6 text-justify">Focus on promoting the rights and well-being of older adults, spreading awareness about geriatric and palliative care, and encouraging early recognition of age-related health challenges such as dementia and chronic illness. Imparting training to the family caregivers and healthcare professionals on Geriatric and Palliative Care.</p>
+                            <p class="text-white mb-6 text-justify">Focus on promoting the rights and well-being of older adults, Spreading Awareness about geriatric and palliative care, and encouraging early recognition of age-related health challenges such as dementia and chronic illness. Imparting training to the family caregivers and healthcare professionals on Geriatric and Palliative Care.</p>
                             <a href="/advocacy-and-training" class="cta-button">Know More</a>
                         </div>
                         <div class="service-image-scroller">

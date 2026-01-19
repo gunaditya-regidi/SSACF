@@ -20,6 +20,10 @@
     <div class="my-8">
         <x-dignity-comfort-compassion />
     </div>
+    <div class="my-8">
+    <x-latest-articles :posts="$posts" :latest-newsletter="$latestNewsletter" />
+    
+</div>
     
     <div class="block md:hidden my-8">
         <x-image-carousel :images="$heroImages" />
