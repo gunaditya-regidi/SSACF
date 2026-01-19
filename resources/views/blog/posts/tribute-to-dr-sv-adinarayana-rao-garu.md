@@ -4,10 +4,24 @@ date: 2026-01-19 10:00:00
 images:
   - /images/articles/sva1.jpg
 ---
-It is with heavy hearts that we bid farewell to our visionary founder, Dr. S.V. Adinarayana Rao garu. A pioneer in the fields of geriatric and palliative care, Dr. Rao was a compassionate soul whose life was dedicated to serving the elderly and those in need. His unwavering commitment to providing dignity, comfort, and care to the most vulnerable members of our society laid the foundation for everything we do at Age Care Foundation.
+Dr. S. V. Adinarayana Rao was not only a gifted orthopedic surgeon but a compassionate human being whose life’s work restored dignity, mobility, and hope to lakhs of children affected by polio. 
 
-Dr. Rao's dream was to create a haven where seniors could live with respect and receive the specialized care they deserve. He envisioned a place where healing was not just about medicine, but about providing emotional, spiritual, and social support. It was this vision that led to the establishment of the Integrated Centre for Geriatric and Palliative Care, a first-of-its-kind facility in Andhra Pradesh.
+Through his skill, dedication, and tireless service, countless young lives were transformed—children who once faced lifelong disability were given the priceless gift of walking again.
 
-His passion and dedication inspired everyone around him. He was a mentor, a leader, and a friend to many. His legacy will continue to live on in the countless lives he touched and the institution he built. We are committed to carrying forward his mission and ensuring that his dream of a more compassionate world for the elderly becomes a reality.
+Beyond clinical excellence, Dr. Rao believed deeply in the power of movement, sport, and opportunity. He was a strong advocate for football and other sports, encouraging physical activity not merely as recreation, but as a means of confidence, inclusion, and holistic development for children and youth.
 
-Dr. Rao garu, you will be deeply missed, but your spirit will forever guide us.
+What truly set Dr. Rao apart was his generosity of spirit. He never turned away an individual or an organisation that sought his help. Whether it was a student, a colleague, a social worker, or a charitable institution, his response was always the same—quiet support, practical guidance, and wholehearted commitment.
+
+Among the many institutions that benefited from his unstinting support are King George Hospital, AMCOSA, Akshaya Patra Foundation, the Hare Krishna Movement, Visakhapatnam, and Sneha Sandhya Age Care Foundation. 
+
+His contributions to these organisations strengthened education, nutrition, spiritual service, healthcare, and compassionate care for the elderly.
+
+Dr. Adinarayana Rao’s legacy lives on not only in institutions and programs, but in every step taken by a child who walks today because of him, and in every life touched by his kindness. 
+
+He showed us that true greatness lies in using one’s knowledge and position to serve others—silently, selflessly, and consistently.
+He will be remembered with deep gratitude, respect, and affection—as a healer, a mentor, a benefactor, and above all, a humane soul.
+
+May his life continue to inspire service with skill, compassion with action, and success with humility.
+
+
+Raju NS
