@@ -197,7 +197,7 @@
                     <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
                     <div>
                         <strong>Geriatric & Palliative Care Hospital:</strong><br>
-                        <span>Premises No.153 Part<br>IIM-Visakhapatnam Road, Gambheeram,<br>Visakhapatnam-530 052</span>
+                        <span>D.No.9-60<br>IIM-Visakhapatnam Road, Gambheeram,<br>Visakhapatnam-530 052</span>
                     </div>
                 </div>
             </div>
