@@ -67,8 +67,8 @@
                 <h3 class="font-semibold text-lg text-white mb-6">Contact Us</h3>
                 <div class="space-y-4 text-gray-400">
                     <p class="flex items-start"><span class="mr-3 mt-1"><i class="fas fa-map-marker-alt"></i></span><span>Regd. Office: # 9-41-31/1, Pithapuram Colony<br>Visakhapatnam, Andhra Pradesh <br>India - 530003</span></p>
-                    <p class="flex items-start"><span class="mr-3 mt-1"><i class="fas fa-map-marker-alt"></i></span><span>Geriatric Palliative Care Centre: Premises No. 153 Part, IIM-Visakhapatnam Road<br>Gambheeram, Visakhapatnam, Andhra Pradesh <br>India - 531163</span></p>
-                    <p class="flex items-center"><span class="mr-3"><i class="fas fa-envelope"></i></span><span>info@agecarefoundation.com</span></p>
+                    <p class="flex items-start"><span class="mr-3 mt-1"><i class="fas fa-map-marker-alt"></i></span><span>Geriatric Palliative Care Centre: D.No.9-60, IIM-Visakhapatnam Road<br>Gambheeram, Visakhapatnam, Andhra Pradesh <br>India - 531163</span></p>
+                    <p class="flex items-center"><span class="mr-3"><i class="fas fa-envelope"></i></span><span>info@agecarefoundation.org</span></p>
                     <p class="flex items-center"><span class="mr-3"><i class="fas fa-phone-alt"></i></span><span>Helpline Nos: <br>+91 89 85 95 2000, <br>+91 89 85 95 3000; </span></p>
                     <p class="flex items-center"><span class="mr-3"><i class="fas fa-phone-alt"></i></span><span>Home Care: +91 85 00 00 5611</span></p>
                 </div>
